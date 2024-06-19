@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bygw04rg0x1ks"]
+
+[node name="Info" type="Node"]
+metadata/creator_name = "Puggo's World"
+metadata/url = "https://lb3d.co/puggos-world/"

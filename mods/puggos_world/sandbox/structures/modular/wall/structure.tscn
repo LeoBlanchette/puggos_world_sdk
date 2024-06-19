@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bi2pf7ekyl2fy"]
+
+[ext_resource type="PackedScene" uid="uid://wfxourcmhfdn" path="res://mods/puggos_world/sandbox/structures/modular/wall/models/wall.gltf" id="1_kwn6j"]
+[ext_resource type="Material" uid="uid://b3y2x1aahlkjh" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-512/material.tres" id="2_i7spa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oiode"]
+size = Vector3(3.5, 3.5, 0.5)
+
+[node name="Structure" instance=ExtResource("1_kwn6j")]
+metadata/id = 7
+metadata/name = "Modular Wall"
+metadata/icon_camera_orthographic_size = "5"
+metadata/icon_camera_position = Vector3(10, 15.875, 10)
+metadata/icon_camera_rotation = Vector3(-45, 45, 0)
+metadata/anchor_type = "wall"
+
+[node name="wall" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_i7spa")
+
+[node name="BuildAreaOccupied" type="Area3D" parent="." index="1"]
+collision_layer = 268435456
+collision_mask = 268435456
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BuildAreaOccupied" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0)
+shape = SubResource("BoxShape3D_oiode")

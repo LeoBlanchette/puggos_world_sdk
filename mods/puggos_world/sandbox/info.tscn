@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bah6721fsmmfq"]
+
+[node name="Info" type="Node"]
+metadata/project_name = "Sandbox"
+metadata/project_description = "Main sandbox objects for Puggo's World."

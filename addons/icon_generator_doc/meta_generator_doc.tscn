@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3wqxd8288b10"]
+
+[ext_resource type="Script" path="res://addons/icon_generator_doc/generate_icon_meta.gd" id="1_i8kah"]
+[ext_resource type="Script" path="res://addons/icon_generator_doc/generate_modular_structure_meta.gd" id="2_i8b51"]
+
+[node name="PW-Mods" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LabelIconMetaGeneration" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Icon Generation:"
+
+[node name="GenerateIconMeta" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Capture Icon Meta"
+script = ExtResource("1_i8kah")
+
+[node name="LabelStructureMetaGeneration" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Icon Generation:"
+
+[node name="GenerateModularStructureMeta" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Generate Structure Meta"
+script = ExtResource("2_i8b51")
+
+[connection signal="pressed" from="VBoxContainer/GenerateIconMeta" to="VBoxContainer/GenerateIconMeta" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/GenerateModularStructureMeta" to="VBoxContainer/GenerateModularStructureMeta" method="_on_pressed"]

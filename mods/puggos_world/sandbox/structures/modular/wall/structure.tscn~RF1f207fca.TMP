@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=4 uid="uid://dp5y6ge7j2qlw"]
+
+[ext_resource type="Material" uid="uid://b3y2x1aahlkjh" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-512/material.tres" id="2_i7spa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xcuej"]
+resource_name = "Material"
+cull_mode = 2
+roughness = 0.5
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_01l26"]
+_surfaces = [{
+"aabb": AABB(-1.75, 0, -0.25, 3.50001, 3.5, 0.50001),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAUAAAABAAQAAwAEAAEAAwAGAAQAAwAHAAYAAwACAAcAAgABAAAAAgADAAEAAAAHAAIAAAAFAAcABgAFAAQABgAHAAUA"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("/v8AAP3/AAD+/wAAAAAAAP7////9/wAA/v///wAAAAAAAAAAAAAAAAAAAAD9/wAAAAD//wAAAAAAAP///f8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_e2ggu"]
+resource_name = "wall_wall"
+_surfaces = [{
+"aabb": AABB(-1.75, 0, -0.25, 3.50001, 3.5, 0.50001),
+"attribute_data": PackedByteArray("/3//f/+PAAD/f/9//3////+fAAD/j/9//38AAP+v/3//fwAA/3//f/+//3//jwAA//////+f/3//n/9/AAD/f/+P/3//r/9/////f/+/AAD/nwAAAAAAAP+vAAD/rwAA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQANABAAAQAEAA0ACQAMAAMACQASAAwACgAWABMACgAHABYACAAFAAIACAALAAUAAAAVAAYAAAAPABUAFAARAA4AFAAXABEA"),
+"material": SubResource("StandardMaterial3D_xcuej"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/v8AAP3/AID+/wAA/f9U1f7/AAD9//+//v8AAAAA///+/wAAAABU1f7/AAAAAP+//v////3/AID+/////f9U1f7////9//+//v///wAA///+////AABU1f7///8AAP+/AAAAAAAA//8AAAAAAABU1QAAAAAAAP+/AAAAAP3/AIAAAAAA/f9U1QAAAAD9//+/AAD//wAA//8AAP//AABU1QAA//8AAP+/AAD///3/AIAAAP///f9U1QAA///9//+//3///1RVVFX/fwAA/3///1RVVFX/fwAA/3///1TVqir/fwAA/3///1TVqir/fwAA/3///1RVVFX/f////3///1RVVFX/f////3///1TVqir/f////3///1TVqir/f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_01l26")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_en7nu"]
+data = PackedVector3Array(1.75, 0, 0.25, -1.75, 0, -0.25, -1.75, 0, 0.25, 1.75, 0, 0.25, 1.75, 0, -0.25, -1.75, 0, -0.25, 1.75, 3.5, -0.25, -1.75, 0, -0.25, 1.75, 0, -0.25, 1.75, 3.5, -0.25, -1.75, 3.5, -0.25, -1.75, 0, -0.25, 1.75, 3.5, -0.25, -1.75, 3.5, 0.25, -1.75, 3.5, -0.25, 1.75, 3.5, -0.25, 1.75, 3.5, 0.25, -1.75, 3.5, 0.25, 1.75, 3.5, 0.25, 1.75, 0, -0.25, 1.75, 0, 0.25, 1.75, 3.5, 0.25, 1.75, 3.5, -0.25, 1.75, 0, -0.25, 1.75, 0, 0.25, -1.75, 3.5, 0.25, 1.75, 3.5, 0.25, 1.75, 0, 0.25, -1.75, 0, 0.25, -1.75, 3.5, 0.25, -1.75, 3.5, -0.25, -1.75, 0, 0.25, -1.75, 0, -0.25, -1.75, 3.5, -0.25, -1.75, 3.5, 0.25, -1.75, 0, 0.25)
+
+[node name="Structure" type="Node3D"]
+metadata/id = 7
+metadata/icon_camera_orthographic_size = 5.0
+metadata/icon_camera_position = Vector3(10, 15.875, 10)
+metadata/icon_camera_rotation = Vector3(-45, 45, 0)
+metadata/name = "Modular Wall"
+
+[node name="wall" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_i7spa")
+mesh = SubResource("ArrayMesh_e2ggu")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_en7nu")
