@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://caeg6bh63006l"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r56u2"]
+size = Vector3(0.33, 0.1, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qecjb"]
+size = Vector3(0.33, 0.1, 0.5)
+
+[node name="Item" type="Node3D"]
+metadata/id = 1
+metadata/name = "Book"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_r56u2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_qecjb")
