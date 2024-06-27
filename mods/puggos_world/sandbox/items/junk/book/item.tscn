@@ -1,17 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://caeg6bh63006l"]
+[gd_scene load_steps=4 format=3 uid="uid://caeg6bh63006l"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_r56u2"]
-size = Vector3(0.33, 0.1, 0.5)
+[sub_resource type="BoxMesh" id="BoxMesh_2rvvr"]
+size = Vector3(0.5, 0.2, 0.75)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_qecjb"]
-size = Vector3(0.33, 0.1, 0.5)
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_mm7nf"]
+properties/0/path = NodePath(".:rotation")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+properties/1/path = NodePath(".:position")
+properties/1/spawn = true
+properties/1/replication_mode = 2
 
-[node name="Item" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_x7ula"]
+size = Vector3(0.5, 0.2, 0.75)
+
+[node name="RigidBody3D" type="RigidBody3D"]
 metadata/id = 1
 metadata/name = "Book"
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_r56u2")
+mesh = SubResource("BoxMesh_2rvvr")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_mm7nf")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_qecjb")
+shape = SubResource("BoxShape3D_x7ula")
