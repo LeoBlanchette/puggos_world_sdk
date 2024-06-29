@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=4 uid="uid://yxrlmf3ajrfj"]
+[gd_scene load_steps=9 format=4 uid="uid://yxrlmf3ajrfj"]
 
+[ext_resource type="PackedScene" uid="uid://dce55nehgtnll" path="res://mods/puggos_world/sandbox/structures/anchors/anchors_foundation.tscn" id="2_5c4a6"]
 [ext_resource type="Material" uid="uid://bf3hxffbgevx1" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-1024/material.tres" id="2_q5yah"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6joft"]
@@ -45,6 +46,14 @@ data = PackedVector3Array(1.75, -5.25, 1.75, 2, -5.25, 2, 2, -5.25, 1.75, 1.75, 
 [sub_resource type="BoxShape3D" id="BoxShape3D_67ay8"]
 size = Vector3(4, 5.5, 4)
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_43f06"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 2
+
 [node name="Structure" type="Node3D"]
 metadata/id = 4
 metadata/name = "Modular Foundation with Stilts"
@@ -70,3 +79,8 @@ collision_mask = 268435456
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BuildAreaOccupied"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0)
 shape = SubResource("BoxShape3D_67ay8")
+
+[node name="AnchorsFoundation" parent="." instance=ExtResource("2_5c4a6")]
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_43f06")

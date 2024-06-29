@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://dim5u01gx6af5"]
+[gd_scene load_steps=8 format=4 uid="uid://dim5u01gx6af5"]
 
 [ext_resource type="PackedScene" uid="uid://k6uw68dmpjfg" path="res://mods/puggos_world/sandbox/structures/modular/door/models/door-colonly.gltf" id="2_g8pa5"]
 [ext_resource type="Material" uid="uid://b3y2x1aahlkjh" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-512/material.tres" id="2_j42ae"]
@@ -38,6 +38,14 @@ shadow_mesh = SubResource("ArrayMesh_2drgt")
 [sub_resource type="BoxShape3D" id="BoxShape3D_ku7e6"]
 size = Vector3(3.5, 3.5, 0.5)
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_s8mgf"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 2
+
 [node name="Structure" type="Node3D"]
 metadata/name = "Modular Door"
 metadata/id = 3
@@ -61,5 +69,8 @@ collision_mask = 268435456
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BuildAreaOccupied"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0)
 shape = SubResource("BoxShape3D_ku7e6")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_s8mgf")
 
 [editable path="door-colonly2"]

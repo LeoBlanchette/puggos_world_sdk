@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=4 uid="uid://bcxby0xmpn6s6"]
+[gd_scene load_steps=9 format=4 uid="uid://bcxby0xmpn6s6"]
 
+[ext_resource type="PackedScene" uid="uid://dce55nehgtnll" path="res://mods/puggos_world/sandbox/structures/anchors/anchors_foundation.tscn" id="2_c5u2c"]
 [ext_resource type="Material" uid="uid://bf3hxffbgevx1" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-1024/material.tres" id="2_q1qq4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3y2ll"]
@@ -40,6 +41,14 @@ data = PackedVector3Array(-2, -5.25, -2, 2, -5.25, 2, 2, -5.25, -2, -2, -5.25, -
 [sub_resource type="BoxShape3D" id="BoxShape3D_omp6h"]
 size = Vector3(4, 5.5, 4)
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_giaxk"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 2
+
 [node name="Structure" type="Node3D"]
 metadata/id = 1
 metadata/name = "Modular Foundation"
@@ -65,3 +74,8 @@ collision_mask = 268435456
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BuildAreaOccupied"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0)
 shape = SubResource("BoxShape3D_omp6h")
+
+[node name="AnchorsFloor" parent="." instance=ExtResource("2_c5u2c")]
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_giaxk")

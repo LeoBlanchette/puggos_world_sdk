@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://dt05vhmdq1euw"]
+[gd_scene load_steps=8 format=4 uid="uid://dt05vhmdq1euw"]
 
 [ext_resource type="Material" uid="uid://b3y2x1aahlkjh" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-512/material.tres" id="2_yqrp5"]
 
@@ -40,6 +40,14 @@ data = PackedVector3Array(1.25, 2.75, -0.25, 1.75, 3.5, -0.249999, 1.25, 3.5, -0
 [sub_resource type="BoxShape3D" id="BoxShape3D_6ayja"]
 size = Vector3(3.5, 3.5, 0.5)
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_1uccd"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 2
+
 [node name="Structure" type="Node3D"]
 metadata/id = 5
 metadata/name = "Modular Gate"
@@ -65,3 +73,6 @@ collision_mask = 268435456
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BuildAreaOccupied"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0)
 shape = SubResource("BoxShape3D_6ayja")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_1uccd")
