@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fw7ofpytgd5n"
-path="res://.godot/imported/icon.svg-ab4d1dcde621f631744814892053f107.ctex"
+path="res://.godot/imported/icon.svg-92df783e342699ca2161fe79753e5672.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/icon_generator_doc/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-ab4d1dcde621f631744814892053f107.ctex"]
+source_file="res://addons/puggos_world_sdk/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-92df783e342699ca2161fe79753e5672.ctex"]
 
 [params]
 

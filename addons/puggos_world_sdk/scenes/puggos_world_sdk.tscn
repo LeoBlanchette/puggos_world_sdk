@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b3wqxd8288b10"]
 
-[ext_resource type="Script" path="res://addons/icon_generator_doc/generate_icon_meta.gd" id="1_i8kah"]
-[ext_resource type="Script" path="res://addons/icon_generator_doc/generate_modular_structure_meta.gd" id="2_i8b51"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/generate_icon_meta.gd" id="1_e2gpe"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/generate_modular_structure_meta.gd" id="2_hqior"]
 
 [node name="PW-Mods" type="Control"]
 layout_mode = 3
@@ -23,16 +23,16 @@ text = "Icon Generation:"
 [node name="GenerateIconMeta" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Capture Icon Meta"
-script = ExtResource("1_i8kah")
+script = ExtResource("1_e2gpe")
 
 [node name="LabelStructureMetaGeneration" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "Icon Generation:"
+text = "Meta  Generation:"
 
 [node name="GenerateModularStructureMeta" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Generate Structure Meta"
-script = ExtResource("2_i8b51")
+script = ExtResource("2_hqior")
 
 [connection signal="pressed" from="VBoxContainer/GenerateIconMeta" to="VBoxContainer/GenerateIconMeta" method="_on_pressed"]
 [connection signal="pressed" from="VBoxContainer/GenerateModularStructureMeta" to="VBoxContainer/GenerateModularStructureMeta" method="_on_pressed"]
