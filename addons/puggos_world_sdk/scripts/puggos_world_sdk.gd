@@ -4,7 +4,7 @@ extends EditorPlugin
 
 # A class member to hold the dock during the plugin life cycle.
 var dock
-
+var meta_info_popup
 
 func _enter_tree():
 	# Initialization of the plugin goes here.
@@ -20,6 +20,7 @@ func _enter_tree():
 	
 	add_custom_type("Mod Info", "Resource", preload("res://addons/puggos_world_sdk/scripts/mod_info.gd"), preload("res://addons/puggos_world_sdk/icons/info.svg"))
 	add_custom_type("Creator Info", "Resource", preload("res://addons/puggos_world_sdk/scripts/creator_info.gd"), preload("res://addons/puggos_world_sdk/icons/info.svg"))
+	
 
 
 func _exit_tree():
