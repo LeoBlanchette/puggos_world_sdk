@@ -6,6 +6,6 @@
 [resource]
 script = ExtResource("1_vakos")
 mod_id = 0
-mod_name = "A Puggo's World Mod"
+mod_name = "Greeble's Guns"
 mod_preview_image = ExtResource("1_5n6x6")
 urls = ["https://steamcommunity.com/app/2414160/", "https://steamcommunity.com/app/2414160/workshop/"]

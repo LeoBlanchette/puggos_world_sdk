@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CreatorInfo" load_steps=2 format=3 uid="uid://c7vpkbry58k3j"]
+
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/creator_info.gd" id="1_bjf8y"]
+
+[resource]
+script = ExtResource("1_bjf8y")
+creator_name = "Greeble3D"
+creator_about = "A Puggo's World author."
+urls = []
