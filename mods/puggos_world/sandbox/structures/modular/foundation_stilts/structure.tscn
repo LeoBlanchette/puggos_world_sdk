@@ -61,6 +61,7 @@ metadata/icon_camera_orthographic_size = 7.0
 metadata/icon_camera_position = Vector3(10, 14.135, 10)
 metadata/icon_camera_rotation = Vector3(-45, 45, 0)
 metadata/anchor_type = "foundation"
+metadata/mod_type = "structures"
 
 [node name="foundation_stilts" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_6lnye")

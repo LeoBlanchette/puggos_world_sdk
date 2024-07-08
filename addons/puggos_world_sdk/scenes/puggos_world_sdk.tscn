@@ -1,8 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3wqxd8288b10"]
+[gd_scene load_steps=5 format=3 uid="uid://b3wqxd8288b10"]
 
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/generate_icon_meta.gd" id="1_e2gpe"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/pw_mods_ui.gd" id="1_e2w2b"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/generate_modular_structure_meta.gd" id="2_hqior"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/structure_meta.gd" id="2_faewn"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/item_meta.gd" id="3_515ti"]
+
+[sub_resource type="GDScript" id="GDScript_hvgm4"]
+script/source = "@tool
+extends Button
+
+func _on_pressed() -> void:
+	var root:Node = get_tree().edited_scene_root
+	var mod_meta:ModMeta = ModMeta.new(root, ModMeta.ModeType.STRUCTURES)
+	mod_meta.generate()
+"
 
 [node name="PW-Mods" type="Control"]
 layout_mode = 3
@@ -11,30 +21,91 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_e2w2b")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="Root" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="LabelIconMetaGeneration" type="Label" parent="VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="Root"]
 layout_mode = 2
-text = "Icon Generation:"
+theme_override_constants/margin_bottom = 10
 
-[node name="GenerateIconMeta" type="Button" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Root/MarginContainer"]
+layout_mode = 2
+
+[node name="LabelIconMetaGeneration" type="Label" parent="Root/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+text = "Icon Generation"
+
+[node name="GenerateIconMeta" type="Button" parent="Root/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Capture Icon Meta"
 script = ExtResource("1_e2gpe")
 
-[node name="LabelStructureMetaGeneration" type="Label" parent="VBoxContainer"]
+[node name="LabelMetaGeneration" type="Label" parent="Root"]
 layout_mode = 2
-text = "Meta  Generation:"
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+text = "Meta Generation"
 
-[node name="GenerateModularStructureMeta" type="Button" parent="VBoxContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="Root"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 10
+
+[node name="StructureMeta" type="VBoxContainer" parent="Root/MarginContainer2"]
+layout_mode = 2
+script = ExtResource("2_faewn")
+
+[node name="Label" type="Label" parent="Root/MarginContainer2/StructureMeta"]
+layout_mode = 2
+text = "Structures:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Root/MarginContainer2/StructureMeta"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Root/MarginContainer2/StructureMeta/HBoxContainer"]
+layout_mode = 2
+text = "Anchor Type"
+
+[node name="AnchorTypeOptionButton" type="OptionButton" parent="Root/MarginContainer2/StructureMeta/HBoxContainer"]
+layout_mode = 2
+item_count = 5
+popup/item_0/text = "none"
+popup/item_1/text = "foundation"
+popup/item_1/id = 1
+popup/item_2/text = "pillar"
+popup/item_2/id = 2
+popup/item_3/text = "wall"
+popup/item_3/id = 3
+popup/item_4/text = "floor"
+popup/item_4/id = 4
+
+[node name="GenerateModularStructureMeta" type="Button" parent="Root/MarginContainer2/StructureMeta"]
 layout_mode = 2
 text = "Generate Structure Meta"
-script = ExtResource("2_hqior")
+script = SubResource("GDScript_hvgm4")
 
-[connection signal="pressed" from="VBoxContainer/GenerateIconMeta" to="VBoxContainer/GenerateIconMeta" method="_on_pressed"]
-[connection signal="pressed" from="VBoxContainer/GenerateModularStructureMeta" to="VBoxContainer/GenerateModularStructureMeta" method="_on_pressed"]
+[node name="MarginContainer3" type="MarginContainer" parent="Root"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 10
+
+[node name="ItemMeta" type="VBoxContainer" parent="Root/MarginContainer3"]
+layout_mode = 2
+script = ExtResource("3_515ti")
+
+[node name="Label" type="Label" parent="Root/MarginContainer3/ItemMeta"]
+layout_mode = 2
+text = "Items:"
+
+[node name="FoodCheckBox" type="CheckBox" parent="Root/MarginContainer3/ItemMeta"]
+layout_mode = 2
+text = "Food"
+
+[node name="GenerateItemMeta" type="Button" parent="Root/MarginContainer3/ItemMeta"]
+layout_mode = 2
+text = "Generate Item Meta"
+
+[connection signal="pressed" from="Root/MarginContainer/VBoxContainer/GenerateIconMeta" to="Root/MarginContainer/VBoxContainer/GenerateIconMeta" method="_on_pressed"]
+[connection signal="pressed" from="Root/MarginContainer2/StructureMeta/GenerateModularStructureMeta" to="Root/MarginContainer2/StructureMeta" method="_on_generate_modular_structure_meta_pressed"]
+[connection signal="pressed" from="Root/MarginContainer3/ItemMeta/GenerateItemMeta" to="Root/MarginContainer3/ItemMeta" method="_on_generate_item_meta_pressed"]

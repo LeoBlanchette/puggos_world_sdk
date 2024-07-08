@@ -21,6 +21,7 @@ metadata/icon_camera_orthographic_size = "5"
 metadata/icon_camera_position = Vector3(10, 15.875, 10)
 metadata/icon_camera_rotation = Vector3(-45, 45, 0)
 metadata/anchor_type = "wall"
+metadata/mod_type = "structures"
 
 [node name="window" parent="." index="0"]
 material_override = ExtResource("2_leydo")

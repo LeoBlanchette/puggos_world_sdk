@@ -61,6 +61,7 @@ metadata/icon_camera_orthographic_size = 5.0
 metadata/icon_camera_position = Vector3(10, 15.875, 10)
 metadata/icon_camera_rotation = Vector3(-45, 45, 0)
 metadata/anchor_type = "pillar"
+metadata/mod_type = "structures"
 
 [node name="pillar" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_g4etq")
