@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cymwtx5ujblvs"]
-
-[ext_resource type="PackedScene" uid="uid://del4t4lqqyfdu" path="res://mods/puggos_world/sandbox/items/character/Survivalist_Helmet/models/Survivalist_Helmet.gltf" id="1_giitw"]
-
-[node name="Survivalist_Helmet" instance=ExtResource("1_giitw")]
