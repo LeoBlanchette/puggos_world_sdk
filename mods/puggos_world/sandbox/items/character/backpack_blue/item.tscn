@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://b6vyqiawn1iew" path="res://mods/puggos_world/sandbox/items/character/backpack_blue/model/Backpack_1.gltf" id="1_ldgh7"]
 
 [node name="Backpack_1" instance=ExtResource("1_ldgh7")]
+metadata/id = 2
+metadata/name = "Backpack Blue"
+metadata/mod_type = "items"
+metadata/equippable_slot = 11
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

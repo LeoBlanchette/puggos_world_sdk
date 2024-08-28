@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://stlhdw5pxwmt" path="res://mods/puggos_world/sandbox/items/character/baseball_cap_blue/model/Baseball_Cap_1.gltf" id="1_05pkj"]
 
 [node name="Baseball_Cap_1" instance=ExtResource("1_05pkj")]
+metadata/id = 3
+metadata/name = "Baseball Cap Blue"
+metadata/mod_type = "items"
+metadata/equippable_slot = 6

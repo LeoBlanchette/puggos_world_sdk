@@ -27,6 +27,7 @@ var icon_camera_rotation:Vector3
 
 #region mod attributes
 var is_food:bool = false
+var avatar_appearance_slot:int = -1
 #endregion
 
 
@@ -46,6 +47,7 @@ func _init(_scene_root:Node, _mod_type:ModeType) -> void:
 			set_anchor_type_meta(scene_root.get_meta("anchor_type", "none"))
 		"items":
 			mod_type = ModeType.ITEMS
+			get_appearance_item_meta()
 		_:
 			pass
 	
@@ -61,6 +63,8 @@ func generate()->void:
 			add_item_meta()
 			if is_food:
 				add_food_meta()
+			if avatar_appearance_slot > 0:
+				add_appearance_item_meta()
 
 func add_basic_meta()->void:
 	scene_root.set_meta("id", id)
@@ -76,6 +80,10 @@ func add_food_meta()->void:
 	#to be added later.
 	pass
 
+func add_appearance_item_meta()->void:
+	scene_root.set_meta("equippable_slot", avatar_appearance_slot)
+	
+
 func add_icon_meta()->void:
 	scene_root.set_meta("icon_camera_orthographic_size", icon_camera_orthographic_size)
 	scene_root.set_meta("icon_camera_position", icon_camera_position)
@@ -85,6 +93,9 @@ func get_icon_meta()->void:
 	icon_camera_orthographic_size = scene_root.get_meta("icon_camera_orthographic_size", 3.0)
 	icon_camera_position = scene_root.get_meta("icon_camera_position", Vector3.ZERO)
 	icon_camera_rotation = scene_root.get_meta("icon_camera_rotation", Vector3.ZERO)
+
+func get_appearance_item_meta()->void:
+	avatar_appearance_slot = scene_root.get_meta("equippable_slot", -1)
 
 func add_anchor_type_meta()->void:
 	var _anchor_type:="none"

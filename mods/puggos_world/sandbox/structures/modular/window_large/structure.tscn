@@ -15,13 +15,6 @@ properties/1/spawn = true
 properties/1/replication_mode = 2
 
 [node name="Structure" instance=ExtResource("1_qa0bj")]
-metadata/id = 9.0
-metadata/name = "Modular Window Large"
-metadata/icon_camera_orthographic_size = "5"
-metadata/icon_camera_position = Vector3(10, 15.9, 10)
-metadata/icon_camera_rotation = Vector3(-45, 45, 0)
-metadata/anchor_type = "wall"
-metadata/mod_type = "structures"
 
 [node name="window-large" parent="." index="0"]
 surface_material_override/0 = ExtResource("2_ih5ma")
