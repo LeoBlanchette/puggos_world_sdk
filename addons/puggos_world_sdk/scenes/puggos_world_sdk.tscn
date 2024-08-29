@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://b3wqxd8288b10"]
+[gd_scene load_steps=7 format=3 uid="uid://b3wqxd8288b10"]
 
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/generate_icon_meta.gd" id="1_e2gpe"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/structure_meta.gd" id="2_faewn"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/item_meta.gd" id="3_515ti"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/appearance_item_meta.gd" id="4_h2xtd"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/anchor_offset_meta.gd" id="5_1dv45"]
 
 [sub_resource type="GDScript" id="GDScript_hvgm4"]
 script/source = "@tool
@@ -100,7 +101,7 @@ script = ExtResource("3_515ti")
 
 [node name="Label" type="Label" parent="Root/MarginContainer3/ItemMeta"]
 layout_mode = 2
-text = "Items Common:"
+text = "Items - Common:"
 
 [node name="FoodCheckBox" type="CheckBox" parent="Root/MarginContainer3/ItemMeta"]
 layout_mode = 2
@@ -120,7 +121,7 @@ script = ExtResource("4_h2xtd")
 
 [node name="Label" type="Label" parent="Root/MarginContainer4/AppearanceItemMeta"]
 layout_mode = 2
-text = "Items Appearance:"
+text = "Items - Appearance:"
 
 [node name="AppearanceOptionButton" type="OptionButton" parent="Root/MarginContainer4/AppearanceItemMeta"]
 layout_mode = 2
@@ -210,7 +211,24 @@ popup/item_39/id = 39
 layout_mode = 2
 text = "Generate Item (Appearance) Meta"
 
+[node name="MarginContainer5" type="MarginContainer" parent="Root"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 10
+
+[node name="AnchorOffsetMeta" type="VBoxContainer" parent="Root/MarginContainer5"]
+layout_mode = 2
+script = ExtResource("5_1dv45")
+
+[node name="Label" type="Label" parent="Root/MarginContainer5/AnchorOffsetMeta"]
+layout_mode = 2
+text = "Items - Anchor Offsets:"
+
+[node name="GenerateItemOffsetMeta" type="Button" parent="Root/MarginContainer5/AnchorOffsetMeta"]
+layout_mode = 2
+text = "Generate Item / Anchor Offsets"
+
 [connection signal="pressed" from="Root/MarginContainer/VBoxContainer/GenerateIconMeta" to="Root/MarginContainer/VBoxContainer/GenerateIconMeta" method="_on_pressed"]
 [connection signal="pressed" from="Root/MarginContainer2/StructureMeta/GenerateModularStructureMeta" to="Root/MarginContainer2/StructureMeta" method="_on_generate_modular_structure_meta_pressed"]
 [connection signal="pressed" from="Root/MarginContainer3/ItemMeta/GenerateItemMeta" to="Root/MarginContainer3/ItemMeta" method="_on_generate_item_meta_pressed"]
 [connection signal="pressed" from="Root/MarginContainer4/AppearanceItemMeta/GenerateAppearanceItemMeta" to="Root/MarginContainer4/AppearanceItemMeta" method="_on_generate_appearance_item_meta_pressed"]
+[connection signal="pressed" from="Root/MarginContainer5/AnchorOffsetMeta/GenerateItemOffsetMeta" to="Root/MarginContainer5/AnchorOffsetMeta" method="_on_generate_item_offset_meta_pressed"]

@@ -1,10 +1,13 @@
 @tool
 extends EditorPlugin
-
+class_name  PuggosWorldSDK
 
 # A class member to hold the dock during the plugin life cycle.
 var dock
 var meta_info_popup
+var editor_selection = get_editor_interface().get_selection()
+var current_selected_nodes = []
+static var instance:PuggosWorldSDK
 
 func _enter_tree():
 	# Initialization of the plugin goes here.
@@ -20,7 +23,8 @@ func _enter_tree():
 	
 	add_custom_type("Mod Info", "Resource", preload("res://addons/puggos_world_sdk/scripts/mod_info.gd"), preload("res://addons/puggos_world_sdk/icons/info.svg"))
 	add_custom_type("Creator Info", "Resource", preload("res://addons/puggos_world_sdk/scripts/creator_info.gd"), preload("res://addons/puggos_world_sdk/icons/info.svg"))
-	
+	editor_selection.connect("selection_changed", _on_selection_changed)
+	instance = self
 
 
 func _exit_tree():
@@ -30,3 +34,11 @@ func _exit_tree():
 	remove_custom_type("Mod Info")
 	# Erase the control from the memory.
 	dock.free()
+	instance = null
+
+func _on_selection_changed():
+	# Returns an array of selected nodes
+	current_selected_nodes = editor_selection.get_selected_nodes() 
+
+func get_selected_nodes():
+	return current_selected_nodes

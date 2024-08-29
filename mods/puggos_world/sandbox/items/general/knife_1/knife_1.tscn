@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxr0vmc43moek"]
+
+[ext_resource type="PackedScene" uid="uid://cek6h4c2s1y6o" path="res://mods/puggos_world/sandbox/items/general/knife_1/models/kanifee.gltf" id="1_let13"]
+
+[node name="Knife_1" instance=ExtResource("1_let13")]
+transform = Transform3D(1, 0, 0, 0, 0.207912, 0.978148, 0, -0.978148, 0.207912, 0.121, 0.0979334, 0.0690136)
+metadata/anchor_slot_34_position = Vector3(0.121, 0.0979334, 0.0690136)
+metadata/anchor_slot_34_rotation = Vector3(-78, 0, 0)

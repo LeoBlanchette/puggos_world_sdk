@@ -34,10 +34,11 @@ var avatar_appearance_slot:int = -1
 func _init(_scene_root:Node, _mod_type:ModeType) -> void:	
 	scene_root = _scene_root
 	mod_type = _mod_type
-	
+	if is_avatar():
+		return
 	id = scene_root.get_meta("id", 0)
 	mod_name = scene_root.get_meta("name", 0)
-	
+
 	var mod_type_string:String = scene_root.get_meta("mod_type", "-")
 	
 	match mod_type_string:
@@ -65,6 +66,52 @@ func generate()->void:
 				add_food_meta()
 			if avatar_appearance_slot > 0:
 				add_appearance_item_meta()
+
+## Generates the offset values for an anchorable object such as a knife or gun.
+## Since the character has multiple points where objects can be anchored, the object
+## must have the offsets recorded for every anchor point it might be assigned to.
+func generate_anchor_offset_meta():	
+	var help:String = "Please open up res://addons/puggos_world_character/avatar/avatar.tscn"\
+		+" to set anchor offsets. The item you are anchoring to the Avatar anchor"\
+		+" slots must be a child of AnchorSlot_<i> and positioned accordingly."\
+		+ " Then, with the item selected, push the Generate Item / Anchor Offsets button."
+	# This will not work without avatar scene. Abort if not Avatar.
+	if not is_avatar():
+		print(help)
+		return 
+	# Get the selecction.
+	var valid_nodes:Array = []
+	var selected = PuggosWorldSDK.instance.get_selected_nodes()
+	for selection in selected:
+		if selection.get_parent().name.begins_with("Anchor_Slot_"):
+			valid_nodes.append(selection)
+	if valid_nodes.is_empty():
+		print("Please select the object you wish to record anchor offsets for. "\
+		+"It must be a child of an anchor slot (Anchor_Slot_<i>")
+		return
+	var selection:Node3D = valid_nodes[0]
+	
+	# Get the offset and rotation values, as well as parent (anchor) name.
+	var pos:Vector3 = selection.position
+	var rot:Vector3 = selection.rotation_degrees
+	var anchor_slot = selection.get_parent_node_3d().name.to_lower()
+	
+	# Set the meta.
+	selection.set_meta(anchor_slot+"_position", pos)
+	selection.set_meta(anchor_slot+"_rotation", rot)
+
+	# save results
+	var packed_scene = PackedScene.new()
+	
+	packed_scene.pack(selection)
+	packed_scene.take_over_path(selection.scene_file_path)
+	ResourceSaver.save(packed_scene, selection.scene_file_path)
+	packed_scene.emit_changed()	
+	print("Saved to: ", selection.scene_file_path)
+
+func is_avatar()->bool:
+	var root_node = EditorInterface.get_edited_scene_root()
+	return root_node.get_meta("avatar", false)
 
 func add_basic_meta()->void:
 	scene_root.set_meta("id", id)
