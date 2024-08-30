@@ -107,7 +107,10 @@ func generate_anchor_offset_meta():
 	packed_scene.take_over_path(selection.scene_file_path)
 	ResourceSaver.save(packed_scene, selection.scene_file_path)
 	packed_scene.emit_changed()	
+	
 	print("Saved to: ", selection.scene_file_path)
+	
+
 
 func is_avatar()->bool:
 	var root_node = EditorInterface.get_edited_scene_root()
