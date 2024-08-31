@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bq21853eclfx5"]
+
+[node name="Skin_1" type="Node3D"]
+metadata/id = 28
+metadata/name = "Skin, Light"
+metadata/mod_type = "items"
+metadata/equippable_slot = 1
