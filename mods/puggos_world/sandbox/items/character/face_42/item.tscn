@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8irrcrybfnvc"]
+
+[ext_resource type="PackedScene" uid="uid://di1xdo65djwk8" path="res://mods/puggos_world/sandbox/items/character/face_42/models/face.gltf" id="1_b37xk"]
+
+[node name="Face_42" instance=ExtResource("1_b37xk")]
+metadata/id = 69
+metadata/name = "Because two is too many."
+metadata/mod_type = "items"
+metadata/equippable_slot = 4

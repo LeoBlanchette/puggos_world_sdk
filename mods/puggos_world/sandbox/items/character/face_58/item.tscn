@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1di2xnrdbpn3"]
+
+[ext_resource type="PackedScene" uid="uid://boub1cjlkn3i7" path="res://mods/puggos_world/sandbox/items/character/face_58/models/face.gltf" id="1_7gxap"]
+
+[node name="Face_58" instance=ExtResource("1_7gxap")]
+metadata/id = 85
+metadata/name = "Back up... what?"
+metadata/mod_type = "items"
+metadata/equippable_slot = 4

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://em36cld2t63a"]
+
+[ext_resource type="PackedScene" uid="uid://hgdq86ydhkk7" path="res://mods/puggos_world/sandbox/items/character/face_21/models/face.gltf" id="1_sumjm"]
+
+[node name="Face_20" instance=ExtResource("1_sumjm")]
+metadata/id = 49
+metadata/name = "Firestarter"
+metadata/mod_type = "items"
+metadata/equippable_slot = 4

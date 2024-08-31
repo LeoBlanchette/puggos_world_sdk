@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2n5ajr6rwnc4"]
+
+[ext_resource type="PackedScene" uid="uid://kd7f1rcy8b5v" path="res://mods/puggos_world/sandbox/items/character/face_2/models/face.gltf" id="1_oj062"]
+
+[node name="Face_2" instance=ExtResource("1_oj062")]
+metadata/id = 30
+metadata/name = "Eager Beaver"
+metadata/mod_type = "items"
+metadata/equippable_slot = 4

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4lq3akdk3b4q"]
+
+[ext_resource type="PackedScene" uid="uid://od7hinre1nsy" path="res://mods/puggos_world/sandbox/items/character/face_40/models/face.gltf" id="1_or2yl"]
+
+[node name="Face_40" instance=ExtResource("1_or2yl")]
+metadata/id = 67
+metadata/name = "Blood Drinker"
+metadata/mod_type = "items"
+metadata/equippable_slot = 4

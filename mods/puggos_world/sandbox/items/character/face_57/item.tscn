@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://4g3r4yuw022e"]
+
+[ext_resource type="PackedScene" uid="uid://bdrk5rv76s1j" path="res://mods/puggos_world/sandbox/items/character/face_57/models/face.gltf" id="1_60l7e"]
+
+[node name="Face_57" instance=ExtResource("1_60l7e")]
+metadata/id = 84
+metadata/name = "I'm a baaaad man"
+metadata/mod_type = "items"
+metadata/equippable_slot = 4

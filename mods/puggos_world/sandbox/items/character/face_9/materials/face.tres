@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dwu3nk54laosj"]
+
+[ext_resource type="Texture2D" uid="uid://c3m15q83088av" path="res://mods/puggos_world/sandbox/items/character/face_9/textures/face_9.png" id="1_hn6pa"]
+
+[resource]
+render_priority = 3
+transparency = 1
+albedo_texture = ExtResource("1_hn6pa")

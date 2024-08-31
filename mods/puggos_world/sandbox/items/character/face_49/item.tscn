@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://8y48rb41gt3h"]
+
+[ext_resource type="PackedScene" uid="uid://daljdfbo8ws0f" path="res://mods/puggos_world/sandbox/items/character/face_49/models/face.gltf" id="1_8wemq"]
+
+[node name="Face_49" instance=ExtResource("1_8wemq")]
+metadata/id = 76
+metadata/name = "...I got an idea..."
+metadata/mod_type = "items"
+metadata/equippable_slot = 4

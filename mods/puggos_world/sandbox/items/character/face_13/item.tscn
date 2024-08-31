@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyk3hat6c8xav"]
+
+[ext_resource type="PackedScene" uid="uid://dby0dj8nwh2qc" path="res://mods/puggos_world/sandbox/items/character/face_13/models/face.gltf" id="1_w4ew0"]
+
+[node name="Face_13" instance=ExtResource("1_w4ew0")]
+metadata/id = 41
+metadata/name = "Don't eat the mud pie."
+metadata/mod_type = "items"
+metadata/equippable_slot = 4
