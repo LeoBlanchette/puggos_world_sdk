@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://b1buqcdegqlhn" path="res://mods/puggos_world/sandbox/items/character/Football_Pants/models/Football_Pants.gltf" id="1_04whl"]
 
 [node name="Football_Pants" instance=ExtResource("1_04whl")]
+metadata/id = 12
+metadata/name = "Football Pants"
+metadata/mod_type = "items"
+metadata/equippable_slot = 20
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

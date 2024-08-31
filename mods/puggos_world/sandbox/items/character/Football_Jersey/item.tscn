@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://dqsccqh0u5gxf" path="res://mods/puggos_world/sandbox/items/character/Football_Jersey/models/Football_Jersey.gltf" id="1_wd4rg"]
 
 [node name="Football_Jersey" instance=ExtResource("1_wd4rg")]
+metadata/id = 11
+metadata/name = "Football Vest"
+metadata/mod_type = "items"
+metadata/equippable_slot = 10
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

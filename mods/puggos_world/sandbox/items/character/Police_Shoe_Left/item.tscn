@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d1ai2u1s3ujs8" path="res://mods/puggos_world/sandbox/items/character/Police_Shoe_Left/models/Police_Shoe_Left.gltf" id="1_i6mg7"]
 
 [node name="Police_Shoe_Left" instance=ExtResource("1_i6mg7")]
+metadata/id = 25
+metadata/name = "Police Shoe (Left)"
+metadata/mod_type = "items"
+metadata/equippable_slot = 23

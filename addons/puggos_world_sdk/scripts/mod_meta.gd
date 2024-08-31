@@ -71,7 +71,7 @@ func generate()->void:
 ## Since the character has multiple points where objects can be anchored, the object
 ## must have the offsets recorded for every anchor point it might be assigned to.
 func generate_anchor_offset_meta():	
-	var help:String = "Please open up res://addons/puggos_world_character/avatar/avatar.tscn"\
+	var help:String = "Please open up res://tools/avatar_anchors/avatar.tscn"\
 		+" to set anchor offsets. The item you are anchoring to the Avatar anchor"\
 		+" slots must be a child of AnchorSlot_<i> and positioned accordingly."\
 		+ " Then, with the item selected, push the Generate Item / Anchor Offsets button."
@@ -101,15 +101,7 @@ func generate_anchor_offset_meta():
 	selection.set_meta(anchor_slot+"_rotation", rot)
 
 	# save results
-	var packed_scene = PackedScene.new()
-	
-	packed_scene.pack(selection)
-	packed_scene.take_over_path(selection.scene_file_path)
-	ResourceSaver.save(packed_scene, selection.scene_file_path)
-	packed_scene.emit_changed()	
-	
-	print("Saved to: ", selection.scene_file_path)
-	
+	PuggosWorldSDK.instance.save_node_resource(selection)
 
 
 func is_avatar()->bool:

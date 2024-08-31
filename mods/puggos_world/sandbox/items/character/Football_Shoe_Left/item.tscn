@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://c34fjn58gc7xo" path="res://mods/puggos_world/sandbox/items/character/Football_Shoe_Left/models/Football_Shoe_Left.gltf" id="1_k2f8v"]
 
 [node name="Football_Shoe_Left" instance=ExtResource("1_k2f8v")]
+metadata/id = 13
+metadata/name = "Football Shoe (Left)"
+metadata/mod_type = "items"
+metadata/equippable_slot = 23
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

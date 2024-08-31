@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://4g67dtlv1lm2" path="res://mods/puggos_world/sandbox/items/character/Football_Glove_Left/models/Football_Glove_Left.gltf" id="1_e8nmp"]
 
 [node name="Football_Glove_Left" instance=ExtResource("1_e8nmp")]
+metadata/id = 8
+metadata/name = "Football Glove (Left)"
+metadata/mod_type = "items"
+metadata/equippable_slot = 15
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bf3rxy7snclbx" path="res://mods/puggos_world/sandbox/items/character/Football_Glove_Right/models/Football_Glove_Right.gltf" id="1_m05g3"]
 
 [node name="Football_Glove_Right" instance=ExtResource("1_m05g3")]
+metadata/id = 9
+metadata/name = "Football Glove (Right)"
+metadata/mod_type = "items"
+metadata/equippable_slot = 15

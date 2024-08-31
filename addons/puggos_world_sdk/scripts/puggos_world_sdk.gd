@@ -9,7 +9,9 @@ var editor_selection = get_editor_interface().get_selection()
 var current_selected_nodes = []
 static var instance:PuggosWorldSDK
 
+
 func _enter_tree():
+
 	# Initialization of the plugin goes here.
 	# Load the dock scene and instantiate it.
 	dock = preload("res://addons/puggos_world_sdk/scenes/puggos_world_sdk.tscn").instantiate()
@@ -42,3 +44,16 @@ func _on_selection_changed():
 
 func get_selected_nodes():
 	return current_selected_nodes
+
+func save_node_resource(ob:Node)->void:
+		# save results
+	var packed_scene = PackedScene.new()
+	var file_path:String = ob.scene_file_path
+	packed_scene.pack(ob)
+	ResourceSaver.save(packed_scene, file_path)
+	
+	print("Saved to: ", file_path)
+	print_rich("IGNORE NEXT WARNING REGARDING [b][color=red]A BUG[/color] :)[/b]")
+	var filesystem = PuggosWorldSDK.instance.get_editor_interface().get_resource_filesystem()
+
+	filesystem.reimport_files(PackedStringArray([file_path]))

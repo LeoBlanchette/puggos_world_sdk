@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://oc054uvocfwt" path="res://mods/puggos_world/sandbox/items/character/Police_Shirt/models/Police_Shirt.gltf" id="1_jusnm"]
 
 [node name="Police_Shirt" instance=ExtResource("1_jusnm")]
+metadata/id = 24
+metadata/name = "Police Shirt"
+metadata/mod_type = "items"
+metadata/equippable_slot = 8
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)

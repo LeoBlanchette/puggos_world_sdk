@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://c66yymoejkrw3" path="res://mods/puggos_world/sandbox/items/character/Hiking_Boot_Right/models/Hiking_Boot_Right.gltf" id="1_g2i8w"]
 
 [node name="Hiking_Boot_Right" instance=ExtResource("1_g2i8w")]
+metadata/id = 18
+metadata/name = "Hiking Boot (Right)"
+metadata/mod_type = "items"
+metadata/equippable_slot = 24
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

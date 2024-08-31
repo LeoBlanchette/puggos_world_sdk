@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://coh40se4v1smy" path="res://mods/puggos_world/sandbox/items/character/Baseball_Cap_brown/models/Baseball_Cap_3.gltf" id="1_wsx4h"]
 
 [node name="Baseball_Cap_brown" instance=ExtResource("1_wsx4h")]
+metadata/id = 4
+metadata/name = "Baseball Cap (Tan)"
+metadata/mod_type = "items"
+metadata/equippable_slot = 6
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

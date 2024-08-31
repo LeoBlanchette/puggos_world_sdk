@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://bcx4d6pdh0ekw" path="res://mods/puggos_world/sandbox/items/character/jeans/models/Jeans.gltf" id="1_jdcwk"]
 
 [node name="Jeans" instance=ExtResource("1_jdcwk")]
+metadata/id = 19
+metadata/name = "Blue Jeans"
+metadata/mod_type = "items"
+metadata/equippable_slot = 20
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

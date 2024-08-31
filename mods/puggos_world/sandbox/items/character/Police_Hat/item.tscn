@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://bwaot6d341jkh" path="res://mods/puggos_world/sandbox/items/character/Police_Hat/models/Police_Hat.gltf" id="1_38jlv"]
 
 [node name="Police_Hat" instance=ExtResource("1_38jlv")]
+metadata/id = 22
+metadata/name = "Police Hat"
+metadata/mod_type = "items"
+metadata/equippable_slot = 6
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)

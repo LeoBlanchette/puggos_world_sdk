@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://devlfetv3rkbb" path="res://mods/puggos_world/sandbox/items/character/Football_Helmet/models/Football_Helmet.gltf" id="1_eay6b"]
 
 [node name="Football_Helmet" instance=ExtResource("1_eay6b")]
+metadata/id = 10
+metadata/name = "Football Helmet (Red)"
+metadata/mod_type = "items"
+metadata/equippable_slot = 6
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)
