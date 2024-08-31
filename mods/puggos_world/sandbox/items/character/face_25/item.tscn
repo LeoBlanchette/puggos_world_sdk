@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://be0fuqdwdudho"]
+
+[ext_resource type="PackedScene" uid="uid://chltukjqoovtb" path="res://mods/puggos_world/sandbox/items/character/face_25/models/face.gltf" id="1_f2gtv"]
+
+[node name="Face_25" instance=ExtResource("1_f2gtv")]
+metadata/id = 53
+metadata/name = "The Ghost of Maddy"
+metadata/mod_type = "items"
+metadata/equippable_slot = 4

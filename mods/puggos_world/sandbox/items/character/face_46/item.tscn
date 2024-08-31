@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct8gqn8p0qm7u"]
+
+[ext_resource type="PackedScene" uid="uid://c3ufvj0w45sm1" path="res://mods/puggos_world/sandbox/items/character/face_46/models/face.gltf" id="1_jrgdo"]
+
+[node name="Face_46" instance=ExtResource("1_jrgdo")]
+metadata/id = 73
+metadata/name = "Froggy"
+metadata/mod_type = "items"
+metadata/equippable_slot = 4
