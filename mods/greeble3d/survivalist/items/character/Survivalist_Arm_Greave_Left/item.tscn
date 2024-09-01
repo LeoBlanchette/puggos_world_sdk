@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://qadll2dl1i76" path="res://mods/greeble3d/survivalist/items/character/Survivalist_Arm_Greave_Left/models/Survivalist_Greave_Left.gltf" id="1_0kqkm"]
 
 [node name="Survivalist_Greave_Left2" instance=ExtResource("1_0kqkm")]
+metadata/id = 10100
+metadata/name = "Survivalist Arm Greave (Left)"
+metadata/mod_type = "items"

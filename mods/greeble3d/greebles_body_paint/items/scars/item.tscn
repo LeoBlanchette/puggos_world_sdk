@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://5nxii3n2qoog"]
+
+[node name="Scars" type="Node3D"]
+metadata/id = 15000
+metadata/name = "Scars, Chest"
+metadata/mod_type = "items"
+metadata/equippable_slot = 1

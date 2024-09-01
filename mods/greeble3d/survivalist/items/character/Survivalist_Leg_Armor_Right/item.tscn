@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://kesyxh0tuc67" path="res://mods/greeble3d/survivalist/items/character/Survivalist_Leg_Armor_Right/models/Survivalist_Leg_Armor_Right.gltf" id="1_e4a46"]
 
 [node name="Survivalist_Leg_Armor_Right" instance=ExtResource("1_e4a46")]
+metadata/id = 10107
+metadata/name = "Survivalist Leg Armor (Right)"
+metadata/mod_type = "items"
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)

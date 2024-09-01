@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnktfpoeggfpv"]
+
+[ext_resource type="PackedScene" uid="uid://b7aotd32yw0n7" path="res://mods/greeble3d/greebles_faces/items/face_angry/models/face.gltf" id="1_47wm6"]
+
+[node name="Face_Angry" instance=ExtResource("1_47wm6")]
