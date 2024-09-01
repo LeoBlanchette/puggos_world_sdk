@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://csjtaykqsme26"]
+
+[node name="Skin_Brown" type="Node3D"]
+metadata/id = 10003
+metadata/name = "Skin, Brown"
+metadata/mod_type = "items"
+metadata/equippable_slot = 1

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d2buakkoaj4oe"]
+
+[node name="Skin_White" type="Node3D"]
+metadata/id = 10005
+metadata/name = "Skin, White"
+metadata/mod_type = "items"
+metadata/equippable_slot = 1

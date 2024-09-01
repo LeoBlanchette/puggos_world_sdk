@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://bmcnr3tor5tre" path="res://mods/greeble3d/survivalist/items/character/Survivalist_Glove_Right/models/Survivalist_Glove_Right.gltf" id="1_8ok6h"]
 
 [node name="Survivalist_Glove_Right" instance=ExtResource("1_8ok6h")]
+metadata/id = 10104
+metadata/name = "Survivalist Glove (Right)"
+metadata/mod_type = "items"
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)

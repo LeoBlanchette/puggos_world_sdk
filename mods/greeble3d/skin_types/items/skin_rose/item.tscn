@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cfo31qmrcy4en"]
+
+[node name="Skin_Rose" type="Node3D"]
+metadata/id = 10004
+metadata/name = "Skin, Rose"
+metadata/mod_type = "items"
+metadata/equippable_slot = 1
