@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://vnaul1p3r0wj"]
 
-[ext_resource type="PackedScene" uid="uid://cjx1eawguw8ie" path="res://mods/puggos_world/sandbox/items/character/civilian_t_shirt/model/T-Shirt.gltf" id="1_abm4r"]
+[ext_resource type="PackedScene" uid="uid://cjx1eawguw8ie" path="res://addons/puggos_world_character/test_objects/slot_8/T-Shirt/T-Shirt.gltf" id="1_abm4r"]
 
 [node name="T-Shirt" instance=ExtResource("1_abm4r")]
 metadata/id = 7
