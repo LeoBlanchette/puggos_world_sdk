@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dopc2k4a8sa1v"
-path="res://.godot/imported/texture.png-eaeeb63538dfb224029e74ebc83048ce.ctex"
+uid="uid://dvwxjap2u28eb"
+path="res://.godot/imported/texture.png-13a3af84b04a3b6de19aab7219780d4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods/puggos_world/sandbox/items/character/skin_1/texture.png"
-dest_files=["res://.godot/imported/texture.png-eaeeb63538dfb224029e74ebc83048ce.ctex"]
+source_file="res://mods/puggos_world/sandbox/items/character/skin_3/texture.png"
+dest_files=["res://.godot/imported/texture.png-13a3af84b04a3b6de19aab7219780d4b.ctex"]
 
 [params]
 

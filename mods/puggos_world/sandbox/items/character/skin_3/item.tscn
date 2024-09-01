@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://5u871aupa67e"]
+
+[node name="Skin_1" type="Node3D"]
+metadata/id = 91
+metadata/name = "Skin Layer 3 Test"
+metadata/mod_type = "items"
+metadata/equippable_slot = 3
