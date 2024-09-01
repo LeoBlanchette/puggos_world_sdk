@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=4 uid="uid://yxrlmf3ajrfj"]
 
+[ext_resource type="Material" uid="uid://b3y2x1aahlkjh" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-512/material.tres" id="1_o6pyt"]
 [ext_resource type="PackedScene" uid="uid://dce55nehgtnll" path="res://mods/puggos_world/sandbox/structures/anchors/anchors_foundation.tscn" id="2_5c4a6"]
-[ext_resource type="Material" uid="uid://bf3hxffbgevx1" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-1024/material.tres" id="2_q5yah"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6joft"]
 resource_name = "Material"
@@ -55,10 +55,11 @@ properties/1/spawn = true
 properties/1/replication_mode = 2
 
 [node name="Structure" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.085, -1)
 metadata/id = 4
 metadata/name = "Modular Foundation with Stilts"
-metadata/icon_camera_orthographic_size = 7.0
-metadata/icon_camera_position = Vector3(10, 14.135, 10)
+metadata/icon_camera_orthographic_size = 5.0
+metadata/icon_camera_position = Vector3(10, 15.875, 10)
 metadata/icon_camera_rotation = Vector3(-45, 45, 0)
 metadata/anchor_type = "foundation"
 metadata/mod_type = "structures"
@@ -66,7 +67,7 @@ metadata/mod_type = "structures"
 [node name="foundation_stilts" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_6lnye")
 skeleton = NodePath("")
-surface_material_override/0 = ExtResource("2_q5yah")
+surface_material_override/0 = ExtResource("1_o6pyt")
 
 [node name="foundation_stilts" type="StaticBody3D" parent="foundation_stilts"]
 

@@ -11,7 +11,6 @@ static var instance:PuggosWorldSDK
 
 
 func _enter_tree():
-
 	# Initialization of the plugin goes here.
 	# Load the dock scene and instantiate it.
 	dock = preload("res://addons/puggos_world_sdk/scenes/puggos_world_sdk.tscn").instantiate()
@@ -27,7 +26,6 @@ func _enter_tree():
 	add_custom_type("Creator Info", "Resource", preload("res://addons/puggos_world_sdk/scripts/creator_info.gd"), preload("res://addons/puggos_world_sdk/icons/info.svg"))
 	editor_selection.connect("selection_changed", _on_selection_changed)
 	instance = self
-
 
 func _exit_tree():
 	# Clean-up of the plugin goes here.
@@ -45,15 +43,32 @@ func _on_selection_changed():
 func get_selected_nodes():
 	return current_selected_nodes
 
+## A hackish way to save a resource. Looking for a better way to do it. 
 func save_node_resource(ob:Node)->void:
-		# save results
+	# Duplicate and set owner to null to avoid parent errors. 
+	# https://docs.godotengine.org/en/4.3/classes/class_node.html#class-node-property-owner
+	ob = ob.duplicate()
+	ob.owner = null
+	# save results
 	var packed_scene = PackedScene.new()
 	var file_path:String = ob.scene_file_path
-	packed_scene.pack(ob)
-	ResourceSaver.save(packed_scene, file_path)
+	var result = packed_scene.pack(ob)
+	if result == OK:		
+		var error = ResourceSaver.save(packed_scene, file_path)		
+		print("Saved to: ", file_path)
+		if error != OK:
+			push_error("An error occurred while saving the scene (%s) to disk."%file_path)
+		else:
+			print("Saved to: ", file_path)			
+		var filesystem = PuggosWorldSDK.instance.get_editor_interface().get_resource_filesystem()
+		
+		# This next silly step is required so that the editor doesn't bug you later and then 
+		# confuse the user on how to reload it. So we run this silly importer 
+		# which will spit out a bug that may concern the user, which we preface with a 
+		# "don't worry about it" note that will likely become relevant later and 
+		# cause a forum discussion about incompetence etc which maybe we can 
+		# defer to a bug report on godot github which will likely never get resolved anyways.
+		# Anyway, this is a cool song: https://www.youtube.com/watch?v=WzsA4TDMh0w
+		print_rich("IGNORE NEXT WARNING REGARDING [b][color=red]A BUG[/color] :)[/b]")
+		filesystem.reimport_files(PackedStringArray([file_path]))
 	
-	print("Saved to: ", file_path)
-	print_rich("IGNORE NEXT WARNING REGARDING [b][color=red]A BUG[/color] :)[/b]")
-	var filesystem = PuggosWorldSDK.instance.get_editor_interface().get_resource_filesystem()
-
-	filesystem.reimport_files(PackedStringArray([file_path]))

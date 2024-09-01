@@ -1,7 +1,41 @@
-[gd_scene load_steps=5 format=3 uid="uid://bi2pf7ekyl2fy"]
+[gd_scene load_steps=8 format=4 uid="uid://bi2pf7ekyl2fy"]
 
-[ext_resource type="PackedScene" uid="uid://wfxourcmhfdn" path="res://mods/puggos_world/sandbox/structures/modular/wall/models/wall.gltf" id="1_kwn6j"]
-[ext_resource type="Material" uid="uid://b3y2x1aahlkjh" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-512/material.tres" id="2_i7spa"]
+[ext_resource type="Material" uid="uid://b3y2x1aahlkjh" path="res://mods/puggos_world/sandbox/materials/structures_modular/graybox-512/material.tres" id="1_751dv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q12nk"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bvv1v"]
+_surfaces = [{
+"aabb": AABB(-1.75, 0, -0.25, 3.5, 3.5, 0.5),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAAEAAUAAAABAAQAAwAEAAEAAwAGAAQAAwAHAAYAAwACAAcAAgABAAAAAgADAAEAAAAHAAIAAAAFAAcABgAFAAQABgAHAAUA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("//8AAP//AAD//wAAAAAAAP///////wAA/////wAAAAAAAAAAAAAAAAAAAAD//wAAAAD//wAAAAAAAP////8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6gatx"]
+resource_name = "wall_wall"
+_surfaces = [{
+"aabb": AABB(-1.75, 0, -0.25, 3.5, 3.5, 0.5),
+"attribute_data": PackedByteArray("/0f/f/9H/3//Of/v/0d/8P85/3//R//v/7f/f/+3/3//Of9//0f/f//F/3//R/9//7d/8P85/w//t//v/0f/D/9H/w//xf/v/7f/f//F/w//t/9//7f/D/+3/w//xf9/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQANABAAAQAEAA0ACQAMAAMACQASAAwACgAWABMACgAHABYACAAFAAIACAALAAUAAAAVAAYAAAAPABUAFAARAA4AFAAXABEA"),
+"material": SubResource("StandardMaterial3D_q12nk"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("//8AAP///7///wAA//9U1f//AAD///+///8AAAAA/////wAAAABU1f//AAAAAP+//////////7////////9U1f////////+//////wAA////////AABU1f////8AAP+/AAAAAAAA//8AAAAAAABU1QAAAAAAAP+/AAAAAP///78AAAAA//9U1QAAAAD///+/AAD//wAA//8AAP//AABU1QAA//8AAP+/AAD//////78AAP////9U1QAA//////+//////6oqVNX/fwAA/3///6oqVNX/fwAA/////1TVqir/fwAA/3///1TVqir/fwAA/3///6oqVNX/f////////6oqVNX/f////3///1TVqir/f////////1TVqir/f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_bvv1v")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xoh8t"]
+data = PackedVector3Array(1.75, 0, 0.25, -1.75, 0, -0.25, -1.75, 0, 0.25, 1.75, 0, 0.25, 1.75, 0, -0.25, -1.75, 0, -0.25, 1.75, 3.5, -0.25, -1.75, 0, -0.25, 1.75, 0, -0.25, 1.75, 3.5, -0.25, -1.75, 3.5, -0.25, -1.75, 0, -0.25, 1.75, 3.5, -0.25, -1.75, 3.5, 0.25, -1.75, 3.5, -0.25, 1.75, 3.5, -0.25, 1.75, 3.5, 0.25, -1.75, 3.5, 0.25, 1.75, 3.5, 0.25, 1.75, 0, -0.25, 1.75, 0, 0.25, 1.75, 3.5, 0.25, 1.75, 3.5, -0.25, 1.75, 0, -0.25, 1.75, 0, 0.25, -1.75, 3.5, 0.25, 1.75, 3.5, 0.25, 1.75, 0, 0.25, -1.75, 0, 0.25, -1.75, 3.5, 0.25, -1.75, 3.5, -0.25, -1.75, 0, 0.25, -1.75, 0, -0.25, -1.75, 3.5, -0.25, -1.75, 3.5, 0.25, -1.75, 0, 0.25)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oiode"]
 size = Vector3(3.5, 3.5, 0.5)
@@ -14,18 +48,32 @@ properties/1/path = NodePath(".:rotation")
 properties/1/spawn = true
 properties/1/replication_mode = 2
 
-[node name="Structure" instance=ExtResource("1_kwn6j")]
+[node name="Structure" type="Node3D"]
+metadata/id = 7
+metadata/name = "Wall"
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 5.0
+metadata/icon_camera_position = Vector3(10, 15.875, 10)
+metadata/icon_camera_rotation = Vector3(-45, 45, 0)
+metadata/anchor_type = "wall"
 
-[node name="wall" parent="." index="0"]
-surface_material_override/0 = ExtResource("2_i7spa")
+[node name="wall" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_6gatx")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_751dv")
 
-[node name="BuildAreaOccupied" type="Area3D" parent="." index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_xoh8t")
+
+[node name="BuildAreaOccupied" type="Area3D" parent="."]
 collision_layer = 268435456
 collision_mask = 268435456
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="BuildAreaOccupied" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BuildAreaOccupied"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0)
 shape = SubResource("BoxShape3D_oiode")
 
-[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." index="2"]
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_0hcfr")

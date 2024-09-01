@@ -1,5 +1,9 @@
 @tool
 extends Node3D
+
+## This class generates meta information for icon generation. Place the object to
+## be photographed under the anchor $SubViewport/Anchor and adjust accordingly.
+## Then go to the PW-Mods window and press the "Generate Icon Meta" button.
 class_name  IconGenerator
 
 static var instance:Node = null
@@ -21,34 +25,14 @@ static func capture_icon_meta():
 	
 	var target:Node = anchor.get_child(0)
 	
-	# now save the results
-	var scene_path = target.scene_file_path
-		
-	var loaded_scene: Resource = ResourceLoader.load(scene_path, "", ResourceLoader.CacheMode.CACHE_MODE_IGNORE)
-	
-	var instantiated_scene = loaded_scene.instantiate()
-	
 	# apply meta to editor object
 	target.set_meta("icon_camera_orthographic_size", camera_orthographic_size)
 	target.set_meta("icon_camera_position", icon_camera_position)	
 	target.set_meta("icon_camera_rotation", icon_camera_rotation)	
-	
-	# apply meta to source object
-	instantiated_scene.set_meta("icon_camera_orthographic_size", camera_orthographic_size)
-	instantiated_scene.set_meta("icon_camera_position", icon_camera_position)
-	instantiated_scene.set_meta("icon_camera_rotation", icon_camera_rotation)	
-	
-	instantiated_scene.position = target.position	
-	
-	# save results
-	var packed_scene = PackedScene.new()
-	
-	packed_scene.pack(instantiated_scene)
-	packed_scene.take_over_path(scene_path)
-	ResourceSaver.save(packed_scene, scene_path)
-	packed_scene.emit_changed()	
-	
-	print("Saved to: ", scene_path)
+		
+	# now save the scene
+	PuggosWorldSDK.instance.save_node_resource(target)
+
 	
 
 # Called when the node enters the scene tree for the first time.
