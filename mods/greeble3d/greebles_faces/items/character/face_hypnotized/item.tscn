@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://he2skijwx8oh" path="res://mods/greeble3d/greebles_faces/items/character/face_hypnotized/models/face.gltf" id="1_eawal"]
 
 [node name="Face_Hypnotized" instance=ExtResource("1_eawal")]
+metadata/id = 10006
+metadata/name = "Tick tock goes the grandfather clock"
+metadata/mod_type = "items"
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

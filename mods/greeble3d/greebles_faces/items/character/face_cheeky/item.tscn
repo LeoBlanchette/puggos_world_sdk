@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://cknvv7erg7oae" path="res://mods/greeble3d/greebles_faces/items/character/face_cheeky/models/face.gltf" id="1_l7cvc"]
 
 [node name="Face_Cheeky" instance=ExtResource("1_l7cvc")]
+metadata/id = 10003
+metadata/name = "Cheeky"
+metadata/mod_type = "items"
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)

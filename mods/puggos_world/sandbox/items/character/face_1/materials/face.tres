@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cxg21wr67qwdi"]
 
-[ext_resource type="Texture2D" uid="uid://c6d6ohwq8g4nt" path="res://mods/puggos_world/sandbox/items/character/face_1/textures/face_1.png" id="1_qsj4y"]
+[ext_resource type="Texture2D" uid="uid://c6d6ohwq8g4nt" path="res://addons/puggos_world_character/test_objects/slot_4/face_1/textures/face.png" id="1_qsj4y"]
 
 [resource]
 render_priority = 3
