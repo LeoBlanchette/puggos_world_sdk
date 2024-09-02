@@ -1,8 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cx870se32girf"]
-
-[ext_resource type="Texture2D" uid="uid://c6nswihu6tf4e" path="res://mods/greeble3d/greebles_faces/items/face_angry/textures/Angry.png" id="1_q0ohb"]
-
-[resource]
-render_priority = 3
-transparency = 1
-albedo_texture = ExtResource("1_q0ohb")

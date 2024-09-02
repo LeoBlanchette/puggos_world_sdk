@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ModInfo" load_steps=3 format=3 uid="uid://dmbedekw4pl0q"]
+
+[ext_resource type="Texture2D" uid="uid://dgrks8cbsbu75" path="res://mods/puggos_world/sandbox/mod_preview.png" id="1_ouwku"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/mod_info.gd" id="2_pb4w4"]
+
+[resource]
+script = ExtResource("2_pb4w4")
+mod_id = 0
+mod_name = "Greeble's Faces"
+mod_preview_image = ExtResource("1_ouwku")
+urls = ["https://steamcommunity.com/app/2414160/", "https://steamcommunity.com/app/2414160/workshop/"]

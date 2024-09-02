@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bk2eyhwop46eu" path="res://mods/greeble3d/survivalist/items/character/Survivalist_Chestplate/models/Survivalist_Chestpiece.gltf" id="1_4k6o7"]
 
 [node name="Survivalist_Chestpiece" instance=ExtResource("1_4k6o7")]
-metadata/id = 10102
+metadata/id = 10012
 metadata/name = "Survivalist Chestpiece"
 metadata/mod_type = "items"
 

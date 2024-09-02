@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dwax5gp68uscj" path="res://mods/greeble3d/survivalist/items/character/Survivalist_Glove_Left/models/Survivalist_Glove_Left.gltf" id="1_08g7d"]
 
 [node name="Survivalist_Glove_Left" instance=ExtResource("1_08g7d")]
-metadata/id = 10103
+metadata/id = 10013
 metadata/name = "Survivalist Glove (Left)"
 metadata/mod_type = "items"
 

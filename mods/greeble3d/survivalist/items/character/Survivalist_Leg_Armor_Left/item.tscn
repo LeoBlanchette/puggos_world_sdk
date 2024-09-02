@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://blxeltjccex6d" path="res://mods/greeble3d/survivalist/items/character/Survivalist_Leg_Armor_Left/models/Survivalist_Leg_Armor_Left.gltf" id="1_6ap0d"]
 
 [node name="Survivalist_Leg_Armor_Left" instance=ExtResource("1_6ap0d")]
-metadata/id = 10106
+metadata/id = 10016
 metadata/name = "Survivalist Leg Armor (Left)"
 metadata/mod_type = "items"
 

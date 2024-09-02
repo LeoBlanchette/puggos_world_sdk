@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c3rnug1lwin7m"]
+
+[ext_resource type="Texture2D" uid="uid://dhawuoxnvqysl" path="res://mods/greeble3d/greebles_faces/items/character/face_hypnotized/textures/Hypnotized.png" id="1_x1sql"]
+
+[resource]
+render_priority = 3
+transparency = 1
+albedo_texture = ExtResource("1_x1sql")

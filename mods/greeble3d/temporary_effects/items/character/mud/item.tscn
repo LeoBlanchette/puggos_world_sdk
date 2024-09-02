@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bhxbp6deqh1m0"]
+
+[node name="Mud" type="Node3D"]
+metadata/id = 10017
+metadata/name = "...Mud"
+metadata/mod_type = "items"
+metadata/equippable_slot = 3
