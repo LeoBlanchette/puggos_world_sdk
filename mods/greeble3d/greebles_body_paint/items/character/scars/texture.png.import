@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpe5m3pwmxp05"
-path="res://.godot/imported/Scar.png-1a6823da301c93f7a79476a943f9c51b.ctex"
+uid="uid://bjdv7l0ekciyw"
+path="res://.godot/imported/texture.png-3518608a284930f1b589231e082a2db5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods/greeble3d/greebles_body_paint/items/tribal/Scar.png"
-dest_files=["res://.godot/imported/Scar.png-1a6823da301c93f7a79476a943f9c51b.ctex"]
+source_file="res://mods/greeble3d/greebles_body_paint/items/character/scars/texture.png"
+dest_files=["res://.godot/imported/texture.png-3518608a284930f1b589231e082a2db5.ctex"]
 
 [params]
 

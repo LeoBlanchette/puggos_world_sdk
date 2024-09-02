@@ -6,3 +6,4 @@
 metadata/id = 10011
 metadata/name = "Survivalist Arm Greave (Right)"
 metadata/mod_type = "items"
+metadata/equippable_slot = 14

@@ -6,6 +6,7 @@
 metadata/id = 10017
 metadata/name = "Survivalist Leg Armor (Right)"
 metadata/mod_type = "items"
+metadata/equippable_slot = 22
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)

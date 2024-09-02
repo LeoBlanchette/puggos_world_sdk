@@ -6,6 +6,7 @@
 metadata/id = 10014
 metadata/name = "Survivalist Glove (Right)"
 metadata/mod_type = "items"
+metadata/equippable_slot = 16
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)
