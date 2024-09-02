@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dnb5tnomjjbn1"]
 
-[ext_resource type="PackedScene" uid="uid://stlhdw5pxwmt" path="res://addons/puggos_world_character/test_objects/slot_6/Baseball_Cap_1/Baseball_Cap_1.gltf" id="1_05pkj"]
+[ext_resource type="PackedScene" uid="uid://stlhdw5pxwmt" path="res://mods/puggos_world/sandbox/items/character/baseball_cap_blue/model/Baseball_Cap_1.gltf" id="1_05pkj"]
 
 [node name="Baseball_Cap_1" instance=ExtResource("1_05pkj")]
 metadata/id = 3

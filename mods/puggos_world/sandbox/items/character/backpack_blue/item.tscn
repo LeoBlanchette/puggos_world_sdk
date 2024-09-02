@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cn3jhswu0m56g"]
 
-[ext_resource type="PackedScene" uid="uid://b6vyqiawn1iew" path="res://addons/puggos_world_character/test_objects/slot_11/Backpack_1/Backpack_1.gltf" id="1_ldgh7"]
+[ext_resource type="PackedScene" uid="uid://b6vyqiawn1iew" path="res://mods/puggos_world/sandbox/items/character/backpack_blue/model/Backpack_1.gltf" id="1_ldgh7"]
 
 [node name="Backpack_1" instance=ExtResource("1_ldgh7")]
 metadata/id = 2
