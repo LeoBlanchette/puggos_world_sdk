@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://ca01648goagj1" path="res://mods/greeble3d/greebles_faces/items/character/face_grandpa/models/face.gltf" id="1_dibr3"]
 
 [node name="Face_Grandpa" instance=ExtResource("1_dibr3")]
+metadata/id = 10005
+metadata/name = "Grandpa!"
+metadata/mod_type = "items"
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/0/rotation = Quaternion(-0.704713, 0, 0, 0.709492)
