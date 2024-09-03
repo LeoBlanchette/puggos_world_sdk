@@ -4,4 +4,4 @@
 metadata/id = 10000
 metadata/name = "Scars, Chest"
 metadata/mod_type = "items"
-metadata/equippable_slot = 1
+metadata/equippable_slot = 2

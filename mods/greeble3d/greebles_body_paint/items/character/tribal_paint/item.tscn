@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://p8pgoi36nib2"]
+
+[node name="TribalFacePaint" type="Node3D"]
+metadata/id = 10001
+metadata/name = "Tribal Face Paint"
+metadata/mod_type = "items"
+metadata/equippable_slot = 2
