@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cf1suy1evhoyt"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 79
+metadata/name = "Sneak Onehandedsharp Forward"
+metadata/mod_type = "animations"

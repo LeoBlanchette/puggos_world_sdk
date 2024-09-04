@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bttqln4o325rx"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 13
+metadata/name = "Loop Onehandedsharp Idle 3"
+metadata/mod_type = "animations"

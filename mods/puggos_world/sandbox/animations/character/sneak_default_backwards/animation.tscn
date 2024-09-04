@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bbkvg4pxt54tp"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 59
+metadata/name = "Sneak Default Backwards"
+metadata/mod_type = "animations"

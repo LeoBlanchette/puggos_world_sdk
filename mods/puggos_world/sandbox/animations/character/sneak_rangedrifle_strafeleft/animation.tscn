@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dborvvluod8tp"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 98
+metadata/name = "Sneak Rangedrifle Strafeleft"
+metadata/mod_type = "animations"

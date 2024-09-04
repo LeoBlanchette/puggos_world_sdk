@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bhnjtrjvd67md"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 25
+metadata/name = "Loop Unwrap Ramen"
+metadata/mod_type = "animations"

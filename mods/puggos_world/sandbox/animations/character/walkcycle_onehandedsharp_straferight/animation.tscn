@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://btau76issv2b"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 123
+metadata/name = "Walkcycle Onehandedsharp Straferight"
+metadata/mod_type = "animations"

@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://k0tcehjjj1k4"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 110
+metadata/name = "Walkcycle Default Backwardleft"
+metadata/mod_type = "animations"

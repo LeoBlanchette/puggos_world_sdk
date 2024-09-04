@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://b0ndtt7311nrx"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 50
+metadata/name = "Runcycle Backwardleft"
+metadata/mod_type = "animations"

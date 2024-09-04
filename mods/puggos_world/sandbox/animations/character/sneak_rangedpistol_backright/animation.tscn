@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bxm04qygr10w0"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 85
+metadata/name = "Sneak Rangedpistol Backright"
+metadata/mod_type = "animations"

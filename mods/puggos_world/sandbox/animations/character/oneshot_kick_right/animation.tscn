@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://k4q43soiytjb"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 30
+metadata/name = "Oneshot Kick Right"
+metadata/mod_type = "animations"

@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://pfdlhdwyrat8"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 96
+metadata/name = "Sneak Rangedrifle Forwardleft"
+metadata/mod_type = "animations"

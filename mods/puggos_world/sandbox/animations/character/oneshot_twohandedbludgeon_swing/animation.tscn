@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bgukuvm48qm7o"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 48
+metadata/name = "Oneshot Twohandedbludgeon Swing"
+metadata/mod_type = "animations"

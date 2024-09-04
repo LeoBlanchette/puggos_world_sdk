@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://daf6o85ian006"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 65
+metadata/name = "Sneak Idle"
+metadata/mod_type = "animations"

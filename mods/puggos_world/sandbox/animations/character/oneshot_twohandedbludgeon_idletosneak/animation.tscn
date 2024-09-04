@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://b6bs3y57hcfdk"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 46
+metadata/name = "Oneshot Twohandedbludgeon Idletosneak"
+metadata/mod_type = "animations"

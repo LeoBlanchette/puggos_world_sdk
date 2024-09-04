@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b3wqxd8288b10"]
+[gd_scene load_steps=9 format=3 uid="uid://b3wqxd8288b10"]
 
 [ext_resource type="Theme" uid="uid://dk3rfpqoysbgq" path="res://addons/puggos_world_sdk/ui/pw-mods-dock.tres" id="1_2fjs0"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/generate_icon_meta.gd" id="1_e2gpe"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/item_meta.gd" id="3_515ti"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/appearance_item_meta.gd" id="4_h2xtd"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/anchor_offset_meta.gd" id="5_1dv45"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/animation_meta.gd" id="7_ylej8"]
 
 [sub_resource type="GDScript" id="GDScript_hvgm4"]
 script/source = "@tool
@@ -255,8 +256,29 @@ text = "Items - Anchor Offsets:"
 layout_mode = 2
 text = "Generate Item / Anchor Offsets"
 
+[node name="MarginContainer6" type="MarginContainer" parent="ScrollContainer/Root"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 10
+
+[node name="AnimationMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainer6"]
+layout_mode = 2
+script = ExtResource("7_ylej8")
+
+[node name="Divider4" type="Panel" parent="ScrollContainer/Root/MarginContainer6/AnimationMeta"]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainer6/AnimationMeta"]
+layout_mode = 2
+text = "Animations"
+
+[node name="GenerateAnimationMeta" type="Button" parent="ScrollContainer/Root/MarginContainer6/AnimationMeta"]
+layout_mode = 2
+text = "Generate Animation Meta"
+
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainer/VBoxContainer/GenerateIconMeta" to="ScrollContainer/Root/MarginContainer/VBoxContainer/GenerateIconMeta" method="_on_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainer2/StructureMeta/GenerateModularStructureMeta" to="ScrollContainer/Root/MarginContainer2/StructureMeta" method="_on_generate_modular_structure_meta_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainer3/ItemMeta/GenerateItemMeta" to="ScrollContainer/Root/MarginContainer3/ItemMeta" method="_on_generate_item_meta_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainer4/AppearanceItemMeta/GenerateAppearanceItemMeta" to="ScrollContainer/Root/MarginContainer4/AppearanceItemMeta" method="_on_generate_appearance_item_meta_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainer5/AnchorOffsetMeta/GenerateItemOffsetMeta" to="ScrollContainer/Root/MarginContainer5/AnchorOffsetMeta" method="_on_generate_item_offset_meta_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainer6/AnimationMeta/GenerateAnimationMeta" to="ScrollContainer/Root/MarginContainer6/AnimationMeta" method="_on_generate_animation_meta_pressed"]

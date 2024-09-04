@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cyxsl2omknek6"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 35
+metadata/name = "Oneshot Onehandedsharp Doublejab"
+metadata/mod_type = "animations"

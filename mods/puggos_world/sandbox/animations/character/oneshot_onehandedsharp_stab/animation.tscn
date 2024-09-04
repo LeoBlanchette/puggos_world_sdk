@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://ck7aef4iv1kqf"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 38
+metadata/name = "Oneshot Onehandedsharp Stab"
+metadata/mod_type = "animations"

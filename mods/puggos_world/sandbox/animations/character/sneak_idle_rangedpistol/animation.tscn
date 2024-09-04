@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bntjn7qn0jvti"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 67
+metadata/name = "Sneak Idle Rangedpistol"
+metadata/mod_type = "animations"

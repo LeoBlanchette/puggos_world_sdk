@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bvnmvkembb3im"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 32
+metadata/name = "Oneshot Onehandedsharp Criss-cross Jab"
+metadata/mod_type = "animations"

@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://luxxdpk25ctx"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 23
+metadata/name = "Loop Twohandedbludgeon Idle Combat"
+metadata/mod_type = "animations"

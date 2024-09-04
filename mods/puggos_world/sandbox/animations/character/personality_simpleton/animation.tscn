@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cb8wx2l3ibr07"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 52
+metadata/name = "Personality Simpleton"
+metadata/mod_type = "animations"

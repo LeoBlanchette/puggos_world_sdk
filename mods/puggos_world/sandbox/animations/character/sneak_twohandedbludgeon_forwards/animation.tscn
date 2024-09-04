@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://brfmd5nixflub"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 105
+metadata/name = "Sneak Twohandedbludgeon Forwards"
+metadata/mod_type = "animations"

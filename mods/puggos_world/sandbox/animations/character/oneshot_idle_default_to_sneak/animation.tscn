@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dm2xmymhuvwoa"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 27
+metadata/name = "Oneshot Idle Default To Sneak"
+metadata/mod_type = "animations"

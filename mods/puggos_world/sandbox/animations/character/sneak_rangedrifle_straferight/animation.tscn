@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://udi6fjqgji6a"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 99
+metadata/name = "Sneak Rangedrifle Straferight"
+metadata/mod_type = "animations"

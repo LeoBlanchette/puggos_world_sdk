@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://c4ih2wqykv86l"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 54
+metadata/name = "Personality Technonut"
+metadata/mod_type = "animations"

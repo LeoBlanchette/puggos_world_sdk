@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cgcgo4277df7s"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 9
+metadata/name = "Loop Idle Fall"
+metadata/mod_type = "animations"

@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bpw0biechfw4n"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 45
+metadata/name = "Oneshot Take Damage"
+metadata/mod_type = "animations"

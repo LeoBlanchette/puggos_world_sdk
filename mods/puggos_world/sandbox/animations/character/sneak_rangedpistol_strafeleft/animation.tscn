@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://egwtsvwwfhb6"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 90
+metadata/name = "Sneak Rangedpistol Strafeleft"
+metadata/mod_type = "animations"

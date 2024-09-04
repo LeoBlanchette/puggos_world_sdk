@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cpd7jfbou1jbf"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 88
+metadata/name = "Sneak Rangedpistol Forwardleft"
+metadata/mod_type = "animations"

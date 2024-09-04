@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://4culsarwwtko"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 116
+metadata/name = "Walkcycle Default Straferight"
+metadata/mod_type = "animations"

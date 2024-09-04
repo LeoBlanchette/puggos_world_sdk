@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cqjhg5nkvdrm4"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 16
+metadata/name = "Loop Rangedpistol Idle 2"
+metadata/mod_type = "animations"

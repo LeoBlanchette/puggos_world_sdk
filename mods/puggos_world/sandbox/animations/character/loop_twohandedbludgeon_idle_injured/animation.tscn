@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bncravcivojn4"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 24
+metadata/name = "Loop Twohandedbludgeon Idle Injured"
+metadata/mod_type = "animations"

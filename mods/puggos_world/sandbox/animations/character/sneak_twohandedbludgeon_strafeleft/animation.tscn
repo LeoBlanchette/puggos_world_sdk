@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cv3t3i4gfayaw"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 107
+metadata/name = "Sneak Twohandedbludgeon Strafeleft"
+metadata/mod_type = "animations"

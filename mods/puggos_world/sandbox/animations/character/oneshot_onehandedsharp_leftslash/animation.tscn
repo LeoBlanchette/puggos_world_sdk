@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://ovvihoss7qqc"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 36
+metadata/name = "Oneshot Onehandedsharp Leftslash"
+metadata/mod_type = "animations"

@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dbenropng7shs"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 21
+metadata/name = "Loop Repair"
+metadata/mod_type = "animations"

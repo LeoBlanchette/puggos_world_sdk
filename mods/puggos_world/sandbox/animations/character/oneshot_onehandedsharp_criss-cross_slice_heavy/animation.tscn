@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cjfomc75rxkpw"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 33
+metadata/name = "Oneshot Onehandedsharp Criss-cross Slice Heavy"
+metadata/mod_type = "animations"

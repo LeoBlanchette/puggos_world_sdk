@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://d0iujuug7w5y6"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 51
+metadata/name = "Personality Sifu"
+metadata/mod_type = "animations"

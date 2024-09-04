@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dcah2hbgbpsbm"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 34
+metadata/name = "Oneshot Onehandedsharp Criss-cross Slice Light"
+metadata/mod_type = "animations"

@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bji77ddvs1bku"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 28
+metadata/name = "Oneshot Jump"
+metadata/mod_type = "animations"

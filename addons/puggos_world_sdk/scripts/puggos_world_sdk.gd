@@ -44,7 +44,7 @@ func get_selected_nodes():
 	return current_selected_nodes
 
 ## A hackish way to save a resource. Looking for a better way to do it. 
-func save_node_resource(ob:Node)->void:
+func save_node_resource(ob:Node, rescan=true)->void:
 	# Duplicate and set owner to null to avoid parent errors. 
 	# https://docs.godotengine.org/en/4.3/classes/class_node.html#class-node-property-owner
 	ob = ob.duplicate()
@@ -60,6 +60,9 @@ func save_node_resource(ob:Node)->void:
 			push_error("An error occurred while saving the scene (%s) to disk."%file_path)
 		else:
 			print("Saved to: ", file_path)			
+		
+		if !rescan:
+			return
 		var filesystem = PuggosWorldSDK.instance.get_editor_interface().get_resource_filesystem()
 		
 		# This next silly step is required so that the editor doesn't bug you later and then 

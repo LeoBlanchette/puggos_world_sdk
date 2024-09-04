@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://pyb3ojeon3ag"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 106
+metadata/name = "Sneak Twohandedbludgeon Idle"
+metadata/mod_type = "animations"

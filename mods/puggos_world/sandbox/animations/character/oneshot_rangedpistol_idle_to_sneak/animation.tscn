@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cioc5c3l1s2vm"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 42
+metadata/name = "Oneshot Rangedpistol Idle To Sneak"
+metadata/mod_type = "animations"

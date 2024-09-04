@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://ckad3ihrrm354"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 125
+metadata/name = "Walkcycle Rangedpistol Backwardleft"
+metadata/mod_type = "animations"

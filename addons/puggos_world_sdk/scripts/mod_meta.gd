@@ -4,7 +4,7 @@ extends Node
 ## Main class for managing Puggo's Mod Meta on the SDK side
 class_name ModMeta
 
-enum ModeType {STRUCTURES, ITEMS,}
+enum ModeType {STRUCTURES, ITEMS,ANIMATIONS}
 
 var scene_root:Node
 
@@ -37,7 +37,7 @@ func _init(_scene_root:Node, _mod_type:ModeType) -> void:
 	if is_avatar():
 		return
 	id = scene_root.get_meta("id", 0)
-	mod_name = scene_root.get_meta("name", 0)
+	mod_name = scene_root.get_meta("name", "")
 
 	var mod_type_string:String = scene_root.get_meta("mod_type", "-")
 	
@@ -49,6 +49,9 @@ func _init(_scene_root:Node, _mod_type:ModeType) -> void:
 		"items":
 			mod_type = ModeType.ITEMS
 			get_appearance_item_meta()
+		"animations":
+			mod_type = ModeType.ANIMATIONS
+			get_animation_meta()
 		_:
 			pass
 	
@@ -66,6 +69,8 @@ func generate()->void:
 				add_food_meta()
 			if avatar_appearance_slot > 0:
 				add_appearance_item_meta()
+		ModeType.ANIMATIONS:
+			add_animation_meta()
 
 ## Generates the offset values for an anchorable object such as a knife or gun.
 ## Since the character has multiple points where objects can be anchored, the object
@@ -122,6 +127,9 @@ func add_food_meta()->void:
 	#to be added later.
 	pass
 
+func add_animation_meta():
+	scene_root.set_meta("mod_type", "animations")
+
 func add_appearance_item_meta()->void:
 	scene_root.set_meta("equippable_slot", avatar_appearance_slot)
 	
@@ -138,6 +146,9 @@ func get_icon_meta()->void:
 
 func get_appearance_item_meta()->void:
 	avatar_appearance_slot = scene_root.get_meta("equippable_slot", -1)
+
+func get_animation_meta():
+	pass
 
 func add_anchor_type_meta()->void:
 	var _anchor_type:="none"

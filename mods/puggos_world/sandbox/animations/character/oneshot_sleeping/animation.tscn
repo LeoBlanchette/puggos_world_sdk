@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://d2c13y24fagf0"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 44
+metadata/name = "Oneshot Sleeping"
+metadata/mod_type = "animations"

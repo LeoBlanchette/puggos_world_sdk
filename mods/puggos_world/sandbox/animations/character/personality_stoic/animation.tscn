@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://g28mclldtlm3"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 53
+metadata/name = "Personality Stoic"
+metadata/mod_type = "animations"

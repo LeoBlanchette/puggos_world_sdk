@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dfw30o0qy3rw2"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 49
+metadata/name = "Personality Bravado"
+metadata/mod_type = "animations"

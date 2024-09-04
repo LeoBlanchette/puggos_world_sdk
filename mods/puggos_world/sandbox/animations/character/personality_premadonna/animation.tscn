@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dl4p4p2llylnw"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 50
+metadata/name = "Personality Premadonna"
+metadata/mod_type = "animations"

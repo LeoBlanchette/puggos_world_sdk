@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://mjq42f3nwoo4"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 115
+metadata/name = "Walkcycle Default Strafeleft"
+metadata/mod_type = "animations"

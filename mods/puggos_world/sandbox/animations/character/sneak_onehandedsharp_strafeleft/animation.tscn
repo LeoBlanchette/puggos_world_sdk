@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bi5mbtbwdaa6t"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 82
+metadata/name = "Sneak Onehandedsharp Strafeleft"
+metadata/mod_type = "animations"

@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://capeofaqdkc2e"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 84
+metadata/name = "Sneak Rangedpistol Backleft"
+metadata/mod_type = "animations"

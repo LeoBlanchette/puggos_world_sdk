@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dwh8mkvnxbcbv"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 120
+metadata/name = "Walkcycle Onehandedsharp Forwardleft"
+metadata/mod_type = "animations"

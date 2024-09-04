@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dopfu1d0yljxp"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 114
+metadata/name = "Walkcycle Default Forwardright"
+metadata/mod_type = "animations"

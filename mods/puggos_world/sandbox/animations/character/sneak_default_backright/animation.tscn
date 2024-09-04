@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://4x4f66maxayb"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 58
+metadata/name = "Sneak Default Backright"
+metadata/mod_type = "animations"

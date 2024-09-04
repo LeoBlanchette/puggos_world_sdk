@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cxl6qy2l0joab"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 136
+metadata/name = "Walkcycle Rangedrifle Strafeleft"
+metadata/mod_type = "animations"

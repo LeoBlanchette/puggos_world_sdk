@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://4lcph0um4u27"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 133
+metadata/name = "Walkcycle Rangedrifle Backwardright"
+metadata/mod_type = "animations"

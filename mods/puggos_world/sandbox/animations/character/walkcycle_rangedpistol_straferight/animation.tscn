@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://dx61osabom7n5"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 130
+metadata/name = "Walkcycle Rangedpistol Straferight"
+metadata/mod_type = "animations"

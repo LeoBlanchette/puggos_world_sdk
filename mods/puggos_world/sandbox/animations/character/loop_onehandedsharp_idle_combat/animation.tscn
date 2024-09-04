@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://coobpxdxwbi0c"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 14
+metadata/name = "Loop Onehandedsharp Idle Combat"
+metadata/mod_type = "animations"

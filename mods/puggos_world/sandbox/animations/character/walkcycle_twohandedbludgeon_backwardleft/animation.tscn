@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://n2wsi6exk1g7"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 139
+metadata/name = "Walkcycle Twohandedbludgeon Backwardleft"
+metadata/mod_type = "animations"

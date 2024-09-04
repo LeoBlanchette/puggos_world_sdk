@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://bsafe218cp4ey"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 19
+metadata/name = "Loop Rangedrifle Idle 2"
+metadata/mod_type = "animations"

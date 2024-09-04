@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://duu8cklseb052"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 6
+metadata/name = "Loop Idle Default 3"
+metadata/mod_type = "animations"

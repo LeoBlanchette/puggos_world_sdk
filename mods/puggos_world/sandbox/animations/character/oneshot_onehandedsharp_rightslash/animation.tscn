@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cjfhrbd6rhk1p"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 37
+metadata/name = "Oneshot Onehandedsharp Rightslash"
+metadata/mod_type = "animations"
