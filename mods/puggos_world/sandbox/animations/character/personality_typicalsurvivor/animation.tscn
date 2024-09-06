@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bhmv3qqbnq446"]
 
-[node name="Animation" type="Node3D"]
+[node name="Animation2" type="Node3D"]
 metadata/id = 55
 metadata/name = "Personality Typicalsurvivor"
 metadata/mod_type = "animations"

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dqlobik6pxt45"]
 
-[node name="Animation" type="Node3D"]
+[node name="Animation2" type="Node3D"]
 metadata/id = 29
 metadata/name = "Oneshot Kick Left"
 metadata/mod_type = "animations"

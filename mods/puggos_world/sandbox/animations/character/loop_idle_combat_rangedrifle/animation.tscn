@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://mik8dogb3f11"]
 
-[node name="Animation" type="Node3D"]
+[node name="Animation2" type="Node3D"]
 metadata/id = 3
 metadata/name = "Loop Idle Combat Rangedrifle"
 metadata/mod_type = "animations"

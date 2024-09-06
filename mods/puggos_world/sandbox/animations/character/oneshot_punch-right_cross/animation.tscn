@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://blw6ojri66n1c"]
 
-[node name="Animation" type="Node3D"]
+[node name="Animation2" type="Node3D"]
 metadata/id = 41
 metadata/name = "Oneshot Punch-right Cross"
 metadata/mod_type = "animations"

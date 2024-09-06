@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://vu8tfgaopp7b"]
 
-[node name="Animation" type="Node3D"]
+[node name="Animation2" type="Node3D"]
 metadata/id = 1
 metadata/name = "Loop Craft"
 metadata/mod_type = "animations"

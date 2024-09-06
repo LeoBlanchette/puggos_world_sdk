@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://p3u2jqc2d12i"]
 
-[node name="Animation" type="Node3D"]
+[node name="Animation2" type="Node3D"]
 metadata/id = 10
 metadata/name = "Loop Limp"
 metadata/mod_type = "animations"
