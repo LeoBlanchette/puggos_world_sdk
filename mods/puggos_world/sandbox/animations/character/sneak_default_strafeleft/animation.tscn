@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxn036p4wwv27"]
 
 [node name="Animation" type="Node3D"]
-metadata/id = 63
+metadata/id = 70
 metadata/name = "Sneak Default Strafeleft"
 metadata/mod_type = "animations"

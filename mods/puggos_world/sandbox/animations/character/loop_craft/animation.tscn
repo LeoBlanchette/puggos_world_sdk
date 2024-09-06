@@ -2,5 +2,5 @@
 
 [node name="Animation" type="Node3D"]
 metadata/id = 1
-metadata/name = "Loop: Craft"
+metadata/name = "Loop Craft"
 metadata/mod_type = "animations"

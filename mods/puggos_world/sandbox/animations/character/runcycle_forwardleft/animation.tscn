@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cbqj7dhiu327l"]
 
 [node name="Animation" type="Node3D"]
-metadata/id = 53
+metadata/id = 60
 metadata/name = "Runcycle Forwardleft"
 metadata/mod_type = "animations"

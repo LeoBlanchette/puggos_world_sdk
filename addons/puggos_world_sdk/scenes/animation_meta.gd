@@ -8,7 +8,7 @@ func _on_generate_animation_meta_pressed() -> void:
 	mod_meta.generate()
 	
 	# UNCOMMENT to auto-meta animation files
-	#return
+	return
 	
 	var dirs = DirAccess.get_directories_at(src)
 	var i = 0
@@ -21,11 +21,8 @@ func _on_generate_animation_meta_pressed() -> void:
 				if f != "animation.tscn":
 					print(f)
 				var path = src+dir+"/"+f
-				var ob:Node3D = load(path).instantiate()
-				if not ob.has_meta("id"):
-					ob.set_meta("id", i)
-				if not ob.has_meta("name"):
-					ob.set_meta("name", anim_name)
-				if not ob.has_meta("mod_type"):
-					ob.set_meta("mod_type", "animations")
+				var ob:Node3D = load(path).instantiate()				
+				ob.set_meta("id", i)				
+				ob.set_meta("name", anim_name)				
+				ob.set_meta("mod_type", "animations")
 				PuggosWorldSDK.instance.save_node_resource(ob, false)

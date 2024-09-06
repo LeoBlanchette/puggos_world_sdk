@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bk2d01elns7m0"]
 
 [node name="Animation" type="Node3D"]
-metadata/id = 56
+metadata/id = 63
 metadata/name = "Runcycle Straferight"
 metadata/mod_type = "animations"

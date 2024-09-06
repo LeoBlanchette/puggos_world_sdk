@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://kt5ep7kcwv53"]
 
 [node name="Animation" type="Node3D"]
-metadata/id = 68
+metadata/id = 75
 metadata/name = "Sneak Idle Rangedrifle"
 metadata/mod_type = "animations"

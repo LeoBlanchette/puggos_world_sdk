@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cxi63nxnbg33l"]
 
 [node name="Animation" type="Node3D"]
-metadata/id = 57
+metadata/id = 64
 metadata/name = "Sneak Default Backleft"
 metadata/mod_type = "animations"

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://obw2nmoeunck"]
 
 [node name="Animation" type="Node3D"]
-metadata/id = 62
+metadata/id = 69
 metadata/name = "Sneak Default Forwardright"
 metadata/mod_type = "animations"
