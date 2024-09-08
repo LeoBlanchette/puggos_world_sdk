@@ -16,8 +16,8 @@ texture = SubResource("ViewportTexture_c7ihr")
 transparent_bg = true
 
 [node name="Camera3D" type="Camera3D" parent="SubViewport"]
-transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 10, 15.875, 10)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.05, -1.002)
 projection = 1
-size = 5.0
+size = 0.7
 
 [node name="Anchor" type="Node3D" parent="SubViewport"]
