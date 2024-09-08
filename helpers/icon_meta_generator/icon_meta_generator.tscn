@@ -21,4 +21,3 @@ projection = 1
 size = 5.0
 
 [node name="Anchor" type="Node3D" parent="SubViewport"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 1)
