@@ -317,6 +317,10 @@ _data = {
 metadata/icon_camera_orthographic_size = 0.3
 metadata/icon_camera_position = Vector3(1, 0.1, 0)
 metadata/icon_camera_rotation = Vector3(0, 90, 0)
+metadata/id = 10302
+metadata/name = "Snow Boot Left"
+metadata/mod_type = "items"
+metadata/equippable_slot = 23
 
 [node name="Armature" type="Node3D" parent="."]
 

@@ -317,6 +317,10 @@ _data = {
 metadata/icon_camera_orthographic_size = 0.3
 metadata/icon_camera_position = Vector3(0.68, 1.225, 1)
 metadata/icon_camera_rotation = Vector3(0, 0, 0)
+metadata/id = 10304
+metadata/name = "Snow Glove Left"
+metadata/mod_type = "items"
+metadata/equippable_slot = 15
 
 [node name="Armature" type="Node3D" parent="."]
 

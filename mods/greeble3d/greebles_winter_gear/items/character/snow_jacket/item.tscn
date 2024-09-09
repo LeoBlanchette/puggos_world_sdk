@@ -317,6 +317,10 @@ _data = {
 metadata/icon_camera_orthographic_size = 0.8
 metadata/icon_camera_position = Vector3(0, 1.08, 1)
 metadata/icon_camera_rotation = Vector3(0, 0, 0)
+metadata/id = 10306
+metadata/name = "Snow Jacket"
+metadata/mod_type = "items"
+metadata/equippable_slot = 9
 
 [node name="Armature" type="Node3D" parent="."]
 
