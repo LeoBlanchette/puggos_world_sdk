@@ -317,6 +317,10 @@ _data = {
 metadata/icon_camera_orthographic_size = 0.7
 metadata/icon_camera_position = Vector3(0, 1.8, 1.03)
 metadata/icon_camera_rotation = Vector3(0, 0, 0)
+metadata/id = 10301
+metadata/name = "Ear Muffs"
+metadata/mod_type = "items"
+metadata/equippable_slot = 6
 
 [node name="Armature" type="Node3D" parent="."]
 
