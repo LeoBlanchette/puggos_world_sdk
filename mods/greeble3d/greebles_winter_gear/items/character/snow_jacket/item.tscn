@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=4 uid="uid://bbhqig44vt2wp"]
 
-[ext_resource type="Material" uid="uid://bcnyp0swdtho0" path="res://addons/puggos_world_character/test_objects/misc/winter_gear_material/winter_gear.tres" id="1_ooihn"]
+[ext_resource type="Material" uid="uid://bq8qytr4ruaan" path="res://mods/greeble3d/greebles_winter_gear/misc/winter_gear.tres" id="1_ooihn"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s7g2x"]
 resource_name = "Snow_Jacket_Snow_Jacket"
