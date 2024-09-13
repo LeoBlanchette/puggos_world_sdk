@@ -40,6 +40,10 @@ shadow_mesh = SubResource("ArrayMesh_4sji0")
 metadata/icon_camera_orthographic_size = 0.7
 metadata/icon_camera_position = Vector3(0, 1.05, -1.002)
 metadata/icon_camera_rotation = Vector3(0, -180, 0)
+metadata/id = 10026
+metadata/name = "Tank Top"
+metadata/mod_type = "items"
+metadata/equippable_slot = 8
 
 [node name="Tank-Top" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_a04a0")

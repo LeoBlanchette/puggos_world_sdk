@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://pq3gvyyru53p"]
+
+[ext_resource type="PackedScene" uid="uid://bpt511axwhyis" path="res://mods/greeble3d/greebles_guns/items/weapons/knife/models/combat_knife.gltf" id="1_oxi3r"]
+
+[node name="combat_knife" instance=ExtResource("1_oxi3r")]

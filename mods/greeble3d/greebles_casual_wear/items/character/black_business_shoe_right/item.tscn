@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckvbhn25dt8wx"]
+
+[ext_resource type="PackedScene" uid="uid://d0a5ijnc4e1n1" path="res://mods/greeble3d/greebles_casual_wear/items/character/black_business_shoe_right/models/black_business_shoe_right.gltf" id="1_f263k"]
+
+[node name="black_business_shoe_right" instance=ExtResource("1_f263k")]

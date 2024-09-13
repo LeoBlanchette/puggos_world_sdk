@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b67ralj25gvnn"]
+
+[ext_resource type="PackedScene" uid="uid://dwrn4np3as2y3" path="res://mods/greeble3d/greebles_casual_wear/items/character/black_pants/models/black_pants.gltf" id="1_44iw6"]
+
+[node name="black_pants" instance=ExtResource("1_44iw6")]
+metadata/id = 10029
+metadata/name = "Black Pants"
+metadata/mod_type = "items"
+metadata/equippable_slot = 20
