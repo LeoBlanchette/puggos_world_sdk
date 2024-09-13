@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://coyllvjwy4m4y"]
+
+[ext_resource type="PackedScene" uid="uid://tr8owm5fm0mh" path="res://mods/greeble3d/greebles_casual_wear/items/character/tan_vest/models/tan_vest.gltf" id="1_bsky4"]
+
+[node name="tan_vest" instance=ExtResource("1_bsky4")]
+metadata/id = 10033
+metadata/name = "Tan Vest"
+metadata/mod_type = "items"
+metadata/equippable_slot = 10
