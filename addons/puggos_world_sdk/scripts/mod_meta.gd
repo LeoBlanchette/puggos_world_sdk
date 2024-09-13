@@ -30,6 +30,13 @@ var is_food:bool = false
 var avatar_appearance_slot:int = -1
 #endregion
 
+#region anchor offsets
+enum OffsetType{
+	DEFAULT,
+	AIMING,
+}
+var offset_type:OffsetType = OffsetType.DEFAULT
+#endregion
 
 func _init(_scene_root:Node, _mod_type:ModeType) -> void:	
 	scene_root = _scene_root
@@ -81,6 +88,7 @@ func generate_anchor_offset_meta():
 		+" slots must be a child of AnchorSlot_<i> and positioned accordingly."\
 		+ " Then, with the item selected, push the Generate Item / Anchor Offsets button."
 	# This will not work without avatar scene. Abort if not Avatar.
+
 	if not is_avatar():
 		print(help)
 		return 
@@ -102,9 +110,14 @@ func generate_anchor_offset_meta():
 	var anchor_slot = selection.get_parent_node_3d().name.to_lower()
 	
 	# Set the meta.
-	selection.set_meta(anchor_slot+"_position", pos)
-	selection.set_meta(anchor_slot+"_rotation", rot)
-
+	match offset_type:
+		OffsetType.DEFAULT:
+			selection.set_meta(anchor_slot+"_position", pos)
+			selection.set_meta(anchor_slot+"_rotation", rot)
+		OffsetType.AIMING:
+			selection.set_meta(anchor_slot+"_position_aiming", pos)
+			selection.set_meta(anchor_slot+"_rotation_aiming", rot)
+			
 	# save results
 	PuggosWorldSDK.instance.save_node_resource(selection)
 

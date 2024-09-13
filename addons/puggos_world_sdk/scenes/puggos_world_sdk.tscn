@@ -1,12 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://b3wqxd8288b10"]
+[gd_scene load_steps=11 format=3 uid="uid://b3wqxd8288b10"]
 
 [ext_resource type="Theme" uid="uid://dk3rfpqoysbgq" path="res://addons/puggos_world_sdk/ui/pw-mods-dock.tres" id="1_2fjs0"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/generate_icon_meta.gd" id="1_e2gpe"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/pw_mods_ui.gd" id="2_dd5m0"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/structure_meta.gd" id="2_faewn"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/item_meta.gd" id="3_515ti"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/appearance_item_meta.gd" id="4_h2xtd"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/anchor_offset_meta.gd" id="5_1dv45"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/animation_meta.gd" id="7_ylej8"]
+[ext_resource type="ButtonGroup" uid="uid://bgjpk6wpjeqg7" path="res://addons/puggos_world_sdk/ui/button_groups/anchor_offset_button_group.tres" id="8_ddb2q"]
 
 [sub_resource type="GDScript" id="GDScript_hvgm4"]
 script/source = "@tool
@@ -18,7 +20,7 @@ func _on_pressed() -> void:
 	mod_meta.generate()
 "
 
-[node name="PW-Mods" type="Control"]
+[node name="PW-Mods-UI" type="Control" node_paths=PackedStringArray("mode_select")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,6 +28,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_2fjs0")
+script = ExtResource("2_dd5m0")
+mode_select = NodePath("ScrollContainer/Root/OptionButtonModeSelect")
 metadata/id = 0
 metadata/name = ""
 metadata/mod_type = "items"
@@ -45,52 +49,71 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/Root"]
+[node name="Label" type="Label" parent="ScrollContainer/Root"]
+layout_mode = 2
+text = "Meta Generation Mode"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Root"]
+layout_mode = 2
+
+[node name="OptionButtonModeSelect" type="OptionButton" parent="ScrollContainer/Root"]
+layout_mode = 2
+selected = 0
+item_count = 6
+popup/item_0/text = "Icon Generation"
+popup/item_0/id = 3
+popup/item_1/text = "Structure Meta"
+popup/item_1/id = 4
+popup/item_2/text = "Item Meta"
+popup/item_2/id = 5
+popup/item_3/text = "Appearance Meta"
+popup/item_3/id = 6
+popup/item_4/text = "Anchor Offset Meta"
+popup/item_4/id = 7
+popup/item_5/text = "Animation Meta"
+popup/item_5/id = 8
+
+[node name="MarginContainerIconGeneration" type="MarginContainer" parent="ScrollContainer/Root"]
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
+metadata/option_label = "Icon Generation"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerIconGeneration"]
 layout_mode = 2
 
-[node name="LabelIconMetaGeneration" type="Label" parent="ScrollContainer/Root/MarginContainer/VBoxContainer"]
+[node name="LabelIconMetaGeneration" type="Label" parent="ScrollContainer/Root/MarginContainerIconGeneration/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "Icon Generation"
 
-[node name="GenerateIconMeta" type="Button" parent="ScrollContainer/Root/MarginContainer/VBoxContainer"]
+[node name="GenerateIconMeta" type="Button" parent="ScrollContainer/Root/MarginContainerIconGeneration/VBoxContainer"]
 layout_mode = 2
 text = "Capture Icon Meta"
 script = ExtResource("1_e2gpe")
 
-[node name="LabelMetaGeneration" type="Label" parent="ScrollContainer/Root"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 0, 1)
-text = "Meta Generation"
-
-[node name="MarginContainer2" type="MarginContainer" parent="ScrollContainer/Root"]
+[node name="MarginContainerStructureMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
+metadata/option_label = "Structure Meta"
 
-[node name="StructureMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainer2"]
+[node name="StructureMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerStructureMeta"]
 layout_mode = 2
 script = ExtResource("2_faewn")
 
-[node name="Divider" type="Panel" parent="ScrollContainer/Root/MarginContainer2/StructureMeta"]
-custom_minimum_size = Vector2(0, 3)
+[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainer2/StructureMeta"]
-layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "Structures:"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Root/MarginContainer2/StructureMeta"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainer2/StructureMeta/HBoxContainer"]
+[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta/HBoxContainer"]
 layout_mode = 2
 text = "Anchor Type"
 
-[node name="AnchorTypeOptionButton" type="OptionButton" parent="ScrollContainer/Root/MarginContainer2/StructureMeta/HBoxContainer"]
+[node name="AnchorTypeOptionButton" type="OptionButton" parent="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta/HBoxContainer"]
 layout_mode = 2
 item_count = 5
 popup/item_0/text = "none"
@@ -103,52 +126,50 @@ popup/item_3/id = 3
 popup/item_4/text = "floor"
 popup/item_4/id = 4
 
-[node name="GenerateModularStructureMeta" type="Button" parent="ScrollContainer/Root/MarginContainer2/StructureMeta"]
+[node name="GenerateModularStructureMeta" type="Button" parent="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta"]
 layout_mode = 2
 text = "Generate Structure Meta"
 script = SubResource("GDScript_hvgm4")
 
-[node name="MarginContainer3" type="MarginContainer" parent="ScrollContainer/Root"]
+[node name="MarginContainerItemMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
+metadata/option_label = "Item Meta"
 
-[node name="ItemMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainer3"]
+[node name="ItemMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerItemMeta"]
 layout_mode = 2
 script = ExtResource("3_515ti")
 
-[node name="Divider2" type="Panel" parent="ScrollContainer/Root/MarginContainer3/ItemMeta"]
-custom_minimum_size = Vector2(0, 3)
+[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainerItemMeta/ItemMeta"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainer3/ItemMeta"]
-layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "Items - Common:"
 
-[node name="FoodCheckBox" type="CheckBox" parent="ScrollContainer/Root/MarginContainer3/ItemMeta"]
+[node name="FoodCheckBox" type="CheckBox" parent="ScrollContainer/Root/MarginContainerItemMeta/ItemMeta"]
 layout_mode = 2
 text = "Food"
 
-[node name="GenerateItemMeta" type="Button" parent="ScrollContainer/Root/MarginContainer3/ItemMeta"]
+[node name="GenerateItemMeta" type="Button" parent="ScrollContainer/Root/MarginContainerItemMeta/ItemMeta"]
 layout_mode = 2
 text = "Generate Item Meta"
 
-[node name="MarginContainer4" type="MarginContainer" parent="ScrollContainer/Root"]
+[node name="MarginContainerAppearanceItemMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
+metadata/option_label = "Appearance Meta"
 
-[node name="AppearanceItemMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainer4"]
+[node name="AppearanceItemMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerAppearanceItemMeta"]
 layout_mode = 2
 script = ExtResource("4_h2xtd")
 
-[node name="Divider3" type="Panel" parent="ScrollContainer/Root/MarginContainer4/AppearanceItemMeta"]
-custom_minimum_size = Vector2(0, 3)
+[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainerAppearanceItemMeta/AppearanceItemMeta"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainer4/AppearanceItemMeta"]
-layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "Items - Appearance:"
 
-[node name="AppearanceOptionButton" type="OptionButton" parent="ScrollContainer/Root/MarginContainer4/AppearanceItemMeta"]
+[node name="AppearanceOptionButton" type="OptionButton" parent="ScrollContainer/Root/MarginContainerAppearanceItemMeta/AppearanceItemMeta"]
 layout_mode = 2
 selected = 0
 item_count = 40
@@ -232,53 +253,62 @@ popup/item_38/id = 38
 popup/item_39/text = "Other (SLOT_39)"
 popup/item_39/id = 39
 
-[node name="GenerateAppearanceItemMeta" type="Button" parent="ScrollContainer/Root/MarginContainer4/AppearanceItemMeta"]
+[node name="GenerateAppearanceItemMeta" type="Button" parent="ScrollContainer/Root/MarginContainerAppearanceItemMeta/AppearanceItemMeta"]
 layout_mode = 2
 text = "Generate Item (Appearance) Meta"
 
-[node name="MarginContainer5" type="MarginContainer" parent="ScrollContainer/Root"]
+[node name="MarginContainerAnchorOffsetMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
+metadata/option_label = "Anchor Offset Meta"
 
-[node name="AnchorOffsetMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainer5"]
+[node name="AnchorOffsetMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerAnchorOffsetMeta"]
 layout_mode = 2
 script = ExtResource("5_1dv45")
 
-[node name="Divider4" type="Panel" parent="ScrollContainer/Root/MarginContainer5/AnchorOffsetMeta"]
-custom_minimum_size = Vector2(0, 3)
+[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainerAnchorOffsetMeta/AnchorOffsetMeta"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainer5/AnchorOffsetMeta"]
-layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 text = "Items - Anchor Offsets:"
 
-[node name="GenerateItemOffsetMeta" type="Button" parent="ScrollContainer/Root/MarginContainer5/AnchorOffsetMeta"]
+[node name="CheckBoxDefault" type="CheckBox" parent="ScrollContainer/Root/MarginContainerAnchorOffsetMeta/AnchorOffsetMeta"]
+layout_mode = 2
+button_group = ExtResource("8_ddb2q")
+text = "Offset Default"
+
+[node name="CheckBoxAiming" type="CheckBox" parent="ScrollContainer/Root/MarginContainerAnchorOffsetMeta/AnchorOffsetMeta"]
+layout_mode = 2
+button_group = ExtResource("8_ddb2q")
+text = "Offset Aiming"
+
+[node name="GenerateItemOffsetMeta" type="Button" parent="ScrollContainer/Root/MarginContainerAnchorOffsetMeta/AnchorOffsetMeta"]
 layout_mode = 2
 text = "Generate Item / Anchor Offsets"
 
-[node name="MarginContainer6" type="MarginContainer" parent="ScrollContainer/Root"]
+[node name="MarginContainerAnimationMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
+metadata/option_label = "Animation Meta"
 
-[node name="AnimationMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainer6"]
+[node name="AnimationMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerAnimationMeta"]
 layout_mode = 2
 script = ExtResource("7_ylej8")
 
-[node name="Divider4" type="Panel" parent="ScrollContainer/Root/MarginContainer6/AnimationMeta"]
-custom_minimum_size = Vector2(0, 3)
+[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainerAnimationMeta/AnimationMeta"]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+text = "Animations Meta:"
 
-[node name="Label" type="Label" parent="ScrollContainer/Root/MarginContainer6/AnimationMeta"]
-layout_mode = 2
-text = "Animations"
-
-[node name="GenerateAnimationMeta" type="Button" parent="ScrollContainer/Root/MarginContainer6/AnimationMeta"]
+[node name="GenerateAnimationMeta" type="Button" parent="ScrollContainer/Root/MarginContainerAnimationMeta/AnimationMeta"]
 layout_mode = 2
 text = "Generate Animation Meta"
 
-[connection signal="pressed" from="ScrollContainer/Root/MarginContainer/VBoxContainer/GenerateIconMeta" to="ScrollContainer/Root/MarginContainer/VBoxContainer/GenerateIconMeta" method="_on_pressed"]
-[connection signal="pressed" from="ScrollContainer/Root/MarginContainer2/StructureMeta/GenerateModularStructureMeta" to="ScrollContainer/Root/MarginContainer2/StructureMeta" method="_on_generate_modular_structure_meta_pressed"]
-[connection signal="pressed" from="ScrollContainer/Root/MarginContainer3/ItemMeta/GenerateItemMeta" to="ScrollContainer/Root/MarginContainer3/ItemMeta" method="_on_generate_item_meta_pressed"]
-[connection signal="pressed" from="ScrollContainer/Root/MarginContainer4/AppearanceItemMeta/GenerateAppearanceItemMeta" to="ScrollContainer/Root/MarginContainer4/AppearanceItemMeta" method="_on_generate_appearance_item_meta_pressed"]
-[connection signal="pressed" from="ScrollContainer/Root/MarginContainer5/AnchorOffsetMeta/GenerateItemOffsetMeta" to="ScrollContainer/Root/MarginContainer5/AnchorOffsetMeta" method="_on_generate_item_offset_meta_pressed"]
-[connection signal="pressed" from="ScrollContainer/Root/MarginContainer6/AnimationMeta/GenerateAnimationMeta" to="ScrollContainer/Root/MarginContainer6/AnimationMeta" method="_on_generate_animation_meta_pressed"]
+[connection signal="item_selected" from="ScrollContainer/Root/OptionButtonModeSelect" to="." method="_on_option_button_mode_select_item_selected"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerIconGeneration/VBoxContainer/GenerateIconMeta" to="ScrollContainer/Root/MarginContainerIconGeneration/VBoxContainer/GenerateIconMeta" method="_on_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta/GenerateModularStructureMeta" to="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta" method="_on_generate_modular_structure_meta_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemMeta/ItemMeta/GenerateItemMeta" to="ScrollContainer/Root/MarginContainerItemMeta/ItemMeta" method="_on_generate_item_meta_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerAppearanceItemMeta/AppearanceItemMeta/GenerateAppearanceItemMeta" to="ScrollContainer/Root/MarginContainerAppearanceItemMeta/AppearanceItemMeta" method="_on_generate_appearance_item_meta_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerAnchorOffsetMeta/AnchorOffsetMeta/GenerateItemOffsetMeta" to="ScrollContainer/Root/MarginContainerAnchorOffsetMeta/AnchorOffsetMeta" method="_on_generate_item_offset_meta_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerAnimationMeta/AnimationMeta/GenerateAnimationMeta" to="ScrollContainer/Root/MarginContainerAnimationMeta/AnimationMeta" method="_on_generate_animation_meta_pressed"]

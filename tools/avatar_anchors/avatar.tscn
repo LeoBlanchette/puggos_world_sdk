@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=4 uid="uid://teqom31kortp"]
+[gd_scene load_steps=6 format=4 uid="uid://teqom31kortp"]
 
 [ext_resource type="PackedScene" uid="uid://l2tpk6ukl3o" path="res://addons/puggos_world_character/character/gltf/Character.gltf" id="2_mo8yt"]
+[ext_resource type="PackedScene" uid="uid://dxr0vmc43moek" path="res://mods/puggos_world/sandbox/items/general/knife_1/knife_1.tscn" id="3_3itgo"]
 [ext_resource type="Material" uid="uid://dqkthq0lor5eh" path="res://addons/puggos_world_character/character/base_materials/slot_1_base_material.tres" id="3_5hi6b"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j0hxb"]
@@ -189,6 +190,9 @@ bone_name = "Hand_1_R"
 bone_idx = 15
 
 [node name="Anchor_Slot_34" type="Node3D" parent="Character/Armature/Skeleton3D/AnchorNodeHandRight"]
+
+[node name="Knife_1" parent="Character/Armature/Skeleton3D/AnchorNodeHandRight/Anchor_Slot_34" instance=ExtResource("3_3itgo")]
+transform = Transform3D(0.99916, 0.0407187, 0.0045885, 0.0185852, -0.350529, -0.936368, -0.0365193, 0.935667, -0.350991, 0.120271, 0.125522, 0.0421353)
 
 [node name="AnimationPlayer" parent="Character" index="1"]
 active = false
