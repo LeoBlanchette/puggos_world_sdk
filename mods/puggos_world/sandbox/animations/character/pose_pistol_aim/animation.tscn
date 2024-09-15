@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c0p67hbyg0y10"]
+
+[node name="animation" type="Node3D"]
+metadata/id = 146
+metadata/name = "Pose: Pistol Aim"
+metadata/mod_type = "animations"

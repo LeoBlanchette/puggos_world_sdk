@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://duqydpaxg2vgh"]
+
+[node name="Animation" type="Node3D"]
+metadata/id = 147
+metadata/name = "Pose: Spear Aim"
+metadata/mod_type = "animations"

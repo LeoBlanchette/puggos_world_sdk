@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bkxe3sy2re775"]
+
+[node name="Animation" type="Node3D"]
+metadata/id = 145
+metadata/name = "Pose: Bazooka Aim"
+metadata/mod_type = "animations"

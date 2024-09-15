@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=4 uid="uid://b6ycs5n7ibhfy"]
 
-[ext_resource type="Material" uid="uid://cs2axwvmqaw2q" path="res://mods/greeble3d/wife_beater/misc/tank_top_mat.tres" id="1_l0s34"]
+[ext_resource type="Material" uid="uid://cs2axwvmqaw2q" path="res://mods/greeble3d/street_punk/misc/tank_top_mat.tres" id="1_l0s34"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_v1kim"]
 _surfaces = [{

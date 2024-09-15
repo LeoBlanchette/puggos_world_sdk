@@ -3,9 +3,15 @@ extends Control
 
 @onready var root: VBoxContainer = $ScrollContainer/Root
 
+#region UI controls
 @export var mode_select:OptionButton
-
 @export var mode_menu:Array[MarginContainer]
+#endregion 
+
+#region UI regeneration
+var is_ui_regenerating:bool = false
+signal ui_regenerated
+#endregion UI regeneration
 
 func _ready() -> void:
 	mode_select.item_selected.connect(_on_mode_selected)
@@ -20,6 +26,7 @@ func _ready() -> void:
 	mode_select.item_selected.emit(0)
 
 func _on_mode_selected(idx:int):
+	is_ui_regenerating = true
 	var selected_index:int = mode_select.get_item_id(idx)
 	var i:int = 0
 	for item in root.get_children():
@@ -31,3 +38,5 @@ func _on_mode_selected(idx:int):
 		else:
 			item.hide()
 		i = i+1
+	is_ui_regenerating = false
+	ui_regenerated.emit()

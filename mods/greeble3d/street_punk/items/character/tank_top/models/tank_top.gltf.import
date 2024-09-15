@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ch5a3n43t23fi"
-path="res://.godot/imported/tank_top.gltf-0096c7b782f43314e1fa2621d773d365.scn"
+path="res://.godot/imported/tank_top.gltf-bbfc2a5f31fcaa201c3dde71b1f8e2cc.scn"
 
 [deps]
 
-source_file="res://mods/greeble3d/wife_beater/items/character/tank_top/models/tank_top.gltf"
-dest_files=["res://.godot/imported/tank_top.gltf-0096c7b782f43314e1fa2621d773d365.scn"]
+source_file="res://mods/greeble3d/street_punk/items/character/tank_top/models/tank_top.gltf"
+dest_files=["res://.godot/imported/tank_top.gltf-bbfc2a5f31fcaa201c3dde71b1f8e2cc.scn"]
 
 [params]
 

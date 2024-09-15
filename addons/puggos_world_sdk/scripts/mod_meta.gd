@@ -4,7 +4,13 @@ extends Node
 ## Main class for managing Puggo's Mod Meta on the SDK side
 class_name ModMeta
 
-enum ModeType {STRUCTURES, ITEMS,ANIMATIONS}
+enum ModeType {
+	STRUCTURES, 
+	ITEMS,
+	ANIMATIONS, 
+	MISC,
+}
+
 
 var scene_root:Node
 
@@ -38,6 +44,37 @@ enum OffsetType{
 var offset_type:OffsetType = OffsetType.DEFAULT
 #endregion
 
+#region item action animation 
+var basic_interaction_animation_id:int=0
+var primary_action_animation_id:int=0
+var secondary_action_animation_id:int=0
+var primary_action_alt_animation_id:int=0
+var secondary_action_alt_animation_id:int=0
+var long_idle_animation_id:int=0
+
+var basic_interaction_animation_mask:String="TORSO"
+var primary_action_animation_mask:String="TORSO"
+var secondary_action_animation_mask:String="TORSO"
+var primary_action_alt_animation_mask:String="FULL"
+var secondary_action_alt_animation_mask:String="FULL"
+var long_idle_animation_mask:String="FULL"
+
+# Whether to add...
+var add_basic_interaction_animation_id:bool=false
+var add_primary_action_animation_id:bool=false
+var add_secondary_action_animation_id:bool=false
+var add_primary_action_alt_animation_id:bool=false
+var add_secondary_action_alt_animation_id:bool=false
+var add_long_idle_animation_id:bool=false
+
+var add_basic_interaction_animation_mask:bool=false
+var add_primary_action_animation_mask:bool=false
+var add_secondary_action_animation_mask:bool=false
+var add_primary_action_alt_animation_mask:bool=false
+var add_secondary_action_alt_animation_mask:bool=false
+var add_long_idle_animation_mask:bool=false
+#endregion 
+
 func _init(_scene_root:Node, _mod_type:ModeType) -> void:	
 	scene_root = _scene_root
 	mod_type = _mod_type
@@ -61,6 +98,7 @@ func _init(_scene_root:Node, _mod_type:ModeType) -> void:
 			get_animation_meta()
 		_:
 			pass
+
 	
 ## Does the meta generation after all attributes are set.
 func generate()->void:
@@ -79,6 +117,12 @@ func generate()->void:
 		ModeType.ANIMATIONS:
 			add_animation_meta()
 
+## When generating meta for actions executed on item use.
+func generate_action_meta():
+	get_item_action_meta()
+	add_item_action_meta()
+
+	
 ## Generates the offset values for an anchorable object such as a knife or gun.
 ## Since the character has multiple points where objects can be anchored, the object
 ## must have the offsets recorded for every anchor point it might be assigned to.
@@ -145,8 +189,52 @@ func add_animation_meta():
 
 func add_appearance_item_meta()->void:
 	scene_root.set_meta("equippable_slot", avatar_appearance_slot)
-	
 
+func add_item_action_meta():
+	# ANIMATION IDS
+	if add_basic_interaction_animation_id:
+		scene_root.set_meta("basic_interaction_animation_id", basic_interaction_animation_id)
+	if add_primary_action_animation_id:
+		scene_root.set_meta("primary_action_animation_id", primary_action_animation_id)
+	if add_secondary_action_animation_id:
+		scene_root.set_meta("secondary_action_animation_id", secondary_action_animation_id)
+	if add_primary_action_alt_animation_id:
+		scene_root.set_meta("primary_action_alt_animation_id", primary_action_alt_animation_id)
+	if add_secondary_action_alt_animation_id:
+		scene_root.set_meta("secondary_action_alt_animation_id", secondary_action_alt_animation_id)
+	if add_long_idle_animation_id:
+		scene_root.set_meta("long_idle_animation_id", long_idle_animation_id)
+	# MASK TYPES
+	if add_basic_interaction_animation_mask:
+		scene_root.set_meta("basic_interaction_animation_mask", basic_interaction_animation_mask)
+	if add_primary_action_animation_mask:
+		scene_root.set_meta("primary_action_animation_mask", primary_action_animation_mask)
+	if add_secondary_action_animation_mask:
+		scene_root.set_meta("secondary_action_animation_mask", secondary_action_animation_mask)
+	if add_primary_action_alt_animation_mask:
+		scene_root.set_meta("primary_action_alt_animation_mask", primary_action_alt_animation_mask)
+	if add_secondary_action_alt_animation_mask:
+		scene_root.set_meta("secondary_action_alt_animation_mask", secondary_action_alt_animation_mask)
+	if add_long_idle_animation_mask:
+		scene_root.set_meta("long_idle_animation_mask", long_idle_animation_mask)
+
+
+func get_item_action_meta():
+	# ANIMATION IDS
+	basic_interaction_animation_id = scene_root.get_meta("basic_interaction_animation_id", -1)
+	primary_action_animation_id = scene_root.get_meta("primary_action_animation_id", -1)
+	secondary_action_animation_id = scene_root.get_meta("secondary_action_animation_id", -1)
+	primary_action_alt_animation_id = scene_root.get_meta("primary_action_alt_animation_id", -1)
+	secondary_action_alt_animation_id = scene_root.get_meta("secondary_action_alt_animation_id", -1)
+	long_idle_animation_id = scene_root.get_meta("long_idle_animation_id", -1)
+	# MASK TYPES
+	basic_interaction_animation_mask = scene_root.get_meta("basic_interaction_animation_mask", "NONE")
+	primary_action_animation_mask = scene_root.get_meta("primary_action_animation_mask", "NONE")
+	secondary_action_animation_mask = scene_root.get_meta("secondary_action_animation_mask", "NONE")
+	primary_action_alt_animation_mask = scene_root.get_meta("primary_action_alt_animation_mask", "NONE")
+	secondary_action_alt_animation_mask = scene_root.get_meta("secondary_action_alt_animation_mask", "NONE")
+	long_idle_animation_mask = scene_root.get_meta("long_idle_animation_mask", "NONE")
+	
 func add_icon_meta()->void:
 	scene_root.set_meta("icon_camera_orthographic_size", icon_camera_orthographic_size)
 	scene_root.set_meta("icon_camera_position", icon_camera_position)

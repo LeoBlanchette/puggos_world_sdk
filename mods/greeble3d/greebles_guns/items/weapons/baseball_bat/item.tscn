@@ -1,5 +1,5 @@
 [gd_scene load_steps=2 format=3 uid="uid://di3iqvwy4lcp1"]
 
-[ext_resource type="PackedScene" uid="uid://cws34c2uynkbg" path="res://mods/greeble3d/greebles_guns/items/weapons/baseball_bat/baseball_bat.gltf" id="1_7djwa"]
+[ext_resource type="PackedScene" uid="uid://cws34c2uynkbg" path="res://mods/greeble3d/greebles_guns/items/weapons/baseball_bat/models/baseball_bat.gltf" id="1_7djwa"]
 
 [node name="baseball_bat" instance=ExtResource("1_7djwa")]

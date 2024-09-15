@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d4lbb1t6ornjn"
-path="res://.godot/imported/short_jeans.gltf-95fbee3d4341c43c5dd23d6833f4eff0.scn"
+path="res://.godot/imported/short_jeans.gltf-b084a437dfa617ec38923bad760fe965.scn"
 
 [deps]
 
-source_file="res://mods/greeble3d/wife_beater/items/character/short_jeans/models/short_jeans.gltf"
-dest_files=["res://.godot/imported/short_jeans.gltf-95fbee3d4341c43c5dd23d6833f4eff0.scn"]
+source_file="res://mods/greeble3d/street_punk/items/character/short_jeans/models/short_jeans.gltf"
+dest_files=["res://.godot/imported/short_jeans.gltf-b084a437dfa617ec38923bad760fe965.scn"]
 
 [params]
 
