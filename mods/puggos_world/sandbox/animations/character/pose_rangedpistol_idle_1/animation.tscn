@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bit4rjlhffvjg"]
+
+[node name="Animation" type="Node3D"]
+metadata/id = 186
+metadata/name = "Pose: Ranged Pistol Idle"
+metadata/mod_type = "animations"

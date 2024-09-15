@@ -11,9 +11,9 @@ var pose_animation_paths:Array[String] = []
 func _on_generate_item_offset_meta_pressed() -> void:
 	var root:Node = get_tree().edited_scene_root
 	var mod_meta:ModMeta = ModMeta.new(root, ModMeta.ModeType.ITEMS)
-	if check_box_default.toggle_mode:
+	if check_box_default.button_pressed:
 		mod_meta.offset_type = ModMeta.OffsetType.DEFAULT
-	if check_box_aiming.toggle_mode:
+	if check_box_aiming.button_pressed:
 		mod_meta.offset_type = ModMeta.OffsetType.AIMING
 	mod_meta.generate_anchor_offset_meta()
 
@@ -27,7 +27,7 @@ func find_avatar_poses():
 	pose_animation_paths.clear()
 	option_button_pose.add_item("Choose avatar pose...")
 	pose_animation_paths.append("") #Just to stay consistent with index coordination
-	var tscns = PuggosWorldSDK.get_all_files_recursive("res://mods", "tscn")
+	var tscns = FileOps.get_all_files_recursive("res://mods", "tscn")
 	for tscn:String in tscns:
 		if tscn.contains("/pose_"):
 			var ob = load(tscn).instantiate()

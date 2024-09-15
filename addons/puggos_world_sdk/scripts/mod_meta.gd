@@ -50,6 +50,7 @@ var primary_action_animation_id:int=0
 var secondary_action_animation_id:int=0
 var primary_action_alt_animation_id:int=0
 var secondary_action_alt_animation_id:int=0
+var short_idle_animation_id:int=0
 var long_idle_animation_id:int=0
 
 var basic_interaction_animation_mask:String="TORSO"
@@ -57,6 +58,7 @@ var primary_action_animation_mask:String="TORSO"
 var secondary_action_animation_mask:String="TORSO"
 var primary_action_alt_animation_mask:String="FULL"
 var secondary_action_alt_animation_mask:String="FULL"
+var short_idle_animation_mask:String="FULL"
 var long_idle_animation_mask:String="FULL"
 
 # Whether to add...
@@ -65,6 +67,7 @@ var add_primary_action_animation_id:bool=false
 var add_secondary_action_animation_id:bool=false
 var add_primary_action_alt_animation_id:bool=false
 var add_secondary_action_alt_animation_id:bool=false
+var add_short_idle_animation_id:bool=false
 var add_long_idle_animation_id:bool=false
 
 var add_basic_interaction_animation_mask:bool=false
@@ -72,6 +75,7 @@ var add_primary_action_animation_mask:bool=false
 var add_secondary_action_animation_mask:bool=false
 var add_primary_action_alt_animation_mask:bool=false
 var add_secondary_action_alt_animation_mask:bool=false
+var add_short_idle_animation_mask:bool=false
 var add_long_idle_animation_mask:bool=false
 #endregion 
 
@@ -202,6 +206,8 @@ func add_item_action_meta():
 		scene_root.set_meta("primary_action_alt_animation_id", primary_action_alt_animation_id)
 	if add_secondary_action_alt_animation_id:
 		scene_root.set_meta("secondary_action_alt_animation_id", secondary_action_alt_animation_id)
+	if add_short_idle_animation_id:
+		scene_root.set_meta("short_idle_animation_id", short_idle_animation_id)
 	if add_long_idle_animation_id:
 		scene_root.set_meta("long_idle_animation_id", long_idle_animation_id)
 	# MASK TYPES
@@ -215,6 +221,8 @@ func add_item_action_meta():
 		scene_root.set_meta("primary_action_alt_animation_mask", primary_action_alt_animation_mask)
 	if add_secondary_action_alt_animation_mask:
 		scene_root.set_meta("secondary_action_alt_animation_mask", secondary_action_alt_animation_mask)
+	if add_short_idle_animation_mask:
+		scene_root.set_meta("short_idle_animation_mask", short_idle_animation_mask)
 	if add_long_idle_animation_mask:
 		scene_root.set_meta("long_idle_animation_mask", long_idle_animation_mask)
 
@@ -226,13 +234,16 @@ func get_item_action_meta():
 	secondary_action_animation_id = scene_root.get_meta("secondary_action_animation_id", -1)
 	primary_action_alt_animation_id = scene_root.get_meta("primary_action_alt_animation_id", -1)
 	secondary_action_alt_animation_id = scene_root.get_meta("secondary_action_alt_animation_id", -1)
+	short_idle_animation_id = scene_root.get_meta("short_idle_animation_id", -1)
 	long_idle_animation_id = scene_root.get_meta("long_idle_animation_id", -1)
+	
 	# MASK TYPES
 	basic_interaction_animation_mask = scene_root.get_meta("basic_interaction_animation_mask", "NONE")
 	primary_action_animation_mask = scene_root.get_meta("primary_action_animation_mask", "NONE")
 	secondary_action_animation_mask = scene_root.get_meta("secondary_action_animation_mask", "NONE")
 	primary_action_alt_animation_mask = scene_root.get_meta("primary_action_alt_animation_mask", "NONE")
 	secondary_action_alt_animation_mask = scene_root.get_meta("secondary_action_alt_animation_mask", "NONE")
+	short_idle_animation_mask = scene_root.get_meta("short_idle_animation_mask", "NONE")
 	long_idle_animation_mask = scene_root.get_meta("long_idle_animation_mask", "NONE")
 	
 func add_icon_meta()->void:

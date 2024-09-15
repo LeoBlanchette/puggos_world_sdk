@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bislu1oramxdv"]
+
+[node name="Animation" type="Node3D"]
+metadata/id = 188
+metadata/name = "Pose: Two Handed Bludgeon Idle"
+metadata/mod_type = "animations"

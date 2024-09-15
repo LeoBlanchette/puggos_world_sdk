@@ -231,7 +231,7 @@ _data = {
 }
 
 [node name="Face_40" type="Node3D"]
-metadata/id = 67
+metadata/id = 190
 metadata/name = "Blood Drinker"
 metadata/mod_type = "items"
 metadata/equippable_slot = 4

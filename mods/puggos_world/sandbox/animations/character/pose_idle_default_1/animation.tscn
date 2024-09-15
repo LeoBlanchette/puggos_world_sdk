@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cfqmtefr83ara"]
+
+[node name="Animation" type="Node3D"]
+metadata/id = 148
+metadata/name = "Pose: Idle Animation 1"
+metadata/mod_type = "animations"

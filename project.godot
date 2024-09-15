@@ -17,12 +17,13 @@ config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/puggos_world_sdk/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
+enabled=PackedStringArray("res://addons/puggos_world_sdk/plugin.cfg", "res://addons/puggos_world_shared/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
 
 [file_customization]
 
 folder_colors={
 "res://addons/": "yellow",
+"res://addons/puggos_world_sdk/scenes/general_ops_scripts/": "green",
 "res://addons/puggos_world_sdk/scripts/": "green",
 "res://helpers/": "teal",
 "res://mods/": "orange",
@@ -82,9 +83,14 @@ folder_colors={
 "res://mods/puggos_world/sandbox/animations/character/personality_technonut/": "green",
 "res://mods/puggos_world/sandbox/animations/character/personality_typicalsurvivor/": "green",
 "res://mods/puggos_world/sandbox/animations/character/pose_bazooka_aim/": "yellow",
+"res://mods/puggos_world/sandbox/animations/character/pose_idle_default_1/": "yellow",
+"res://mods/puggos_world/sandbox/animations/character/pose_onehandedsharp_idle_1/": "yellow",
 "res://mods/puggos_world/sandbox/animations/character/pose_pistol_aim/": "yellow",
+"res://mods/puggos_world/sandbox/animations/character/pose_rangedpistol_idle_1/": "yellow",
+"res://mods/puggos_world/sandbox/animations/character/pose_rangedrifle_idle_1/": "yellow",
 "res://mods/puggos_world/sandbox/animations/character/pose_rifle_aim/": "yellow",
 "res://mods/puggos_world/sandbox/animations/character/pose_spear_aim/": "yellow",
+"res://mods/puggos_world/sandbox/animations/character/pose_twohandedbludgeon_idle/": "yellow",
 "res://mods/puggos_world/sandbox/animations/character/runcycle_backward/": "pink",
 "res://mods/puggos_world/sandbox/animations/character/runcycle_backwardleft/": "pink",
 "res://mods/puggos_world/sandbox/animations/character/runcycle_backwardright/": "pink",

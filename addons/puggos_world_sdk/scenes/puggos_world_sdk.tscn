@@ -1,15 +1,16 @@
-[gd_scene load_steps=12 format=3 uid="uid://b3wqxd8288b10"]
+[gd_scene load_steps=13 format=3 uid="uid://b3wqxd8288b10"]
 
 [ext_resource type="Theme" uid="uid://dk3rfpqoysbgq" path="res://addons/puggos_world_sdk/ui/pw-mods-dock.tres" id="1_2fjs0"]
 [ext_resource type="Script" path="res://addons/puggos_world_sdk/scripts/generate_icon_meta.gd" id="1_e2gpe"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/pw_mods_ui.gd" id="2_dd5m0"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/structure_meta.gd" id="2_faewn"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/item_meta.gd" id="3_515ti"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/appearance_item_meta.gd" id="4_h2xtd"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/anchor_offset_meta.gd" id="5_1dv45"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/animation_meta.gd" id="7_ylej8"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/general_ops_scripts/pw_mods_ui.gd" id="2_dd5m0"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/general_ops_scripts/structure_meta.gd" id="2_faewn"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/general_ops_scripts/item_meta.gd" id="3_515ti"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/general_ops_scripts/appearance_item_meta.gd" id="4_h2xtd"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/general_ops_scripts/anchor_offset_meta.gd" id="5_1dv45"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/general_ops_scripts/animation_meta.gd" id="7_ylej8"]
 [ext_resource type="ButtonGroup" uid="uid://bgjpk6wpjeqg7" path="res://addons/puggos_world_sdk/ui/button_groups/anchor_offset_button_group.tres" id="8_ddb2q"]
-[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/item_action_meta.gd" id="9_2v0ow"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/general_ops_scripts/item_action_meta.gd" id="9_2v0ow"]
+[ext_resource type="Script" path="res://addons/puggos_world_sdk/scenes/general_ops_scripts/id_tracking.gd" id="11_i5xe0"]
 
 [sub_resource type="GDScript" id="GDScript_hvgm4"]
 script/source = "@tool
@@ -49,7 +50,7 @@ size_flags_vertical = 3
 
 [node name="Label" type="Label" parent="ScrollContainer/Root"]
 layout_mode = 2
-text = "Meta Generation Mode"
+text = "Puggos World SDK Ops:"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/Root"]
 layout_mode = 2
@@ -57,26 +58,28 @@ layout_mode = 2
 [node name="OptionButtonModeSelect" type="OptionButton" parent="ScrollContainer/Root"]
 layout_mode = 2
 selected = 0
-item_count = 7
-popup/item_0/text = "Icon Generation"
+item_count = 8
+popup/item_0/text = "Meta Info: Icon Generation"
 popup/item_0/id = 3
-popup/item_1/text = "Structure Meta"
+popup/item_1/text = "Meta Info: Structures / Building"
 popup/item_1/id = 4
-popup/item_2/text = "Item Meta"
+popup/item_2/text = "Meta Info: Items"
 popup/item_2/id = 5
-popup/item_3/text = "Appearance Meta"
+popup/item_3/text = "Meta Info: Character Appearance"
 popup/item_3/id = 6
-popup/item_4/text = "Anchor Offset Meta"
+popup/item_4/text = "Meta Info: Anchor Offsets"
 popup/item_4/id = 7
-popup/item_5/text = "Item Action Meta"
+popup/item_5/text = "Meta Info: Items"
 popup/item_5/id = 8
-popup/item_6/text = "Animation Meta"
+popup/item_6/text = "Meta Info: Animations"
 popup/item_6/id = 9
+popup/item_7/text = "Mod ID Tracking"
+popup/item_7/id = 10
 
 [node name="MarginContainerIconGeneration" type="MarginContainer" parent="ScrollContainer/Root"]
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
-metadata/option_label = "Icon Generation"
+metadata/option_label = "Meta Info: Icon Generation"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerIconGeneration"]
 layout_mode = 2
@@ -92,9 +95,10 @@ text = "Capture Icon Meta"
 script = ExtResource("1_e2gpe")
 
 [node name="MarginContainerStructureMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
-metadata/option_label = "Structure Meta"
+metadata/option_label = "Meta Info: Structures / Building"
 
 [node name="StructureMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerStructureMeta"]
 layout_mode = 2
@@ -131,9 +135,10 @@ text = "Generate Structure Meta"
 script = SubResource("GDScript_hvgm4")
 
 [node name="MarginContainerItemMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
-metadata/option_label = "Item Meta"
+metadata/option_label = "Meta Info: Items"
 
 [node name="ItemMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerItemMeta"]
 layout_mode = 2
@@ -153,9 +158,10 @@ layout_mode = 2
 text = "Generate Item Meta"
 
 [node name="MarginContainerAppearanceItemMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
-metadata/option_label = "Appearance Meta"
+metadata/option_label = "Meta Info: Character Appearance"
 
 [node name="AppearanceItemMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerAppearanceItemMeta"]
 layout_mode = 2
@@ -257,7 +263,7 @@ text = "Generate Item (Appearance) Meta"
 [node name="MarginContainerAnchorOffsetMeta" type="MarginContainer" parent="ScrollContainer/Root"]
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
-metadata/option_label = "Anchor Offset Meta"
+metadata/option_label = "Meta Info: Anchor Offsets"
 
 [node name="AnchorOffsetMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerAnchorOffsetMeta" node_paths=PackedStringArray("pw_mods_ui")]
 layout_mode = 2
@@ -288,9 +294,10 @@ layout_mode = 2
 text = "Generate Item / Anchor Offsets"
 
 [node name="MarginContainerItemActionMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
-metadata/option_label = "Item Action Meta"
+metadata/option_label = "Meta Info: Item Actions"
 
 [node name="ItemActionMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerItemActionMeta"]
 layout_mode = 2
@@ -305,26 +312,37 @@ text = "Item Action Meta:"
 
 [node name="CheckButtonBasicInteraction" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
 layout_mode = 2
+tooltip_text = "Animation ID that plays during Basic Interaction (E Key)"
 text = "Basic Interaction"
 
 [node name="CheckButtonPrimaryAction" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
 layout_mode = 2
+tooltip_text = "Animation ID that plays during Primary Action (Left Mouse Button)"
 text = "Primary Action"
 
 [node name="CheckButtonSecondaryAction" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
 layout_mode = 2
+tooltip_text = "Animation ID that plays during Secondary Action (Right  Mouse Button)"
 text = "Secondary Action"
 
 [node name="CheckButtonPrimaryActionAlt" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
 layout_mode = 2
+tooltip_text = "Animation ID that plays during Primary Alt Action (Left Mouse Button + Shift)"
 text = "Primary Action (Alternate)"
 
 [node name="CheckButtonSecondaryActionAlt" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
 layout_mode = 2
+tooltip_text = "Animation ID that plays during Secondary Alt Action (Right Mouse Button + Shift)"
 text = "Secondary Action (Alternate) "
+
+[node name="CheckButtonShortIdle" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
+layout_mode = 2
+tooltip_text = "Animation ID that plays during short idle. This idle is important. It is the one that shows character holding weapon. TORSO should usually be the animation mask."
+text = "Short Idle "
 
 [node name="CheckButtonLongIdle" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
 layout_mode = 2
+tooltip_text = "The Animation ID that plays during the long idle, when character has been standing a long time. You usually wouldn't change this, except if a special suit prompts the user to dance when idle, or something."
 text = "Long Idle "
 
 [node name="HSeparator" type="HSeparator" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
@@ -361,6 +379,11 @@ text = "Primary Action (Alternate) [Mask]"
 layout_mode = 2
 text = "Secondary Action (Alternate) [Mask]"
 
+[node name="CheckButtonShortIdleMask" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
+layout_mode = 2
+tooltip_text = "var add_long_idle_animation_mask:bool=false"
+text = "Short Idle [Mask]"
+
 [node name="CheckButtonLongIdleMask" type="CheckButton" parent="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta"]
 layout_mode = 2
 text = "Long Idle [Mask]"
@@ -370,9 +393,10 @@ layout_mode = 2
 text = "Generate Item Action Meta"
 
 [node name="MarginContainerAnimationMeta" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
 layout_mode = 2
 theme_override_constants/margin_bottom = 10
-metadata/option_label = "Animation Meta"
+metadata/option_label = "Meta Info: Animations"
 
 [node name="AnimationMeta" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerAnimationMeta"]
 layout_mode = 2
@@ -386,6 +410,28 @@ text = "Animations Meta:"
 [node name="GenerateAnimationMeta" type="Button" parent="ScrollContainer/Root/MarginContainerAnimationMeta/AnimationMeta"]
 layout_mode = 2
 text = "Generate Animation Meta"
+
+[node name="MarginContainerIDTracking" type="MarginContainer" parent="ScrollContainer/Root"]
+visible = false
+layout_mode = 2
+metadata/option_label = "Mod ID Tracking"
+
+[node name="IDTracking" type="VBoxContainer" parent="ScrollContainer/Root/MarginContainerIDTracking"]
+layout_mode = 2
+script = ExtResource("11_i5xe0")
+
+[node name="Label2" type="Label" parent="ScrollContainer/Root/MarginContainerIDTracking/IDTracking"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+text = "ID Tracking"
+
+[node name="HSeparator" type="HSeparator" parent="ScrollContainer/Root/MarginContainerIDTracking/IDTracking"]
+layout_mode = 2
+
+[node name="ButtonIDTracking" type="Button" parent="ScrollContainer/Root/MarginContainerIDTracking/IDTracking"]
+layout_mode = 2
+tooltip_text = "Prints out to the console which IDs mod creators have used if present in the SDK."
+text = "Get ID Summaries"
 
 [connection signal="item_selected" from="ScrollContainer/Root/OptionButtonModeSelect" to="." method="_on_option_button_mode_select_item_selected"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerIconGeneration/VBoxContainer/GenerateIconMeta" to="ScrollContainer/Root/MarginContainerIconGeneration/VBoxContainer/GenerateIconMeta" method="_on_pressed"]
@@ -401,12 +447,15 @@ text = "Generate Animation Meta"
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonSecondaryAction" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_secondary_action_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonPrimaryActionAlt" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_primary_action_alt_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonSecondaryActionAlt" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_secondary_action_alt_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonShortIdle" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_long_idle_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonLongIdle" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_long_idle_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonBasicInteractionMask" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_basic_interaction_mask_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonPrimaryActionMask" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_primary_action_mask_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonSecondaryActionMask" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_secondary_action_mask_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonPrimaryActionAltMask" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_primary_action_alt_mask_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonSecondaryActionAltMask" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_secondary_action_alt_mask_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonShortIdleMask" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_long_idle_mask_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/CheckButtonLongIdleMask" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_check_button_long_idle_mask_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta/GenerateItemActionMeta" to="ScrollContainer/Root/MarginContainerItemActionMeta/ItemActionMeta" method="_on_generate_item_action_meta_pressed"]
 [connection signal="pressed" from="ScrollContainer/Root/MarginContainerAnimationMeta/AnimationMeta/GenerateAnimationMeta" to="ScrollContainer/Root/MarginContainerAnimationMeta/AnimationMeta" method="_on_generate_animation_meta_pressed"]
+[connection signal="pressed" from="ScrollContainer/Root/MarginContainerIDTracking/IDTracking/ButtonIDTracking" to="ScrollContainer/Root/MarginContainerIDTracking/IDTracking" method="_on_button_id_tracking_pressed"]

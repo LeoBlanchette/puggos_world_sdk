@@ -7,6 +7,7 @@ extends VBoxContainer
 @onready var check_button_secondary_action: CheckButton = $CheckButtonSecondaryAction
 @onready var check_button_primary_action_alt: CheckButton = $CheckButtonPrimaryActionAlt
 @onready var check_button_secondary_action_alt: CheckButton = $CheckButtonSecondaryActionAlt
+@onready var check_button_short_idle: CheckButton = $CheckButtonShortIdle
 @onready var check_button_long_idle: CheckButton = $CheckButtonLongIdle
 
 # Masks
@@ -15,6 +16,7 @@ extends VBoxContainer
 @onready var check_button_secondary_action_mask: CheckButton = $CheckButtonSecondaryActionMask
 @onready var check_button_primary_action_alt_mask: CheckButton = $CheckButtonPrimaryActionAltMask
 @onready var check_button_secondary_action_alt_mask: CheckButton = $CheckButtonSecondaryActionAltMask
+@onready var check_button_short_idle_mask: CheckButton = $CheckButtonShortIdleMask
 @onready var check_button_long_idle_mask: CheckButton = $CheckButtonLongIdleMask
 
 func _on_generate_item_action_meta_pressed() -> void:
@@ -31,6 +33,8 @@ func _on_generate_item_action_meta_pressed() -> void:
 		mod_meta.add_primary_action_alt_animation_id = true
 	if check_button_secondary_action_alt.button_pressed:
 		mod_meta.add_secondary_action_alt_animation_id = true
+	if check_button_short_idle.button_pressed:
+		mod_meta.add_short_idle_animation_id = true
 	if check_button_long_idle.button_pressed:
 		mod_meta.add_long_idle_animation_id = true
 	
@@ -44,6 +48,8 @@ func _on_generate_item_action_meta_pressed() -> void:
 		mod_meta.add_primary_action_alt_animation_mask = true
 	if check_button_secondary_action_alt_mask.button_pressed:
 		mod_meta.add_secondary_action_alt_animation_mask = true
+	if check_button_short_idle_mask.button_pressed:
+		mod_meta.add_short_idle_animation_mask = true
 	if check_button_long_idle_mask.button_pressed:
 		mod_meta.add_long_idle_animation_mask = true
 	
