@@ -95,7 +95,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_iiphk")
 
 [node name="combat_knife" type="Node3D"]
-transform = Transform3D(-0.17995, 0.427003, 0.886164, 0.581205, -0.680652, 0.445999, 0.793612, 0.5953, -0.125693, 0.0166907, 0.0571047, 0.0714311)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 metadata/anchor_slot_34_position = Vector3(0.0166907, 0.0571047, 0.0714311)
 metadata/anchor_slot_34_rotation = Vector3(-26.4872, 98.073, 139.506)
 metadata/primary_action_animation_id = 38
@@ -107,6 +107,7 @@ metadata/short_idle_animation_mask = "TORSO"
 metadata/id = 10309
 metadata/name = "Bowie Knife"
 metadata/mod_type = "items"
+metadata/equippable_slot = 34
 
 [node name="CombatKnife" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0)
