@@ -99,7 +99,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_knxxa")
 
 [node name="rifle" type="Node3D"]
-transform = Transform3D(0.486958, 0.85058, 0.198477, 0.000339262, -0.227423, 0.973798, 0.873428, -0.474131, -0.111034, -0.0331434, 0.021288, 0.0930329)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 metadata/anchor_slot_34_position_aiming = Vector3(-0.040773, 0.0569367, -0.0169293)
 metadata/anchor_slot_34_rotation_aiming = Vector3(-63.4427, 36.7477, -129.637)
 metadata/anchor_slot_34_position = Vector3(-0.0331434, 0.021288, 0.0930329)
