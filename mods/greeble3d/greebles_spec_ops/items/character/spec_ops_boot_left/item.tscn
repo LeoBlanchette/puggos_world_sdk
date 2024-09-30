@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cxmkryuykifpu" path="res://mods/greeble3d/greebles_spec_ops/items/character/spec_ops_boot_left/models/spec_ops_boot_left.gltf" id="1_xb381"]
 
 [node name="spec_ops_boot_left" instance=ExtResource("1_xb381")]
+metadata/id = 10036
+metadata/name = "Special Operatives Boot Left"
+metadata/mod_type = "items"
+metadata/equippable_slot = 23

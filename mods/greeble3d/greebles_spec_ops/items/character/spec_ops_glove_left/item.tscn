@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://csyopi4dhjk6d" path="res://mods/greeble3d/greebles_spec_ops/items/character/spec_ops_glove_left/models/spec_ops_glove_left.gltf" id="1_d6pi2"]
 
 [node name="spec_ops_glove_left" instance=ExtResource("1_d6pi2")]
+metadata/id = 10038
+metadata/name = "Special Operatives Glove Left"
+metadata/mod_type = "items"
+metadata/equippable_slot = 15

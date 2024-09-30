@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dcgb3o0qi10ia" path="res://mods/greeble3d/greebles_spec_ops/items/character/spec_ops_pants/models/spec_ops_pants.gltf" id="1_2gk4e"]
 
 [node name="spec_ops_pants" instance=ExtResource("1_2gk4e")]
+metadata/id = 10042
+metadata/name = "Special Operatives Pants"
+metadata/mod_type = "items"
+metadata/equippable_slot = 20

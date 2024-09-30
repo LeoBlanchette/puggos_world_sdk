@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://ruxawkkvgx8x" path="res://mods/greeble3d/greebles_spec_ops/items/character/night_vision_goggles/models/night_vision_goggles.gltf" id="1_cqh5u"]
 
 [node name="night_vision_goggles" instance=ExtResource("1_cqh5u")]
+metadata/id = 10035
+metadata/name = "Night Vision Goggles"
+metadata/mod_type = "items"
+metadata/equippable_slot = 12
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)
