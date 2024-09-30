@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyon8g2ourcki"]
+
+[ext_resource type="PackedScene" uid="uid://crhp21wx1giqe" path="res://mods/greeble3d/greebles_spec_ops/items/character/spec_ops_vambrace_right/models/spec_ops_vambrace_right.gltf" id="1_ju8l0"]
+
+[node name="spec_ops_vambrace_right" instance=ExtResource("1_ju8l0")]

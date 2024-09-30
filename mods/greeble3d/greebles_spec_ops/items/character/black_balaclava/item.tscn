@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv5lv3ssvs0uv"]
+
+[ext_resource type="PackedScene" uid="uid://dyaf3un8rw6dw" path="res://mods/greeble3d/greebles_spec_ops/items/character/black_balaclava/models/black_balaclava.gltf" id="1_plwmb"]
+
+[node name="black_balaclava" instance=ExtResource("1_plwmb")]

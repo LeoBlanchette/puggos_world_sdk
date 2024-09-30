@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgopebksf5x0t"
-path.s3tc="res://.godot/imported/WifeBeaterSet.png-70b333a0265b79d3246dfd301ee3b5d2.s3tc.ctex"
+uid="uid://cinwe0xlln7il"
+path.s3tc="res://.godot/imported/NVG.png-8b4ef109f276842f9c307366e833b742.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://mods/greeble3d/street_punk/misc/WifeBeaterSet.png"
-dest_files=["res://.godot/imported/WifeBeaterSet.png-70b333a0265b79d3246dfd301ee3b5d2.s3tc.ctex"]
+source_file="res://mods/greeble3d/greebles_spec_ops/misc/NVG.png"
+dest_files=["res://.godot/imported/NVG.png-8b4ef109f276842f9c307366e833b742.s3tc.ctex"]
 
 [params]
 
