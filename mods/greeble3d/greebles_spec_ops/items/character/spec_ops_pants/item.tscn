@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm16rt1jqqc6a"]
+
+[ext_resource type="PackedScene" uid="uid://dcgb3o0qi10ia" path="res://mods/greeble3d/greebles_spec_ops/items/character/spec_ops_pants/models/spec_ops_pants.gltf" id="1_2gk4e"]
+
+[node name="spec_ops_pants" instance=ExtResource("1_2gk4e")]
