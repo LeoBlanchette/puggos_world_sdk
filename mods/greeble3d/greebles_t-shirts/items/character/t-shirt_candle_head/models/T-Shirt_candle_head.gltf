@@ -1185,7 +1185,7 @@
 		},
 		{
 			"mesh":0,
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_JapaneseGoober",
 			"skin":0
 		},
 		{
@@ -3370,7 +3370,7 @@
 	"materials":[
 		{
 			"doubleSided":true,
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_JapaneseGoober",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
@@ -3382,7 +3382,7 @@
 	],
 	"meshes":[
 		{
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_JapaneseGoober",
 			"primitives":[
 				{
 					"attributes":{
@@ -3407,8 +3407,8 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"T-Shirt_Butler",
-			"uri":"T-Shirt_Butler.png"
+			"name":"T-Shirt_JapaneseGoober",
+			"uri":"T-Shirt_JapaneseGoober.png"
 		}
 	],
 	"skins":[
@@ -5582,7 +5582,7 @@
 	"buffers":[
 		{
 			"byteLength":24704,
-			"uri":"T-Shirt_Butler.bin"
+			"uri":"T-Shirt_candle_head.bin"
 		}
 	]
 }

@@ -1185,7 +1185,7 @@
 		},
 		{
 			"mesh":0,
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_Caution",
 			"skin":0
 		},
 		{
@@ -3370,7 +3370,7 @@
 	"materials":[
 		{
 			"doubleSided":true,
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_Caution",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
@@ -3382,7 +3382,7 @@
 	],
 	"meshes":[
 		{
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_Caution",
 			"primitives":[
 				{
 					"attributes":{
@@ -3407,8 +3407,8 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"T-Shirt_Butler",
-			"uri":"T-Shirt_Butler.png"
+			"name":"T-Shirt_Caution",
+			"uri":"T-Shirt_Caution.png"
 		}
 	],
 	"skins":[
@@ -5582,7 +5582,7 @@
 	"buffers":[
 		{
 			"byteLength":24704,
-			"uri":"T-Shirt_Butler.bin"
+			"uri":"T-Shirt_Caution.bin"
 		}
 	]
 }

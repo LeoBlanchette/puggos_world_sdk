@@ -1185,7 +1185,7 @@
 		},
 		{
 			"mesh":0,
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_Gumkin",
 			"skin":0
 		},
 		{
@@ -3370,7 +3370,7 @@
 	"materials":[
 		{
 			"doubleSided":true,
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_Gumkin",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
@@ -3382,7 +3382,7 @@
 	],
 	"meshes":[
 		{
-			"name":"T-Shirt_Butler",
+			"name":"T-Shirt_Gumkin",
 			"primitives":[
 				{
 					"attributes":{
@@ -3407,8 +3407,8 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"T-Shirt_Butler",
-			"uri":"T-Shirt_Butler.png"
+			"name":"T-Shirt_Gumkin",
+			"uri":"T-Shirt_Gumkin.png"
 		}
 	],
 	"skins":[
@@ -5582,7 +5582,7 @@
 	"buffers":[
 		{
 			"byteLength":24704,
-			"uri":"T-Shirt_Butler.bin"
+			"uri":"T-Shirt_Gumkin.bin"
 		}
 	]
 }

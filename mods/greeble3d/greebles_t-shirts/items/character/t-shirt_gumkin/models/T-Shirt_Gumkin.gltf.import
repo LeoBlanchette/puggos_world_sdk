@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bq43v4emalavu"
-path="res://.godot/imported/T-Shirt_Butler.gltf-2cde038cab2fd75ecacb64869aa689d0.scn"
+uid="uid://dwfn0rsft7f2g"
+path="res://.godot/imported/T-Shirt_Gumkin.gltf-996377c5fcbab674ec73f49f28c81f30.scn"
 
 [deps]
 
-source_file="res://mods/greeble3d/greebles_t-shirts/items/character/t-shirt_butler/models/T-Shirt_Butler.gltf"
-dest_files=["res://.godot/imported/T-Shirt_Butler.gltf-2cde038cab2fd75ecacb64869aa689d0.scn"]
+source_file="res://mods/greeble3d/greebles_t-shirts/items/character/t-shirt_gumkin/models/T-Shirt_Gumkin.gltf"
+dest_files=["res://.godot/imported/T-Shirt_Gumkin.gltf-996377c5fcbab674ec73f49f28c81f30.scn"]
 
 [params]
 
@@ -33,9 +33,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"T-Shirt_Butler": {
+"T-Shirt_Gumkin": {
 "use_external/enabled": true,
-"use_external/path": "res://mods/greeble3d/greebles_t-shirts/items/misc/t-shirt_butler.tres"
+"use_external/path": "res://mods/greeble3d/greebles_t-shirts/items/misc/t-shirt_gumkin.tres"
 }
 }
 }

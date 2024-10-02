@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bq43v4emalavu"
-path="res://.godot/imported/T-Shirt_Butler.gltf-2cde038cab2fd75ecacb64869aa689d0.scn"
+uid="uid://8vv6u23lvkss"
+path="res://.godot/imported/T-Shirt_candle_head.gltf-a71c85b3cd4f5a573c73b9fb898ac1fa.scn"
 
 [deps]
 
-source_file="res://mods/greeble3d/greebles_t-shirts/items/character/t-shirt_butler/models/T-Shirt_Butler.gltf"
-dest_files=["res://.godot/imported/T-Shirt_Butler.gltf-2cde038cab2fd75ecacb64869aa689d0.scn"]
+source_file="res://mods/greeble3d/greebles_t-shirts/items/character/t-shirt_candle_head/models/T-Shirt_candle_head.gltf"
+dest_files=["res://.godot/imported/T-Shirt_candle_head.gltf-a71c85b3cd4f5a573c73b9fb898ac1fa.scn"]
 
 [params]
 
@@ -33,9 +33,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"T-Shirt_Butler": {
+"T-Shirt_JapaneseGoober": {
 "use_external/enabled": true,
-"use_external/path": "res://mods/greeble3d/greebles_t-shirts/items/misc/t-shirt_butler.tres"
+"use_external/path": "res://mods/greeble3d/greebles_t-shirts/items/misc/t-shirt_candlehead.tres"
 }
 }
 }
