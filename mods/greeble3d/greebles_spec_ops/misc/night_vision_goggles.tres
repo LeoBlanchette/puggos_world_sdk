@@ -15,4 +15,5 @@ next_pass = SubResource("StandardMaterial3D_b7t52")
 transparency = 1
 albedo_texture = ExtResource("1_sm01u")
 emission_enabled = true
+emission_energy_multiplier = 16.0
 emission_texture = ExtResource("2_rw617")

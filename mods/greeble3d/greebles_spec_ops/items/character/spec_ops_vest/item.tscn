@@ -3,6 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://cj5817fbdfcu" path="res://mods/greeble3d/greebles_spec_ops/items/character/spec_ops_vest/models/spec_ops_vest.gltf" id="1_vqu0r"]
 
 [node name="spec_ops_vest" instance=ExtResource("1_vqu0r")]
+metadata/id = 10045
+metadata/name = "Special Operatives Vest"
+metadata/mod_type = "items"
+metadata/equippable_slot = 10
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)

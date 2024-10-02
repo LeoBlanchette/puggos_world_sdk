@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://txpgc3k8unyh" path="res://mods/greeble3d/greebles_spec_ops/items/character/spec_ops_boot_right/models/spec_ops_boot_right.gltf" id="1_qdvsy"]
 
 [node name="spec_ops_boot_right" instance=ExtResource("1_qdvsy")]
+metadata/id = 10037
+metadata/name = "Special Operatives Boot Right"
+metadata/mod_type = "items"
+metadata/equippable_slot = 24

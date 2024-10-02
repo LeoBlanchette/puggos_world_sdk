@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dkyawkatie5c1" path="res://mods/greeble3d/greebles_spec_ops/items/character/spec_ops_helmet/models/spec_ops_helmet.gltf" id="1_lgbs7"]
 
 [node name="spec_ops_helmet" instance=ExtResource("1_lgbs7")]
+metadata/id = 10040
+metadata/name = "Special Operatives Helmet"
+metadata/mod_type = "items"
+metadata/equippable_slot = 6

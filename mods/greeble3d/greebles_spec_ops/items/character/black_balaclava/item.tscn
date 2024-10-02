@@ -3,3 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dyaf3un8rw6dw" path="res://mods/greeble3d/greebles_spec_ops/items/character/black_balaclava/models/black_balaclava.gltf" id="1_plwmb"]
 
 [node name="black_balaclava" instance=ExtResource("1_plwmb")]
+metadata/id = 10034
+metadata/name = "Black Balaclava"
+metadata/mod_type = "items"
+metadata/equippable_slot = 5
