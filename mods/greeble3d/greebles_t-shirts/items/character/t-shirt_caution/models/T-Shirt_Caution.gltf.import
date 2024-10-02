@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bq43v4emalavu"
-path="res://.godot/imported/T-Shirt_Butler.gltf-2cde038cab2fd75ecacb64869aa689d0.scn"
+uid="uid://dssktx5e05680"
+path="res://.godot/imported/T-Shirt_Caution.gltf-e173ab7ab0383ad9823954212fd0b70d.scn"
 
 [deps]
 
-source_file="res://mods/greeble3d/greebles_t-shirts/items/character/t-shirt_butler/models/T-Shirt_Butler.gltf"
-dest_files=["res://.godot/imported/T-Shirt_Butler.gltf-2cde038cab2fd75ecacb64869aa689d0.scn"]
+source_file="res://mods/greeble3d/greebles_t-shirts/items/character/t-shirt_caution/models/T-Shirt_Caution.gltf"
+dest_files=["res://.godot/imported/T-Shirt_Caution.gltf-e173ab7ab0383ad9823954212fd0b70d.scn"]
 
 [params]
 
@@ -33,9 +33,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"T-Shirt_Butler": {
+"T-Shirt_Caution": {
 "use_external/enabled": true,
-"use_external/path": "res://mods/greeble3d/greebles_t-shirts/items/misc/t-shirt_butler.tres"
+"use_external/path": "res://mods/greeble3d/greebles_t-shirts/items/misc/t-shirt_caution.tres"
 }
 }
 }
