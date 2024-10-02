@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bw0w5jxl1nb82"]
+
+[node name="Emote" type="Node3D"]
+metadata/id = 1
+metadata/name = "Emote: Caution"
+metadata/tag = "caution"
+metadata/mod_type = "emotes"
+metadata/emote_type = "URGENT_COMMUNICATION"
+metadata/emote_animation_id = 0

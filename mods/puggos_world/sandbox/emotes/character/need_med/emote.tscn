@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dhlmwign0ap3s"]
+
+[node name="Emote" type="Node3D"]
+metadata/id = 3
+metadata/name = "Emote: Need Medical"
+metadata/tag = "med"
+metadata/mod_type = "emotes"
+metadata/emote_type = "URGENT_THOUGHT"
+metadata/emote_animation_id = 0

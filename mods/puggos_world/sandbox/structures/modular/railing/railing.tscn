@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dexxlycjstas"]
+
+[ext_resource type="PackedScene" uid="uid://lth00ulb7r2s" path="res://mods/puggos_world/sandbox/structures/modular/railing/blend/Railing.blend" id="1_no7mf"]
+
+[node name="Railing" instance=ExtResource("1_no7mf")]

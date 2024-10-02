@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0vk0dbkqdub1"]
+
+[ext_resource type="PackedScene" uid="uid://ba74x5hdc01v7" path="res://mods/puggos_world/sandbox/structures/modular/floor/blend/Floor.blend" id="1_jp7vt"]
+
+[node name="Floor" instance=ExtResource("1_jp7vt")]

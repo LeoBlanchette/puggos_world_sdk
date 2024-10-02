@@ -99,11 +99,19 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_knxxa")
 
 [node name="rifle" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-metadata/anchor_slot_34_position_aiming = Vector3(-0.040773, 0.0569367, -0.0169293)
-metadata/anchor_slot_34_rotation_aiming = Vector3(-63.4427, 36.7477, -129.637)
+transform = Transform3D(-0.00631489, 0.966412, 0.25692, -0.363711, -0.241548, 0.899649, 0.931489, -0.0877635, 0.35302, -0.0369799, 0.0798403, 0.029009)
+metadata/anchor_slot_34_position_aiming = Vector3(-0.0369799, 0.0798403, 0.029009)
+metadata/anchor_slot_34_rotation_aiming = Vector3(-64.112, 36.0463, -123.589)
 metadata/anchor_slot_34_position = Vector3(-0.0331434, 0.021288, 0.0930329)
 metadata/anchor_slot_34_rotation = Vector3(-76.8546, 119.224, 179.915)
+metadata/secondary_action_animation_id = 147
+metadata/secondary_action_animation_mask = "HEAD_TORSO"
+metadata/id = 10310
+metadata/name = "Rifle"
+metadata/mod_type = "items"
+metadata/equippable_slot = 34
+metadata/short_idle_animation_id = 18
+metadata/short_idle_animation_mask = "TORSO"
 
 [node name="Rifle" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, 1, -2.98023e-08, 2.98023e-08, 0, -1, -1, -2.98023e-08, 0, 0, 0, 0)
