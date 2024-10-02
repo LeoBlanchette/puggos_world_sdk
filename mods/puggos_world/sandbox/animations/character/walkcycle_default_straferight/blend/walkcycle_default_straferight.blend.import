@@ -33,10 +33,10 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "animations": {
-"walkcycle_default_straferight": {
-"save_to_file/enabled": true,
+"walkcycle_default_strafeleft": {
+"save_to_file/enabled": false,
 "save_to_file/keep_custom_tracks": "",
-"save_to_file/path": "res://mods/puggos_world/sandbox/animations/character/walkcycle_default_straferight/walkcycle_default_straferight.res",
+"save_to_file/path": "",
 "settings/loop_mode": 1,
 "slice_1/end_frame": 0,
 "slice_1/loop_mode": 0,

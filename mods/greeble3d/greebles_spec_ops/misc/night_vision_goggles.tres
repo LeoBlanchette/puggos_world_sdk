@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://dtr8ru3b8xb2y"]
+
+[ext_resource type="Texture2D" uid="uid://cinwe0xlln7il" path="res://mods/greeble3d/greebles_spec_ops/misc/NVG.png" id="1_sm01u"]
+[ext_resource type="Texture2D" uid="uid://dkfe7dpi5lwlf" path="res://mods/greeble3d/greebles_spec_ops/misc/NVG_Emission.png" id="2_rw617"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xirq5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b7t52"]
+next_pass = SubResource("StandardMaterial3D_xirq5")
+
+[resource]
+resource_local_to_scene = true
+render_priority = 2
+next_pass = SubResource("StandardMaterial3D_b7t52")
+transparency = 1
+albedo_texture = ExtResource("1_sm01u")
+emission_enabled = true
+emission_energy_multiplier = 16.0
+emission_texture = ExtResource("2_rw617")
