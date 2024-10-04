@@ -25,7 +25,6 @@ folder_colors={
 "res://addons/": "yellow",
 "res://addons/puggos_world_sdk/scenes/general_ops_scripts/": "green",
 "res://addons/puggos_world_sdk/scripts/": "green",
-"res://helpers/": "teal",
 "res://mods/": "orange",
 "res://mods/puggos_world/sandbox/animations/character/loop_craft/": "blue",
 "res://mods/puggos_world/sandbox/animations/character/loop_idle_combat_ranged_pistol/": "blue",

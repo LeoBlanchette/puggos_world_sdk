@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=4 uid="uid://dvpv8tfinp8rb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wmurv"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_20ro0"]
+_surfaces = [{
+"aabb": AABB(-2, -1.19209e-07, -1.75, 4, 4, 1.75),
+"format": 34359742465,
+"index_count": 48,
+"index_data": PackedByteArray("BwADAAYABwACAAMACQAFAAQACQAIAAUACQAHAAAAAAAIAAkAAAABAAgAAwAEAAUAAwACAAQABgAFAAgABgADAAUABgAIAAEAAgAJAAQAAgAHAAkAAAAGAAEAAAAHAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray("AAAAwAAAAAAAAOC/AAAAwAAAAAAAAACAAAAAQAAAgEAAAOC/AAAAQAAAgEAAAACAAAAAQAAAYEAAAOC/AAAAQAAAYEAAAACAAQDAv/z//z4AAACAAQDAv/z//z4AAOC/AQDAvwAAALQAAACAAQDAvwAAALQAAOC/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_04agh"]
+resource_name = "Stairs-4_Stairs-4-col"
+_surfaces = [{
+"aabb": AABB(-2, -1.19209e-07, -1.75, 4, 4, 1.75),
+"attribute_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8AAAAAAAAAPwAAAAAAAAA/AACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAD8AAIA/AAAAPwAAgD8AAAA/AACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAD8AAIA/AAAAPwAAgD8AAAA/AAAAPv7//z4AAAA+/v//Pv3//z0AAAAA/f//PQAAAAD8//89AAAAP/z//z0AAAA//P//PQAAAD/+//89AAAAAP7//z0AAAAA/v//PQAAAAA="),
+"format": 34359742487,
+"index_count": 48,
+"index_data": PackedByteArray("FQALABMAFQAIAAsAGwAQAA0AGwAYABAAGQAUAAAAAQAXABoAAQAEABcACgAOABEACgAHAA4AEgAPABYAEgAJAA8AEgAWAAMABgAZAAwABgAUABkAAgATAAUAAgAVABMA"),
+"material": SubResource("StandardMaterial3D_wmurv"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("AAAAwAAAAAAAAOC/AAAAwAAAAAAAAOC/AAAAwAAAAAAAAOC/AAAAwAAAAAAAAACAAAAAwAAAAAAAAACAAAAAwAAAAAAAAACAAAAAQAAAgEAAAOC/AAAAQAAAgEAAAOC/AAAAQAAAgEAAAOC/AAAAQAAAgEAAAACAAAAAQAAAgEAAAACAAAAAQAAAgEAAAACAAAAAQAAAYEAAAOC/AAAAQAAAYEAAAOC/AAAAQAAAYEAAAOC/AAAAQAAAYEAAAACAAAAAQAAAYEAAAACAAAAAQAAAYEAAAACAAQDAv/z//z4AAACAAQDAv/z//z4AAACAAQDAv/z//z4AAOC/AQDAv/z//z4AAOC/AQDAvwAAALQAAACAAQDAvwAAALQAAACAAQDAvwAAALQAAACAAQDAvwAAALQAAOC/AQDAvwAAALQAAOC/AQDAvwAAALQAAOC//////////z//fwAA////P/8//7//v//f/3//f////7//fwAA////P/8//7//v//f/////////z////9/////v/8//7//v//f/3//f////z////9/////v/8//7//v//f/////////z//v/8//7//H////3////+//3//f/+//9//v/8//7//H////3////+//3//f4jMutn/P/+//7//3/////////8//z//v/+//9//f/9/fOVAzf9/AAD///8//7//P/+//x//////////P/9/AAD///8//7//P/+//x8=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_20ro0")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fvoyk"]
+data = PackedVector3Array(-1.5, 0.5, -1.75, 2, 4, 0, -1.5, 0.5, 0, -1.5, 0.5, -1.75, 2, 4, -1.75, 2, 4, 0, -1.5, -1.19209e-07, -1.75, 2, 3.5, 0, 2, 3.5, -1.75, -1.5, -1.19209e-07, -1.75, -1.5, -1.19209e-07, 0, 2, 3.5, 0, -1.5, -1.19209e-07, -1.75, -1.5, 0.5, -1.75, -2, 0, -1.75, -2, 0, -1.75, -1.5, -1.19209e-07, 0, -1.5, -1.19209e-07, -1.75, -2, 0, -1.75, -2, 0, 0, -1.5, -1.19209e-07, 0, 2, 4, 0, 2, 3.5, -1.75, 2, 3.5, 0, 2, 4, 0, 2, 4, -1.75, 2, 3.5, -1.75, -1.5, 0.5, 0, 2, 3.5, 0, -1.5, -1.19209e-07, 0, -1.5, 0.5, 0, 2, 4, 0, 2, 3.5, 0, -1.5, 0.5, 0, -1.5, -1.19209e-07, 0, -2, 0, 0, 2, 4, -1.75, -1.5, -1.19209e-07, -1.75, 2, 3.5, -1.75, 2, 4, -1.75, -1.5, 0.5, -1.75, -1.5, -1.19209e-07, -1.75, -2, 0, -1.75, -1.5, 0.5, 0, -2, 0, 0, -2, 0, -1.75, -1.5, 0.5, -1.75, -1.5, 0.5, 0)
+
+[node name="Stairs-4" type="Node3D"]
+metadata/id = 6
+metadata/name = "Stairs"
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 5.824
+metadata/icon_camera_position = Vector3(-0.814, 3.196, -0.042)
+metadata/icon_camera_rotation = Vector3(-45, -34.1, 0)
+metadata/structure_type = "INTERIOR_MODULE"
+
+[node name="Stairs-4" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_04agh")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Stairs-4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs-4/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_fvoyk")

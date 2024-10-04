@@ -33,6 +33,13 @@ grow_vertical = 2
 theme = ExtResource("1_2fjs0")
 script = ExtResource("2_dd5m0")
 mode_select = NodePath("ScrollContainer/Root/OptionButtonModeSelect")
+metadata/id = 0
+metadata/name = ""
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 3.0
+metadata/icon_camera_position = Vector3(0, 0, 0)
+metadata/icon_camera_rotation = Vector3(0, 0, 0)
+metadata/structure_type = "WALL_1"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 custom_minimum_size = Vector2(300, 0)
@@ -121,16 +128,6 @@ text = "Anchor Type"
 
 [node name="AnchorTypeOptionButton" type="OptionButton" parent="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta/HBoxContainer"]
 layout_mode = 2
-item_count = 5
-popup/item_0/text = "none"
-popup/item_1/text = "foundation"
-popup/item_1/id = 1
-popup/item_2/text = "pillar"
-popup/item_2/id = 2
-popup/item_3/text = "wall"
-popup/item_3/id = 3
-popup/item_4/text = "floor"
-popup/item_4/id = 4
 
 [node name="GenerateModularStructureMeta" type="Button" parent="ScrollContainer/Root/MarginContainerStructureMeta/StructureMeta"]
 layout_mode = 2

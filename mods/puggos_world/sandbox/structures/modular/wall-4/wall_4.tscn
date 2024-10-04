@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdlk7b5pgtvsy"]
-
-[ext_resource type="PackedScene" uid="uid://bvqfhet86ivac" path="res://mods/puggos_world/sandbox/structures/modular/wall-4/blend/Wall-4.blend" id="1_j5s6i"]
-
-[node name="Wall-4" instance=ExtResource("1_j5s6i")]

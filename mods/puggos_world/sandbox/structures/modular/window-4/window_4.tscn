@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dtjj5m0do5tea"]
-
-[ext_resource type="PackedScene" uid="uid://cx7akd7u3m6qf" path="res://mods/puggos_world/sandbox/structures/modular/window-4/blend/Window-4.blend" id="1_f8sc8"]
-
-[node name="Window-4" instance=ExtResource("1_f8sc8")]

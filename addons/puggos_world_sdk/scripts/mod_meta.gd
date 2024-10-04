@@ -27,8 +27,7 @@ var tag:String = ""
 #endregion 
 
 #region structures
-enum AnchorType {NONE, FOUNDATION, PILLAR, WALL, FLOOR}
-var anchor_type:AnchorType
+var structure_type:Types.ModularStructureType
 #endregion
 
 #region icon meta
@@ -104,7 +103,7 @@ func _init(_scene_root:Node, _mod_type:ModeType) -> void:
 		"structures":
 			mod_type = ModeType.STRUCTURES
 			get_icon_meta()
-			set_anchor_type_meta(scene_root.get_meta("anchor_type", "none"))
+			set_structure_type_meta(scene_root.get_meta("structure_type", "NONE"))
 		"items":
 			mod_type = ModeType.ITEMS
 			get_appearance_item_meta()
@@ -125,7 +124,7 @@ func generate()->void:
 		ModeType.STRUCTURES:
 			add_structure_meta()
 			add_icon_meta()
-			add_anchor_type_meta()
+			add_structure_type_meta()
 		ModeType.ITEMS:
 			add_item_meta()
 			if is_food:
@@ -206,35 +205,26 @@ func add_icon_meta()->void:
 	scene_root.set_meta("icon_camera_position", icon_camera_position)
 	scene_root.set_meta("icon_camera_rotation", icon_camera_rotation)
 
-func add_anchor_type_meta()->void:
-	var _anchor_type:="none"
-	match anchor_type:
-		AnchorType.NONE:
-			_anchor_type = "none"
-		AnchorType.FOUNDATION:
-			_anchor_type = "foundation"
-		AnchorType.PILLAR:
-			_anchor_type = "pillar"
-		AnchorType.WALL:
-			_anchor_type = "wall"
-		AnchorType.FLOOR:
-			_anchor_type = "floor"
-	scene_root.set_meta("anchor_type", _anchor_type)
+func add_structure_type_meta()->void:	
+	var _structure_type =Types.ModularStructureType.keys()[structure_type]
+	scene_root.set_meta("structure_type", _structure_type)
 
-func set_anchor_type_meta(_anchor_type:String)->void:
-	match _anchor_type:
-		"none":
-			anchor_type = AnchorType.NONE
-		"foundation":
-			anchor_type = AnchorType.FOUNDATION
-		"pillar":
-			anchor_type = AnchorType.PILLAR
-		"wall":
-			anchor_type = AnchorType.WALL
-		"floor":
-			anchor_type = AnchorType.FLOOR
+func set_structure_type_meta(_structure_type:String)->void:
+	match _structure_type:
+		"NONE":
+			structure_type = Types.ModularStructureType.NONE
+		"FLOOR":
+			structure_type = Types.ModularStructureType.FLOOR
+		"PILLAR":
+			structure_type = Types.ModularStructureType.PILLAR
+		"WALL_1":
+			structure_type = Types.ModularStructureType.WALL_1
+		"WALL_2":
+			structure_type = Types.ModularStructureType.WALL_2
+		"INTERIOR_MODULE":
+			structure_type = Types.ModularStructureType.INTERIOR_MODULE
 		_:
-			anchor_type = AnchorType.NONE
+			structure_type = Types.ModularStructureType.NONE
 
 ## When generating meta for actions executed on item use.
 func generate_action_meta():

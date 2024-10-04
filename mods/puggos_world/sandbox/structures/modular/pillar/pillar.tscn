@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpy4te2k66sv4"]
-
-[ext_resource type="PackedScene" uid="uid://b6qsg6e4pbhjk" path="res://mods/puggos_world/sandbox/structures/modular/pillar/blend/Pillar.blend" id="1_4hr15"]
-
-[node name="Pillar" instance=ExtResource("1_4hr15")]

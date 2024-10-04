@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://q33j5tdfio8o"]
 
-[ext_resource type="Script" path="res://helpers/icon_meta_generator/icon_meta_generator.gd" id="1_iaq8t"]
+[ext_resource type="Script" path="res://tools/icon_meta_generator/icon_meta_generator.gd" id="1_iaq8t"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_c7ihr"]
 viewport_path = NodePath("SubViewport")
 
 [node name="IconGenerator" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
 script = ExtResource("1_iaq8t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -16,8 +16,8 @@ texture = SubResource("ViewportTexture_c7ihr")
 transparent_bg = true
 
 [node name="Camera3D" type="Camera3D" parent="SubViewport"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 1)
+transform = Transform3D(0.82806, 0.396432, -0.396432, 0, 0.707107, 0.707107, 0.560639, -0.585527, 0.585527, -0.814, 3.196, -0.042)
 projection = 1
-size = 0.65
+size = 5.824
 
 [node name="Anchor" type="Node3D" parent="SubViewport"]

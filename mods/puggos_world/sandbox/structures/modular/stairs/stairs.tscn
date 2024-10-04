@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvpv8tfinp8rb"]
-
-[ext_resource type="PackedScene" uid="uid://cvbdru6m4vgu7" path="res://mods/puggos_world/sandbox/structures/modular/stairs/blend/Stairs-4.blend" id="1_rbphi"]
-
-[node name="Stairs-4" instance=ExtResource("1_rbphi")]
