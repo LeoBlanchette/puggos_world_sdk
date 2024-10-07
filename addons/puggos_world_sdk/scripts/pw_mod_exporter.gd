@@ -22,7 +22,7 @@ func _export_file(path: String, type: String, features: PackedStringArray) -> vo
 		write_mod_meta(path)
 	if path.ends_with("creator_info.tres"):
 		write_creator_meta(path)
-	if path.contains("/blend/"):
+	if path.contains("/no_export/"):
 		skip()
 
 func copy_preview_file(preview_image:Texture2D):	

@@ -271,7 +271,7 @@ func generate_anchor_offset_meta():
 			selection.set_meta(anchor_slot+"_rotation_aiming", rot)
 			
 	# save results
-	PuggosWorldSDK.instance.save_node_resource(selection)
+	PuggosWorldSDK.instance.save_node_resource_meta(selection)
 
 #endregion ADD META 
 

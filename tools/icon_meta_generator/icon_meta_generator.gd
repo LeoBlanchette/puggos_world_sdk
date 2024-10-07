@@ -31,7 +31,7 @@ static func capture_icon_meta():
 	target.set_meta("icon_camera_rotation", icon_camera_rotation)	
 		
 	# now save the scene
-	PuggosWorldSDK.instance.save_node_resource(target)
+	PuggosWorldSDK.instance.save_node_resource_meta(target)
 
 	
 

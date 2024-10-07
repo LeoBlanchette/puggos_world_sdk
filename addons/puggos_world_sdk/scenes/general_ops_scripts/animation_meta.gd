@@ -25,4 +25,4 @@ func _on_generate_animation_meta_pressed() -> void:
 				ob.set_meta("id", i)				
 				ob.set_meta("name", anim_name)				
 				ob.set_meta("mod_type", "animations")
-				PuggosWorldSDK.instance.save_node_resource(ob, false)
+				PuggosWorldSDK.instance.save_node_resource_meta(ob)

@@ -44,34 +44,15 @@ func get_selected_nodes():
 	return current_selected_nodes
 
 ## A hackish way to save a resource. Looking for a better way to do it. 
-func save_node_resource(ob:Node, rescan=true)->void:
-	# Duplicate and set owner to null to avoid parent errors. 
-	# https://docs.godotengine.org/en/4.3/classes/class_node.html#class-node-property-owner
-	ob = ob.duplicate()
-	ob.owner = null
-	# save results
-	var packed_scene = PackedScene.new()
+func save_node_resource_meta(ob:Node)->void:
+
 	var file_path:String = ob.scene_file_path
-	var result = packed_scene.pack(ob)
-	if result == OK:		
-		var error = ResourceSaver.save(packed_scene, file_path)		
-		print("Saved to: ", file_path)
-		if error != OK:
-			push_error("An error occurred while saving the scene (%s) to disk."%file_path)
-		else:
-			print("Saved to: ", file_path)			
-		
-		if !rescan:
-			return
-		var filesystem = PuggosWorldSDK.instance.get_editor_interface().get_resource_filesystem()
-		
-		# This next silly step is required so that the editor doesn't bug you later and then 
-		# confuse the user on how to reload it. So we run this silly importer 
-		# which will spit out a bug that may concern the user, which we preface with a 
-		# "don't worry about it" note that will likely become relevant later and 
-		# cause a forum discussion about incompetence etc which maybe we can 
-		# defer to a bug report on godot github which will likely never get resolved anyways.
-		# Anyway, this is a cool song: https://www.youtube.com/watch?v=WzsA4TDMh0w
-		print_rich("IGNORE NEXT WARNING REGARDING [b][color=red]A BUG[/color] :)[/b]")
-		filesystem.reimport_files(PackedStringArray([file_path]))
+	EditorInterface.open_scene_from_path(file_path)
+	var root = EditorInterface.get_edited_scene_root()
 	
+	# Now transfer over meta data 
+	var meta_data_keys:Array[StringName] = ob.get_meta_list()
+	
+	for meta_key:String in meta_data_keys:
+		root.set_meta(meta_key, ob.get_meta(meta_key))
+	EditorInterface.save_scene()
