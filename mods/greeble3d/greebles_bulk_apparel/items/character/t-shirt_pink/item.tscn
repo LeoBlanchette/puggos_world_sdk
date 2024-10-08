@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2gypf5gbyxtg"]
+
+[ext_resource type="PackedScene" uid="uid://c5t7r364ajd66" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/t-shirt_pink/models/t-shirt_pink.gltf" id="1_hhkgc"]
+
+[node name="t-shirt_pink" instance=ExtResource("1_hhkgc")]
