@@ -27,7 +27,7 @@ var tag:String = ""
 #endregion 
 
 #region structures
-var structure_type:Types.ModularStructureType
+var structure_type:Types.ModularStructureType 
 #endregion
 
 #region icon meta

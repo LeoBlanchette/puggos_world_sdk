@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c72wcie5xh7fe"]
+
+[ext_resource type="PackedScene" uid="uid://dpxepnwn6snjn" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/leather_belt/models/leather_belt.gltf" id="1_ubbdo"]
+
+[node name="leather_belt" instance=ExtResource("1_ubbdo")]
+metadata/id = 10059
+metadata/name = "Leather Belt"
+metadata/mod_type = "items"
+metadata/equippable_slot = 19

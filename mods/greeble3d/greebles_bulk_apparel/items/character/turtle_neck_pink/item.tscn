@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgvnhk7vto87b"]
+
+[ext_resource type="PackedScene" uid="uid://mcnsmrce0txf" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/turtle_neck_pink/models/turtle_neck_pink.gltf" id="1_31gwh"]
+
+[node name="turtle_neck_pink" instance=ExtResource("1_31gwh")]
+metadata/id = 10053
+metadata/name = "Pink Turtleneck"
+metadata/mod_type = "items"
+metadata/equippable_slot = 9
+metadata/icon_camera_orthographic_size = 0.8
+metadata/icon_camera_position = Vector3(0, 1.005, 0.82)
+metadata/icon_camera_rotation = Vector3(0, 0, 0)
