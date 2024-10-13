@@ -1,0 +1,43 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://ba0oujlyrmfm1"
+path="res://.godot/imported/gold_bracelet_left.gltf-9264a90b019a50672e63ba6460737a7d.scn"
+
+[deps]
+
+source_file="res://mods/greeble3d/greebles_bulk_apparel/items/character/gold_bracelet_left/models/gold_bracelet_left.gltf"
+dest_files=["res://.godot/imported/gold_bracelet_left.gltf-9264a90b019a50672e63ba6460737a7d.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"GoldBracelet": {
+"use_external/enabled": true,
+"use_external/path": "res://mods/greeble3d/greebles_bulk_apparel/items/character/misc/gold_bracelets.tres"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

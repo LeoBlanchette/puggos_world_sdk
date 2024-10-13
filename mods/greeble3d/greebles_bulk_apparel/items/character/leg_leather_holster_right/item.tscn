@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://m8wu5bodcqb2"]
+
+[ext_resource type="PackedScene" uid="uid://bjuo5af0lnb2h" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/leg_leather_holster_right/models/leg_leather_holster_right.gltf" id="1_i443p"]
+
+[node name="leg_leather_holster_right" instance=ExtResource("1_i443p")]
+metadata/id = 10056
+metadata/name = "Leather Holster Right"
+metadata/mod_type = "items"
+metadata/equippable_slot = 26
