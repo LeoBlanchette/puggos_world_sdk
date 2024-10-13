@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwe40kfsewl57"]
+
+[ext_resource type="PackedScene" uid="uid://bw28myw4txbh0" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/metal_face_guard/models/metal_face_guard.gltf" id="1_5bbtv"]
+
+[node name="metal_face_guard" instance=ExtResource("1_5bbtv")]
+metadata/id = 10060
+metadata/name = "Metal Face Guard"
+metadata/mod_type = "items"
+metadata/equippable_slot = 5

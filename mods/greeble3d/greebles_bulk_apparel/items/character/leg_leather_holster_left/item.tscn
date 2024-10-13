@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw3sm4vn8o0cq"]
+
+[ext_resource type="PackedScene" uid="uid://ugweinxonn10" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/leg_leather_holster_left/models/leg_leather_holster_left.gltf" id="1_7td8g"]
+
+[node name="leg_leather_holster_left" instance=ExtResource("1_7td8g")]
+metadata/id = 10055
+metadata/name = "Leather Holster Left"
+metadata/mod_type = "items"
+metadata/equippable_slot = 25
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)
+bones/5/rotation = Quaternion(0.00359548, 1.19209e-07, 4.28615e-10, 0.999994)
+bones/6/rotation = Quaternion(0.00512855, 2.34846e-08, 2.47324e-08, 0.999987)
+bones/6/scale = Vector3(1, 1, 1)
+bones/7/rotation = Quaternion(0.583939, -0.397949, 0.586009, 0.396541)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/rotation = Quaternion(-0.190585, -0.00105579, 0.0116607, 0.981601)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/rotation = Quaternion(-0.00223352, -4.16533e-05, -0.0420428, 0.999113)
+bones/11/scale = Vector3(1, 1, 1)
+bones/13/scale = Vector3(1, 1, 1)
+bones/14/rotation = Quaternion(-6.30458e-05, 9.48892e-07, 0.00223618, 0.999997)
+bones/15/rotation = Quaternion(0.165023, -0.677707, -0.160723, 0.698319)
+bones/16/rotation = Quaternion(-9.47407e-05, 9.71038e-07, 0.00336283, 0.999994)
+bones/17/rotation = Quaternion(0.165023, -0.677707, -0.160723, 0.698319)
+bones/18/rotation = Quaternion(-9.47407e-05, 9.71038e-07, 0.00336283, 0.999994)
+bones/19/rotation = Quaternion(0.00533338, -0.0110512, 0.0290144, 0.999504)
+bones/19/scale = Vector3(1, 1, 1)
+bones/20/rotation = Quaternion(-0.583939, -0.397949, 0.586009, -0.396541)
+bones/20/scale = Vector3(1, 1, 1)
+bones/21/rotation = Quaternion(-0.190585, 0.00105579, -0.0116607, 0.981601)
+bones/21/scale = Vector3(1, 1, 1)
+bones/24/scale = Vector3(1, 1, 1)
+bones/26/scale = Vector3(1, 1, 1)
+bones/28/scale = Vector3(1, 1, 1)
+bones/29/rotation = Quaternion(-9.47399e-05, -9.83394e-07, -0.00336289, 0.999994)
+bones/30/rotation = Quaternion(0.165023, 0.677707, 0.160723, 0.698319)
+bones/30/scale = Vector3(1, 1, 1)
+bones/31/rotation = Quaternion(-9.47385e-05, -1.10354e-06, -0.00336284, 0.999994)
+bones/32/rotation = Quaternion(0.00533339, 0.0110512, -0.0290144, 0.999504)
+bones/35/rotation = Quaternion(-0.00903405, 0.709961, -0.704124, 0.00910894)
+bones/35/scale = Vector3(1, 1, 1)
+bones/36/rotation = Quaternion(0.00903405, 0.709961, -0.704124, -0.00910894)
+bones/36/scale = Vector3(1, 1, 1)
+bones/37/rotation = Quaternion(-0.00748135, 0.0223848, 0.999677, 0.0094003)
+bones/38/rotation = Quaternion(-0.040224, 0.0171399, -0.00173917, 0.999042)
+bones/38/scale = Vector3(1, 1, 1)
+bones/39/rotation = Quaternion(-0.0162725, 0.9642, 0.263789, 0.021667)
+bones/39/scale = Vector3(1, 1, 1)
+bones/41/rotation = Quaternion(0.00748135, 0.0223848, 0.999677, -0.0094003)
+bones/42/rotation = Quaternion(-0.040224, -0.0171397, 0.00173916, 0.999042)
+bones/42/scale = Vector3(1, 1, 1)
+bones/43/rotation = Quaternion(0.0162725, 0.9642, 0.263789, -0.0216669)
+bones/43/scale = Vector3(1, 1, 1)
+bones/44/scale = Vector3(1, 1, 1)
+bones/46/rotation = Quaternion(-0.704713, 0, 0, 0.709492)
+bones/48/rotation = Quaternion(-0.861449, 3.83412e-08, 6.50376e-08, 0.507844)
+bones/53/rotation = Quaternion(-0.704713, 0, 0, 0.709492)
+bones/55/rotation = Quaternion(-0.861449, 3.83412e-08, 6.50376e-08, 0.507844)

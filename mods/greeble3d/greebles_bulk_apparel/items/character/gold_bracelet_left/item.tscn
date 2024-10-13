@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bla8cg5qhywdd"]
+
+[ext_resource type="PackedScene" uid="uid://ba0oujlyrmfm1" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/gold_bracelet_left/models/gold_bracelet_left.gltf" id="1_hcobl"]
+
+[node name="gold_bracelet_left" instance=ExtResource("1_hcobl")]
+metadata/id = 10057
+metadata/name = "Gold Bracelet Left"
+metadata/mod_type = "items"
+metadata/equippable_slot = 17

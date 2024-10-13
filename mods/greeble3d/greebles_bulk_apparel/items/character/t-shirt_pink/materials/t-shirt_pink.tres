@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://bsmndghguag2l"]
 
-[ext_resource type="Texture2D" uid="uid://bvloqtgobrror" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/t-shirt_pink/textures/T-Shirt_Pink.png" id="1_ll5k6"]
+[ext_resource type="Texture2D" uid="uid://cyay3g8x6vtme" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/t-shirt_pink/textures/T-Shirt_Pink.png" id="1_ll5k6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xirq5"]
 
