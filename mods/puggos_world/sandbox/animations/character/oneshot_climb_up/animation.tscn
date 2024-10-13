@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cqc1hyr0o43xy"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 190
+metadata/name = "One Shot Climb Up"
+metadata/mod_type = "animations"

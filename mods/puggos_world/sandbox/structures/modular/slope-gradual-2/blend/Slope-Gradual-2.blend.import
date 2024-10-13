@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c0ejbk2vnfp10"
-path="res://.godot/imported/Door-4.5-Ramp.blend-13efaab975b50bfc862fa59148075642.scn"
+uid="uid://bl54fb8gg6bue"
+path="res://.godot/imported/Slope-Gradual-2.blend-6cabf7f325bf67ec3384111b7f7dab5f.scn"
 
 [deps]
 
-source_file="res://mods/puggos_world/sandbox/structures/modular/tmp/Door-4.5-Ramp.blend"
-dest_files=["res://.godot/imported/Door-4.5-Ramp.blend-13efaab975b50bfc862fa59148075642.scn"]
+source_file="res://mods/puggos_world/sandbox/structures/modular/slope-gradual-2/blend/Slope-Gradual-2.blend"
+dest_files=["res://.godot/imported/Slope-Gradual-2.blend-6cabf7f325bf67ec3384111b7f7dab5f.scn"]
 
 [params]
 

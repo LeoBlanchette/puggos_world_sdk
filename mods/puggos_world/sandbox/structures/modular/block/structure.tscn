@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8pger5qbpbip"]
+
+[ext_resource type="PackedScene" uid="uid://btnw6r33gjr5o" path="res://mods/puggos_world/sandbox/structures/modular/block/blend/Block.blend" id="1_qc7tt"]
+
+[node name="Structure" type="Node3D"]
+metadata/id = 10
+metadata/name = "Block Prototype"
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 7.063
+metadata/icon_camera_position = Vector3(-4.498, 9.975, 6.626)
+metadata/icon_camera_rotation = Vector3(-45, -34.1, 0)
+metadata/structure_type = "BLOCK"
+
+[node name="Block" parent="." instance=ExtResource("1_qc7tt")]

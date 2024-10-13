@@ -223,6 +223,8 @@ func set_structure_type_meta(_structure_type:String)->void:
 			structure_type = Types.ModularStructureType.WALL_2
 		"INTERIOR_MODULE":
 			structure_type = Types.ModularStructureType.INTERIOR_MODULE
+		"BLOCK":
+			structure_type = Types.ModularStructureType.BLOCK
 		_:
 			structure_type = Types.ModularStructureType.NONE
 

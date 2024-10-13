@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b15ursnh0522o"]
+
+[ext_resource type="PackedScene" uid="uid://bwtvqa752pos4" path="res://mods/puggos_world/sandbox/structures/modular/slope-45-corner/blend/Slope-45-Corner.blend" id="1_fpfrn"]
+
+[node name="Structure" type="Node3D"]
+metadata/id = 15
+metadata/name = "Slope (45 Degrees) Corner Prototype"
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 4.748
+metadata/icon_camera_position = Vector3(-4.733, 8.51, 6.626)
+metadata/icon_camera_rotation = Vector3(-45, -34.1, 0)
+metadata/structure_type = "BLOCK"
+
+[node name="Slope-45-Corner" parent="." instance=ExtResource("1_fpfrn")]

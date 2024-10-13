@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://btnw6r33gjr5o"
-path="res://.godot/imported/Block.blend-60f5fb386b86e13c9875fa58cb75fde4.scn"
+uid="uid://c0ejbk2vnfp10"
+path="res://.godot/imported/Door-4.5-Ramp.blend-8b2e4c6c2d7e4002fe261be6ea0ff3cf.scn"
 
 [deps]
 
-source_file="res://mods/puggos_world/sandbox/structures/modular/tmp/Block.blend"
-dest_files=["res://.godot/imported/Block.blend-60f5fb386b86e13c9875fa58cb75fde4.scn"]
+source_file="res://mods/puggos_world/sandbox/structures/modular/door-4.5-ramp/blend/Door-4.5-Ramp.blend"
+dest_files=["res://.godot/imported/Door-4.5-Ramp.blend-8b2e4c6c2d7e4002fe261be6ea0ff3cf.scn"]
 
 [params]
 

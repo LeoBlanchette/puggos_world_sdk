@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://baq76x56pb3ts"]
+
+[ext_resource type="PackedScene" uid="uid://c0ejbk2vnfp10" path="res://mods/puggos_world/sandbox/structures/modular/door-4.5-ramp/blend/Door-4.5-Ramp.blend" id="1_vgfvf"]
+
+[node name="Structure" type="Node3D"]
+metadata/id = 12
+metadata/name = "Door-full / Ramp Connection Prototype"
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 5.674
+metadata/icon_camera_position = Vector3(-4.498, 10.28, 6.626)
+metadata/icon_camera_rotation = Vector3(-45, -34.1, 0)
+metadata/structure_type = "WALL_2"
+
+[node name="Door-4_5-Ramp" parent="." instance=ExtResource("1_vgfvf")]
