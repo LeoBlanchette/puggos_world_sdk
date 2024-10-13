@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://cksv4wnixn3oe"]
 
 [node name="Animation" type="Node3D"]
+metadata/id = 191
+metadata/name = "One Shot Step Up"
+metadata/mod_type = "animations"

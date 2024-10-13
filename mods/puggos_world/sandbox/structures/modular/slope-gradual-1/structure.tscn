@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dopnnvhbaj55t"]
+
+[ext_resource type="PackedScene" uid="uid://bsxxj1dv1o02n" path="res://mods/puggos_world/sandbox/structures/modular/slope-gradual-1/blend/Slope-Gradual-1.blend" id="1_15f4j"]
+
+[node name="Structure" type="Node3D"]
+metadata/id = 16
+metadata/name = "Slope Gradual Begin Prototype"
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 5.674
+metadata/icon_camera_position = Vector3(-4.498, 8.94, 6.626)
+metadata/icon_camera_rotation = Vector3(-45, -34.1, 0)
+metadata/structure_type = "BLOCK"
+
+[node name="Slope-Gradual-1" parent="." instance=ExtResource("1_15f4j")]

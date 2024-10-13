@@ -4,6 +4,7 @@ extends VBoxContainer
 @onready var anchor_type_option_button: OptionButton = $HBoxContainer/AnchorTypeOptionButton
 
 func _ready() -> void:
+	anchor_type_option_button.clear()
 	for structure_type in Types.ModularStructureType.keys():
 		anchor_type_option_button.add_item(structure_type)
 

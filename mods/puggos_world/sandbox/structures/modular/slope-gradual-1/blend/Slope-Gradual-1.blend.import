@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bwtvqa752pos4"
-path="res://.godot/imported/Slope-45-Corner.blend-44cc711ed2d4ab2e35ff9ea6c74337b1.scn"
+uid="uid://bsxxj1dv1o02n"
+path="res://.godot/imported/Slope-Gradual-1.blend-cd85030ca5ebf52fcfadbf546d8cc163.scn"
 
 [deps]
 
-source_file="res://mods/puggos_world/sandbox/structures/modular/tmp/Slope-45-Corner.blend"
-dest_files=["res://.godot/imported/Slope-45-Corner.blend-44cc711ed2d4ab2e35ff9ea6c74337b1.scn"]
+source_file="res://mods/puggos_world/sandbox/structures/modular/slope-gradual-1/blend/Slope-Gradual-1.blend"
+dest_files=["res://.godot/imported/Slope-Gradual-1.blend-cd85030ca5ebf52fcfadbf546d8cc163.scn"]
 
 [params]
 

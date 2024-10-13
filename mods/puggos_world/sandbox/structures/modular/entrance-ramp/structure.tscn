@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://da5jnkplwgr33"]
+
+[ext_resource type="PackedScene" uid="uid://cisgvmk5hgi73" path="res://mods/puggos_world/sandbox/structures/modular/entrance-ramp/blend/Entrance-Ramp.blend" id="1_45ftb"]
+
+[node name="Structure" type="Node3D"]
+metadata/id = 13
+metadata/name = "Entrance Ramp Prototype"
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 2.433
+metadata/icon_camera_position = Vector3(-3.563, 6.245, 6.626)
+metadata/icon_camera_rotation = Vector3(-45, -34.1, 0)
+metadata/structure_type = "NONE"
+
+[node name="Entrance-Ramp" parent="." instance=ExtResource("1_45ftb")]

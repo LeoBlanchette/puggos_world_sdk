@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://iqkgmn77pehc"]
+
+[ext_resource type="PackedScene" uid="uid://ftcce3ruq0s3" path="res://mods/puggos_world/sandbox/structures/modular/slope-45/blend/Slope-45.blend" id="1_sgbva"]
+
+[node name="Structure" type="Node3D"]
+metadata/id = 14
+metadata/name = "Slope (45 degrees) Prototype"
+metadata/mod_type = "structures"
+metadata/icon_camera_orthographic_size = 7.526
+metadata/icon_camera_position = Vector3(-4.733, 10.12, 6.626)
+metadata/icon_camera_rotation = Vector3(-45, -34.1, 0)
+metadata/structure_type = "BLOCK"
+
+[node name="Slope-45" parent="." instance=ExtResource("1_sgbva")]
