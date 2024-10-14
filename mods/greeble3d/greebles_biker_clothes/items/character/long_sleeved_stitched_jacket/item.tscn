@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://brib0ii1gckh6"]
+
+[ext_resource type="PackedScene" uid="uid://cyid45hhjgdcb" path="res://mods/greeble3d/greebles_biker_clothes/items/character/long_sleeved_stitched_jacket/models/longsleeved_stitched_jacket.gltf" id="1_ryv57"]
+
+[node name="longsleeved_stitched_jacket" instance=ExtResource("1_ryv57")]
+metadata/id = 10323
+metadata/name = "Long Sleeved Stitched Jacket"
+metadata/mod_type = "items"
+metadata/equippable_slot = 9
+metadata/icon_camera_orthographic_size = 0.7
+metadata/icon_camera_position = Vector3(0, 1.04, 1)
+metadata/icon_camera_rotation = Vector3(0, 0, 0)

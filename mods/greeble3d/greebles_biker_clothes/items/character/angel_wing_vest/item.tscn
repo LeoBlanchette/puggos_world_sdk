@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0vahfooyewp"]
+
+[ext_resource type="PackedScene" uid="uid://7ulaxon5e0ru" path="res://mods/greeble3d/greebles_biker_clothes/items/character/angel_wing_vest/models/angel_wing_vest.gltf" id="1_l7ydu"]
+
+[node name="angel_wing_vest" instance=ExtResource("1_l7ydu")]
+metadata/id = 10320
+metadata/name = "Angel Wing Vest"
+metadata/mod_type = "items"
+metadata/equippable_slot = 10
+metadata/icon_camera_orthographic_size = 0.6
+metadata/icon_camera_position = Vector3(0, 1.095, -1.18)
+metadata/icon_camera_rotation = Vector3(0, 180, 0)

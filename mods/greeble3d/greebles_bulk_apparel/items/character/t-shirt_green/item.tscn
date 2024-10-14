@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b405d5x6l36yk" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/t-shirt_green/models/t-shirt_green.gltf" id="1_8aepq"]
 
 [node name="t-shirt_green" instance=ExtResource("1_8aepq")]
-metadata/id = 10048
+metadata/id = 10313
 metadata/name = "Green T-Shirt"
 metadata/mod_type = "items"
 metadata/equippable_slot = 8

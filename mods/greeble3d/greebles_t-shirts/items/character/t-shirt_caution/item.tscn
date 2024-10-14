@@ -307,7 +307,7 @@ _data = {
 }
 
 [node name="T-Shirt_Caution" type="Node3D"]
-metadata/id = 10047
+metadata/id = 10316
 metadata/name = "Caution T-Shirt"
 metadata/mod_type = "items"
 metadata/equippable_slot = 8
