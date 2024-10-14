@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://3hag8xxwu4d1"
-path="res://.godot/imported/turtle_neck_blue.gltf-35fc6066c7f3c84baa1bd6ce024b4e87.scn"
+uid="uid://c8rlnvcb5khjf"
+path="res://.godot/imported/fingerless_glove_right.gltf-f61df391762622d5f30431a21834c746.scn"
 
 [deps]
 
-source_file="res://mods/greeble3d/greebles_bulk_apparel/items/character/turtle_neck_blue/models/turtle_neck_blue.gltf"
-dest_files=["res://.godot/imported/turtle_neck_blue.gltf-35fc6066c7f3c84baa1bd6ce024b4e87.scn"]
+source_file="res://mods/greeble3d/greebles_biker_clothes/items/character/fingerless_glove_right/models/fingerless_glove_right.gltf"
+dest_files=["res://.godot/imported/fingerless_glove_right.gltf-f61df391762622d5f30431a21834c746.scn"]
 
 [params]
 
@@ -33,9 +33,9 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Blue_TurtleNeck": {
+"Bowman": {
 "use_external/enabled": true,
-"use_external/path": "res://mods/greeble3d/greebles_bulk_apparel/items/character/turtle_neck_blue/materials/turtle_neck_blue.tres"
+"use_external/path": "res://mods/greeble3d/greebles_biker_clothes/items/character/misc/angel_wing_vest.tres"
 }
 }
 }

@@ -3,10 +3,13 @@
 [ext_resource type="PackedScene" uid="uid://b3civw5xftesl" path="res://mods/greeble3d/greebles_casual_wear/items/character/black_business_shoe_left/models/black_business_shoe_left.gltf" id="1_qaw8j"]
 
 [node name="black_business_shoe_left" instance=ExtResource("1_qaw8j")]
-metadata/id = 10027
+metadata/id = 10317
 metadata/name = "Black Business Shoe Left"
 metadata/mod_type = "items"
 metadata/equippable_slot = 23
+metadata/icon_camera_orthographic_size = 0.4
+metadata/icon_camera_position = Vector3(0.15, 0.1, 0.82)
+metadata/icon_camera_rotation = Vector3(0, 0, 0)
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)

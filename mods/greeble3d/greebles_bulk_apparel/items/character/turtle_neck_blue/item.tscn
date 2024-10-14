@@ -3,13 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://3hag8xxwu4d1" path="res://mods/greeble3d/greebles_bulk_apparel/items/character/turtle_neck_blue/models/turtle_neck_blue.gltf" id="1_exn1x"]
 
 [node name="turtle_neck_blue" instance=ExtResource("1_exn1x")]
-metadata/id = 10051
-metadata/name = "Blue Turtleneck"
-metadata/mod_type = "items"
-metadata/equippable_slot = 9
-metadata/icon_camera_orthographic_size = 0.8
-metadata/icon_camera_position = Vector3(0, 1.05, 0.82)
-metadata/icon_camera_rotation = Vector3(0, 0, 0)
 
 [node name="Skeleton3D" parent="Armature" index="0"]
 bones/3/rotation = Quaternion(0.00409953, 0, 0, 0.999992)
